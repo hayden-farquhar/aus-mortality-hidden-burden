@@ -58,9 +58,9 @@ suicide <- mur_data %>%
   filter(icd_code == "X60-X84")
 
 cat("Suicide deaths (X60-X84, underlying cause):\n")
-cat(sprintf("  Males:   %,d\n", suicide$underlying_male))
-cat(sprintf("  Females: %,d\n", suicide$underlying_female))
-cat(sprintf("  Persons: %,d\n", suicide$underlying_persons))
+cat(sprintf("  Males:   %s\n", format(suicide$underlying_male, big.mark = ",")))
+cat(sprintf("  Females: %s\n", format(suicide$underlying_female, big.mark = ",")))
+cat(sprintf("  Persons: %s\n", format(suicide$underlying_persons, big.mark = ",")))
 cat(sprintf("  Male/female ratio: %.2f\n",
             suicide$underlying_male / suicide$underlying_female))
 
@@ -69,10 +69,14 @@ mental <- mur_data %>%
   filter(icd_code == "F00-F99")
 
 cat("\nMental health (F00-F99):\n")
-cat(sprintf("  Underlying deaths: Male=%,d, Female=%,d, Persons=%,d\n",
-            mental$underlying_male, mental$underlying_female, mental$underlying_persons))
-cat(sprintf("  Multiple cause:    Male=%,d, Female=%,d, Persons=%,d\n",
-            mental$multiple_male, mental$multiple_female, mental$multiple_persons))
+cat(sprintf("  Underlying deaths: Male=%s, Female=%s, Persons=%s\n",
+            format(mental$underlying_male, big.mark = ","),
+            format(mental$underlying_female, big.mark = ","),
+            format(mental$underlying_persons, big.mark = ",")))
+cat(sprintf("  Multiple cause:    Male=%s, Female=%s, Persons=%s\n",
+            format(mental$multiple_male, big.mark = ","),
+            format(mental$multiple_female, big.mark = ","),
+            format(mental$multiple_persons, big.mark = ",")))
 cat(sprintf("  MUR: Male=%.2f, Female=%.2f, Persons=%.2f\n",
             mental$mur_male, mental$mur_female, mental$mur_persons))
 cat(sprintf("  Male/female MUR ratio: %.2f (males %.0f%% higher)\n",
@@ -105,11 +109,11 @@ cat("(Conservative estimate based on death certificate studies)\n\n")
 suicide_with_mh_male   <- suicide$underlying_male * pct_mh_on_suicide
 suicide_with_mh_female <- suicide$underlying_female * pct_mh_on_suicide
 
-cat(sprintf("Estimated suicide deaths with MH contributing cause:\n"))
-cat(sprintf("  Males:   %.0f (50%% of %,d)\n",
-            suicide_with_mh_male, suicide$underlying_male))
-cat(sprintf("  Females: %.0f (50%% of %,d)\n",
-            suicide_with_mh_female, suicide$underlying_female))
+cat("Estimated suicide deaths with MH contributing cause:\n")
+cat(sprintf("  Males:   %.0f (50%% of %s)\n",
+            suicide_with_mh_male, format(suicide$underlying_male, big.mark = ",")))
+cat(sprintf("  Females: %.0f (50%% of %s)\n",
+            suicide_with_mh_female, format(suicide$underlying_female, big.mark = ",")))
 
 # ============================================================================
 # CALCULATE COUNTERFACTUAL MUR (IF SUICIDE DEATHS WEREN'T INFLATING)
