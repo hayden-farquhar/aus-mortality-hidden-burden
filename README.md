@@ -12,7 +12,7 @@ This repository contains all analysis code, derived data, and results for a seco
 
 A MUR of 1.0 means a condition is only ever the underlying cause (e.g., intentional self-harm). A MUR of 27.7 (hypertension) means the condition appears nearly 28 times more often as *any* cause than as the *underlying* cause, revealing a massive hidden burden invisible to standard mortality statistics.
 
-**Pre-registration:** [OSF](https://osf.io/k46rn)
+**Pre-registration:** [OSF](https://doi.org/10.17605/OSF.IO/K46RN)
 **Ethics:** Not required (publicly available aggregated data, no individual-level records).
 **Code:** https://github.com/hayden-farquhar/aus-mortality-hidden-burden
 
@@ -113,6 +113,8 @@ All scripts assume the working directory is `Analysis/` (set automatically by op
 | `18_hospital_mortality_linkage.R` | Hospital procedure volume vs MUR linkage |
 | `19_pbs_vs_mortality.R` | PBS prescribing vs hypertension mortality trends |
 | `20_temporal_high_mur.R` | Temporal trends for high-MUR conditions |
+| `21_fig1_mur_concept.R` | Figure 1: Conceptual MUR illustration |
+| `22_reviewer_sensitivity_analyses.R` | Sensitivity analyses: eye domain, Poisson CIs, crude rate Spearman |
 
 ## File Descriptions
 

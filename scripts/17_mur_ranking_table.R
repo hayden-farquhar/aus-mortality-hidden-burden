@@ -310,10 +310,10 @@ p <- ggplot(top30, aes(x = mur_persons,
                                mur_persons),
                    yend = reorder(paste0(condition_name, " [", icd_code, "]"),
                                   mur_persons)),
-               colour = "grey70", linewidth = 0.5) +
-  geom_point(size = 3, colour = "#2c7bb6") +
+               colour = "grey70", linewidth = 0.6) +
+  geom_point(size = 4, colour = "#2c7bb6") +
   geom_text(aes(label = sprintf("%.1f", mur_persons)),
-            hjust = -0.3, size = 2.8, colour = "grey30") +
+            hjust = -0.3, size = 3.8, colour = "grey30") +
   scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
   labs(
     title = "Top 30 Conditions by Multiple-to-Underlying Cause Ratio (MUR)",
@@ -323,18 +323,20 @@ p <- ggplot(top30, aes(x = mur_persons,
     y = NULL,
     caption = "Source: ABS Causes of Death 2023, Cube 10 (multiple causes)"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
     panel.grid.major.y = element_blank(),
     panel.grid.minor = element_blank(),
-    plot.title = element_text(face = "bold", size = 13),
-    plot.subtitle = element_text(size = 10, colour = "grey40"),
-    plot.caption = element_text(size = 8, colour = "grey50"),
-    axis.text.y = element_text(size = 8)
+    plot.title = element_text(face = "bold", size = 15),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    plot.caption = element_text(size = 9, colour = "grey50"),
+    axis.text.y = element_text(size = 10),
+    axis.text.x = element_text(size = 10),
+    plot.margin = margin(10, 20, 10, 10)
   )
 
 ggsave("outputs/figures/fig15_mur_ranking_top30.png", p,
-       width = 12, height = 10, dpi = 300, bg = "white")
+       width = 12, height = 13, dpi = 300, bg = "white")
 
 cat("Figure saved: outputs/figures/fig15_mur_ranking_top30.png\n")
 
@@ -356,7 +358,7 @@ top20_sex <- mur_ranking %>%
 if (nrow(top20_sex) > 0) {
   p_sex <- ggplot(top20_sex, aes(x = mur, y = reorder(label, mur),
                                   colour = sex)) +
-    geom_point(size = 3, position = position_dodge(width = 0.5)) +
+    geom_point(size = 3.5, position = position_dodge(width = 0.5)) +
     scale_colour_manual(values = c("Male" = "#2c7bb6", "Female" = "#d7191c")) +
     labs(
       title = "Sex-Stratified MUR for Top 20 High-MUR Conditions",
@@ -366,18 +368,20 @@ if (nrow(top20_sex) > 0) {
       colour = "Sex",
       caption = "Source: ABS Causes of Death 2023, Cube 10"
     ) +
-    theme_minimal(base_size = 11) +
+    theme_minimal(base_size = 13) +
     theme(
       panel.grid.major.y = element_blank(),
       panel.grid.minor = element_blank(),
-      plot.title = element_text(face = "bold", size = 13),
-      plot.subtitle = element_text(size = 10, colour = "grey40"),
-      axis.text.y = element_text(size = 8),
-      legend.position = "top"
+      plot.title = element_text(face = "bold", size = 15),
+      plot.subtitle = element_text(size = 11, colour = "grey40"),
+      plot.caption = element_text(size = 9, colour = "grey50"),
+      axis.text.y = element_text(size = 10),
+      legend.position = "top",
+      legend.text = element_text(size = 11)
     )
 
   ggsave("outputs/figures/fig15b_mur_ranking_sex.png", p_sex,
-         width = 12, height = 9, dpi = 300, bg = "white")
+         width = 12, height = 10, dpi = 300, bg = "white")
 
   cat("Figure saved: outputs/figures/fig15b_mur_ranking_sex.png\n")
 }

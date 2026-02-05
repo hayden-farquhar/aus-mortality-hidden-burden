@@ -1,0 +1,143 @@
+============================================================
+REVIEWER SENSITIVITY ANALYSES
+Date: 2026-02-06 09:35
+============================================================
+
+============================================================
+A. HOSPITAL-MUR CORRELATION: SENSITIVITY TO EYE DOMAIN
+============================================================
+
+indexing hospital_mortality_linkage.csv [==========================================] 205.15MB/s, eta:  0s                                                                                                         All domains (n = 12 ):
+  Eye                   MUR =   76.5  Procs/death =      74725
+  Ear                   MUR =   15.1  Procs/death =       4295
+  Blood/immune          MUR =    7.8  Procs/death =        152
+  Musculoskeletal       MUR =    7.2  Procs/death =        588
+  Genitourinary         MUR =    6.9  Procs/death =        465
+  Skin                  MUR =    4.5  Procs/death =       1339
+  Respiratory           MUR =    4.3  Procs/death =         18
+  Cardiovascular        MUR =    4.1  Procs/death =         15
+  Digestive             MUR =    3.4  Procs/death =        312
+  Obstetric             MUR =    3.2  Procs/death =     143781
+  Nervous system        MUR =    2.2  Procs/death =         53
+  Neoplasms             MUR =    1.5  Procs/death =          2
+
+--- WITH Eye domain (n = 12 ) ---
+  Spearman rho (log procs/death vs MUR):     rho = 0.510, p = 0.0899
+  Pearson r (log procs/death vs log MUR):    r   = 0.618, p = 0.0322
+
+--- WITHOUT Eye domain (n = 11) ---
+  Spearman rho (log procs/death vs MUR):     rho = 0.445, p = 0.1697
+  Pearson r (log procs/death vs log MUR):    r   = 0.428, p = 0.1889
+
+--- Summary ---
+  Eye domain: MUR = 76.5, Procs/death = 74,724.69 (extreme outlier)
+  Removing Eye changes Spearman rho from 0.510 to 0.445
+  Removing Eye changes Pearson r from 0.618 to 0.428
+
+
+============================================================
+B. POISSON CONFIDENCE INTERVALS FOR MUR (TABLE 1)
+============================================================
+
+indexing mur_ranking_full.csv [======================================================] 7.97GB/s, eta:  0s                                                                                                         Exact Poisson 95% CIs for MUR:
+(MUR = Multiple / Underlying; CI based on Poisson uncertainty in
+ underlying death count, which is the smaller and more variable quantity)
+
+Condition                                                    U      M    MUR   95% CI   CI width
+-------------------------------------------------------------------------------------------------------------- 
+Surgical and other medical procedures as the cause o...     15   4217  281.1 [ 170.5,  502.3]   width=332
+Shock, not elsewhere classified                             24   3442  143.4 [  96.4,  223.8]   width=127
+Symptoms and signs involving the digestive system an...     20   2403  120.2 [  77.8,  196.7]   width=119
+Neurotic, stress-related and somatoform disorders           22   2325  105.7 [  69.8,  168.6]   width=99
+Cachexia                                                    14   1382   98.7 [  58.8,  180.6]   width=122
+Complications of medical and surgical care                  68   6413   94.3 [  74.4,  121.4]   width=47
+Other anxiety disorders                                     19   1739   91.5 [  58.6,  152.0]   width=93
+Respiratory failure, not elsewhere classified               92   7582   82.4 [  67.2,  102.2]   width=35
+Symptoms and signs involving cognition, perception, ...     55   4250   77.3 [  59.4,  102.6]   width=43
+Symptoms and signs concerning food and fluid intake         23   1746   75.9 [  50.6,  119.8]   width=69
+
+Interpretation:
+Conditions with few underlying deaths (<50) have extremely wide CIs,
+indicating MUR point estimates are unstable. For example, Y83-Y84
+(15 underlying deaths) has a CI width spanning hundreds of MUR units.
+Conditions with >50 underlying deaths have narrower, more reliable CIs.
+
+
+Key conditions referenced in manuscript:
+  Essential (primary) hypertension (I10): MUR = 27.7 [25.9, 29.7]
+  Respiratory failure, not elsewhere cl... (J96): MUR = 82.4 [67.2, 102.2]
+
+
+============================================================
+C. SPEARMAN RHO ON CRUDE RATES vs RAW COUNTS (TABLE 3)
+============================================================
+
+indexing temporal_high_mur_series.csv [==============================================] 1.46GB/s, eta:  0s                                                                                                         indexing population_estimates.csv [================================================] 409.42GB/s, eta:  0s                                                                                                         Population estimates (mid-year, Australia):
+  2014: 23,475,686
+  2015: 23,815,995
+  2016: 24,190,907
+  2017: 24,592,588
+  2018: 24,963,258
+  2019: 25,334,826
+  2020: 25,649,248
+  2021: 25,685,412
+  2022: 26,018,721
+  2023: 26,659,922
+  2024: 27,194,286
+
+
+Comparison: Spearman rho on raw counts vs crude rates
+
+Condition                                   rho_cnt    p_cnt rho_rate   p_rate   Changed?
+---------------------------------------------------------------------------------------------------- 
+Delirium, not induced by alcohol and ot...  -0.582   0.0604   -0.582   0.0604   no
+Mood [affective] disorders                  +0.425   0.1930   +0.282   0.4011   no
+Depressive episode                          +0.433   0.1836   +0.255   0.4500   no
+Sleep disorders                             +0.925   0.0000   +0.918   0.0001   no
+Essential (primary) hypertension            +0.645   0.0320   +0.473   0.1420   YES ***
+Pulmonary oedema                            +0.370   0.2629   +0.182   0.5926   no
+Other diseases of the respiratory system    -0.682   0.0208   -0.682   0.0208   no
+Respiratory failure, not elsewhere clas...  +0.691   0.0186   +0.536   0.0890   no
+Other arthrosis                             -0.491   0.1252   -0.555   0.0767   YES ***
+Symptoms and signs involving the circul...  -0.379   0.2504   -0.445   0.1697   no
+Other symptoms and signs involving the ...  -0.361   0.2758   -0.382   0.2466   no
+Symptoms and signs involving cognition,...  +0.895   0.0002   +0.882   0.0003   no
+Other symptoms and signs involving cogn...  +0.900   0.0002   +0.900   0.0002   no
+Malaise and fatigue                         +1.000   0.0000   +1.000   0.0000   no
+Complications of medical and surgical care  -0.100   0.7699   -0.173   0.6115   no
+
+
+Summary: 2 of 15 conditions changed trend classification
+Conditions that changed:
+  Essential (primary) hypertension [I10]: Increasing -> Stable
+  Other arthrosis [M19]: Stable -> Decreasing
+
+Note: For Spearman (rank-based), if population grows monotonically,
+the rank order of years is usually preserved. Differences arise only
+when year-to-year death count changes are small relative to population
+growth, potentially flipping the rank of adjacent years.
+
+
+Updated crude rate changes (per 100,000):
+
+Condition                                   Rate 2014  Rate 2024    Abs chg      % chg      ICD
+----------------------------------------------------------------------------------------------- 
+Delirium, not induced by alcohol and ot...      1.125      0.246     -0.878     -78.1%      F05
+Mood [affective] disorders                      0.319      0.371      0.052     +16.3%  F30-F39
+Depressive episode                              0.243      0.291      0.048     +19.6%      F32
+Sleep disorders                                 0.136      0.305      0.169    +123.9%      G47
+Essential (primary) hypertension                2.466      3.063      0.597     +24.2%      I10
+Pulmonary oedema                                0.204      0.213      0.009      +4.3%      J81
+Other diseases of the respiratory system        1.746      1.236     -0.511     -29.3%  J95-J99
+Respiratory failure, not elsewhere clas...      0.256      0.349      0.094     +36.7%      J96
+Other arthrosis                                 0.515      0.357     -0.159     -30.8%      M19
+Symptoms and signs involving the circul...      0.260      0.302      0.042     +16.0%  R00-R09
+Other symptoms and signs involving the ...      0.213      0.257      0.044     +20.9%      R09
+Symptoms and signs involving cognition,...      0.030      0.191      0.161    +541.3%  R40-R46
+Other symptoms and signs involving cogn...      0.026      0.191      0.166    +648.2%      R41
+Malaise and fatigue                             0.153      1.228      1.075    +700.9%      R53
+Complications of medical and surgical care      0.818      0.243     -0.575     -70.3%  Y40-Y84
+
+============================================================
+Script 21 complete.
+============================================================

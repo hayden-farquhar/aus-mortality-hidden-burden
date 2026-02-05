@@ -389,12 +389,12 @@ p_a <- ggplot(index_data, aes(x = year, y = indexed,
     y = "Index (baseline = 100)",
     colour = NULL, linetype = NULL
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
     legend.position = "bottom",
-    legend.text = element_text(size = 8)
+    legend.text = element_text(size = 10)
   ) +
   guides(colour = guide_legend(nrow = 2))
 
@@ -423,11 +423,12 @@ p_b <- ggplot(pct_data, aes(x = year, y = pct, colour = metric_label)) +
     y = "Percentage (%)",
     colour = NULL
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
-    legend.position = "bottom"
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    legend.position = "bottom",
+    legend.text = element_text(size = 10)
   )
 
 # Panel C: Scatter — RAAS prescribing vs hypertension deaths
@@ -443,7 +444,7 @@ if (length(raas_col) > 0) {
     geom_point(aes(colour = year), size = 3) +
     geom_smooth(method = "lm", se = TRUE, colour = "grey50",
                 linetype = "dashed", linewidth = 0.5) +
-    geom_text(aes(label = year), hjust = -0.3, size = 2.8) +
+    geom_text(aes(label = year), hjust = -0.3, size = 3.5) +
     scale_colour_viridis_c() +
     labs(
       title = "C. RAAS Inhibitor Prescribing vs Hypertension Deaths",
@@ -453,11 +454,12 @@ if (length(raas_col) > 0) {
       y = "Hypertension deaths (underlying cause)",
       colour = "Year"
     ) +
-    theme_minimal(base_size = 11) +
+    theme_minimal(base_size = 13) +
     theme(
-      plot.title = element_text(face = "bold", size = 12),
-      plot.subtitle = element_text(size = 9, colour = "grey40"),
-      legend.position = "right"
+      plot.title = element_text(face = "bold", size = 14),
+      plot.subtitle = element_text(size = 11, colour = "grey40"),
+      legend.position = "right",
+      legend.text = element_text(size = 10)
     )
 } else {
   p_c <- ggplot() + theme_void() +
@@ -472,14 +474,14 @@ p_combined <- (p_a | p_b) / p_c +
     caption = paste0("Sources: PBS Item Reports (2015-2024), ",
                      "ABS Causes of Death Cube 14 (2014-2024)"),
     theme = theme(
-      plot.title = element_text(face = "bold", size = 14),
-      plot.subtitle = element_text(size = 10, colour = "grey40"),
-      plot.caption = element_text(size = 8, colour = "grey50")
+      plot.title = element_text(face = "bold", size = 16),
+      plot.subtitle = element_text(size = 12, colour = "grey40"),
+      plot.caption = element_text(size = 10, colour = "grey50")
     )
   )
 
 ggsave("outputs/figures/fig17_pbs_vs_mortality.png", p_combined,
-       width = 16, height = 12, dpi = 300, bg = "white")
+       width = 14, height = 11, dpi = 300, bg = "white")
 
 cat("Figure saved: outputs/figures/fig17_pbs_vs_mortality.png\n")
 

@@ -286,7 +286,7 @@ cat("Summary text saved: outputs/exploratory/hospital_mortality_linkage.txt\n")
 p_a <- ggplot(analysis_data, aes(x = procs_per_death, y = mur)) +
   geom_point(aes(size = underlying_deaths), colour = "#2c7bb6", alpha = 0.7) +
   geom_text(aes(label = clinical_domain),
-            hjust = -0.1, vjust = -0.5, size = 2.8, colour = "grey30") +
+            hjust = -0.1, vjust = -0.5, size = 3.5, colour = "grey30") +
   geom_smooth(method = "lm", se = TRUE, colour = "grey50",
               linetype = "dashed", linewidth = 0.5) +
   scale_x_log10(labels = scales::comma) +
@@ -299,18 +299,19 @@ p_a <- ggplot(analysis_data, aes(x = procs_per_death, y = mur)) +
     x = "Procedure separations per underlying death (log scale)",
     y = "MUR (Multiple / Underlying ratio)"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
-    legend.position = "right"
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    legend.position = "right",
+    legend.text = element_text(size = 10)
   )
 
 # Panel B: Diagnosis separations per death vs MUR
 p_b <- ggplot(analysis_data, aes(x = diags_per_death, y = mur)) +
   geom_point(aes(size = underlying_deaths), colour = "#d7191c", alpha = 0.7) +
   geom_text(aes(label = clinical_domain),
-            hjust = -0.1, vjust = -0.5, size = 2.8, colour = "grey30") +
+            hjust = -0.1, vjust = -0.5, size = 3.5, colour = "grey30") +
   geom_smooth(method = "lm", se = TRUE, colour = "grey50",
               linetype = "dashed", linewidth = 0.5) +
   scale_x_log10(labels = scales::comma) +
@@ -323,18 +324,19 @@ p_b <- ggplot(analysis_data, aes(x = diags_per_death, y = mur)) +
     x = "Diagnosis separations per underlying death (log scale)",
     y = "MUR (Multiple / Underlying ratio)"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
-    legend.position = "right"
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    legend.position = "right",
+    legend.text = element_text(size = 10)
   )
 
 # Panel C: Bubble chart — proc volume vs deaths, coloured by MUR
 p_c <- ggplot(analysis_data, aes(x = proc_seps, y = underlying_deaths)) +
   geom_point(aes(colour = mur, size = mur), alpha = 0.7) +
   geom_text(aes(label = clinical_domain),
-            hjust = -0.1, vjust = -0.5, size = 2.8, colour = "grey30") +
+            hjust = -0.1, vjust = -0.5, size = 3.5, colour = "grey30") +
   scale_x_log10(labels = scales::comma) +
   scale_y_log10(labels = scales::comma) +
   scale_colour_viridis_c(option = "plasma", name = "MUR") +
@@ -345,11 +347,12 @@ p_c <- ggplot(analysis_data, aes(x = proc_seps, y = underlying_deaths)) +
     x = "Total procedure separations (log scale)",
     y = "Total underlying deaths (log scale)"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
-    legend.position = "right"
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    legend.position = "right",
+    legend.text = element_text(size = 10)
   )
 
 # Combine
@@ -358,13 +361,13 @@ p_combined <- (p_a | p_b) / p_c +
     title = "Hospital Activity vs Mortality Hidden Burden by Clinical Domain",
     caption = "Source: AIHW hospital statistics (2022-23), ABS Causes of Death 2023 (Cube 10)",
     theme = theme(
-      plot.title = element_text(face = "bold", size = 14),
-      plot.caption = element_text(size = 8, colour = "grey50")
+      plot.title = element_text(face = "bold", size = 16),
+      plot.caption = element_text(size = 10, colour = "grey50")
     )
   )
 
 ggsave("outputs/figures/fig16_hospital_vs_mur.png", p_combined,
-       width = 16, height = 12, dpi = 300, bg = "white")
+       width = 14, height = 11, dpi = 300, bg = "white")
 
 cat("Figure saved: outputs/figures/fig16_hospital_vs_mur.png\n")
 

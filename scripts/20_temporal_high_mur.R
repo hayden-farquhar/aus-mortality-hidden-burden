@@ -326,12 +326,12 @@ p_a <- ggplot(temporal_top8, aes(x = year, y = indexed,
     y = "Index (baseline = 100)",
     colour = NULL
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
     legend.position = "bottom",
-    legend.text = element_text(size = 7)
+    legend.text = element_text(size = 9)
   ) +
   guides(colour = guide_legend(ncol = 2))
 
@@ -349,12 +349,12 @@ p_b <- ggplot(temporal_top8, aes(x = year, y = deaths,
     y = "Deaths (underlying cause)",
     colour = NULL
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
     legend.position = "bottom",
-    legend.text = element_text(size = 7)
+    legend.text = element_text(size = 9)
   ) +
   guides(colour = guide_legend(ncol = 2))
 
@@ -382,12 +382,12 @@ if (nrow(temporal_chapters) > 0) {
       y = "Index (baseline = 100)",
       colour = NULL
     ) +
-    theme_minimal(base_size = 11) +
+    theme_minimal(base_size = 13) +
     theme(
-      plot.title = element_text(face = "bold", size = 12),
-      plot.subtitle = element_text(size = 9, colour = "grey40"),
+      plot.title = element_text(face = "bold", size = 14),
+      plot.subtitle = element_text(size = 11, colour = "grey40"),
       legend.position = "bottom",
-      legend.text = element_text(size = 8)
+      legend.text = element_text(size = 10)
     ) +
     guides(colour = guide_legend(ncol = 2))
 } else {
@@ -400,7 +400,7 @@ p_d <- ggplot(trend_results,
   geom_vline(xintercept = 0, linetype = "dashed", colour = "grey50") +
   geom_point(aes(size = deaths_last, colour = direction), alpha = 0.7) +
   geom_text(aes(label = icd_code), hjust = -0.2, vjust = -0.5,
-            size = 2.5, colour = "grey30") +
+            size = 3.2, colour = "grey30") +
   scale_colour_manual(values = c(
     "Increasing" = "#d7191c",
     "Decreasing" = "#2c7bb6",
@@ -415,11 +415,12 @@ p_d <- ggplot(trend_results,
     y = "MUR (2023)",
     colour = "Trend"
   ) +
-  theme_minimal(base_size = 11) +
+  theme_minimal(base_size = 13) +
   theme(
-    plot.title = element_text(face = "bold", size = 12),
-    plot.subtitle = element_text(size = 9, colour = "grey40"),
-    legend.position = "right"
+    plot.title = element_text(face = "bold", size = 14),
+    plot.subtitle = element_text(size = 11, colour = "grey40"),
+    legend.position = "right",
+    legend.text = element_text(size = 10)
   )
 
 # Combine
@@ -429,14 +430,14 @@ p_combined <- (p_a | p_b) / (p_c | p_d) +
     subtitle = "Conditions with the greatest 'hidden' mortality burden: are they becoming more or less visible?",
     caption = "Sources: ABS Causes of Death 2023 Cube 10 (MUR), ABS Cube 14 (temporal, 2014-2024)",
     theme = theme(
-      plot.title = element_text(face = "bold", size = 14),
-      plot.subtitle = element_text(size = 10, colour = "grey40"),
-      plot.caption = element_text(size = 8, colour = "grey50")
+      plot.title = element_text(face = "bold", size = 16),
+      plot.subtitle = element_text(size = 12, colour = "grey40"),
+      plot.caption = element_text(size = 10, colour = "grey50")
     )
   )
 
 ggsave("outputs/figures/fig18_temporal_high_mur.png", p_combined,
-       width = 18, height = 14, dpi = 300, bg = "white")
+       width = 16, height = 13, dpi = 300, bg = "white")
 
 cat("Figure saved: outputs/figures/fig18_temporal_high_mur.png\n")
 
