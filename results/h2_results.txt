@@ -16,7 +16,7 @@ DEVIATION FROM PRE-REGISTRATION:
   crude rates where ASRs were suppressed for small jurisdictions.
   Rate type recorded per condition in rate_type column.
 
-H4a PRIMARY: Mann-Whitney U
+H2a PRIMARY: Mann-Whitney U
   Z: -0.162 
   U: 7459 
   p-value: 0.87162 
@@ -24,11 +24,11 @@ H4a PRIMARY: Mann-Whitney U
   Median CV avoidable: 30.8 %
   Median CV non-avoidable: 31.1 %
 
-H4a SUPPLEMENTARY: Permutation test
+H2a SUPPLEMENTARY: Permutation test
   Observed median difference: -0.3 
   p-value: 0.9056 
 
-H4b SECONDARY: Preventable vs Treatable
+H2b SECONDARY: Preventable vs Treatable
   U: 1135 
   p-value: 0.83165 
   Rank-biserial r: -0.027 
@@ -36,9 +36,9 @@ H4b SECONDARY: Preventable vs Treatable
   Median CV treatable: 32.6 %
 
 SENSITIVITY: Excluding NT and ACT
-  H4a p-value: 0.872319 
+  H2a p-value: 0.872319 
   Rank-biserial r: 0.012 
-  H4b p-value: 0.83165 
+  H2b p-value: 0.83165 
 
 NOTE: p-values are UNCORRECTED. Apply Holm-Bonferroni correction
 across all confirmatory tests using Script 16 before interpreting

@@ -1,8 +1,0 @@
-hypothesis,test,test_type,statistic_name,statistic_value,p_value_uncorrected,ci_lower,ci_upper,ci_method,effect_size_r,n,significant_uncorrected,deviation_note
-H5a,Wilcoxon signed-rank (exact),primary,V,2.2404481344448155,0.0234375,NA,NA,NA,0.8012321722494486,8,TRUE,Adapted: n=8 block-level sub-conditions (not n=17 years as pre-registered)
-H5a,Exact binomial sign test,supplementary,n_positive,7,0.07031250000000003,NA,NA,NA,NA,8,FALSE,Supplementary test for small n
-H5a,Bootstrap CI,supplementary,mean_diff,40.782510386221844,NA,7.689267649063384,82.32934053899329,Percentile,NA,8,NA,NA
-H5a,Permutation test,supplementary,observed_mean_diff,40.782510386221844,0.0253,NA,NA,NA,NA,8,TRUE,NA
-H5b_substance,Wilcoxon signed-rank (exact),secondary,V,0.674199862463242,0.625,NA,NA,NA,0.2185874562101569,5,FALSE,Substance use sub-conditions (F10-F19 individual codes)
-H5b_non_substance,Wilcoxon signed-rank (exact),secondary,V,2.2013981571160284,0.03125,NA,NA,NA,0.8793156617239652,6,TRUE,Non-substance block-level conditions (F20-F99)
-H5c,Spearman correlation,secondary,rho,0.6272727272727273,0.03884525362035334,NA,NA,NA,0.6272727272727273,11,TRUE,Uses crude death rates (not MUR) due to data availability

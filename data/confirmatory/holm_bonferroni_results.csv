@@ -1,9 +1,9 @@
 test_id,hypothesis,test_type,description,p_uncorrected,p_holm_primary,p_holm_all,significant_uncorrected,significant_corrected
 H1b,H1,secondary,"Hypertension sex gap temporal trend (Spearman, crude rates)",0.01455205195372772,NA,0.11641641562982176,TRUE,FALSE
-H5a,H5,primary,Mental health MUR: male vs female (Wilcoxon signed-rank),0.0234375,0.0703125,0.1640625,TRUE,FALSE
-H5b_nonsub,H5,secondary,Non-substance (F20-F99) MUR: male vs female (Wilcoxon),0.03125,NA,0.1875,TRUE,FALSE
-H5c,H5,secondary,"Mental health sex gap temporal trend (Spearman, crude rates)",0.03884525362035334,NA,0.1942262681017667,TRUE,FALSE
+H3a,H3,primary,Mental health MUR: male vs female (Wilcoxon signed-rank),0.0234375,0.0703125,0.1640625,TRUE,FALSE
+H3b_nonsub,H3,secondary,Non-substance (F20-F99) MUR: male vs female (Wilcoxon),0.03125,NA,0.1875,TRUE,FALSE
+H3c,H3,secondary,"Mental health sex gap temporal trend (Spearman, crude rates)",0.03884525362035334,NA,0.1942262681017667,TRUE,FALSE
 H1a,H1,primary,Hypertension MUR: male vs female (Wilcoxon signed-rank),0.125,0.25,0.5,FALSE,FALSE
-H5b_sub,H5,secondary,Substance use (F10-F19) MUR: male vs female (Wilcoxon),0.625,NA,1,FALSE,FALSE
-H4b,H4,secondary,Geographic CV: preventable vs treatable (Mann-Whitney U),0.8316498138027415,NA,1,FALSE,FALSE
-H4a,H4,primary,Geographic CV: avoidable vs non-avoidable (Mann-Whitney U),0.8716201271663704,0.8716201271663704,1,FALSE,FALSE
+H3b_sub,H3,secondary,Substance use (F10-F19) MUR: male vs female (Wilcoxon),0.625,NA,1,FALSE,FALSE
+H2b,H2,secondary,Geographic CV: preventable vs treatable (Mann-Whitney U),0.8316498138027415,NA,1,FALSE,FALSE
+H2a,H2,primary,Geographic CV: avoidable vs non-avoidable (Mann-Whitney U),0.8716201271663704,0.8716201271663704,1,FALSE,FALSE

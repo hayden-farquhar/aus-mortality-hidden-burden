@@ -1,0 +1,6 @@
+hypothesis,test,test_type,statistic_name,statistic_value,p_value_uncorrected,effect_size_name,effect_size,n_group1,n_group2,significant_uncorrected,deviation_note
+H2a,Mann-Whitney U,primary,Z,-0.16160092712961996,0.8716201271663704,rank_biserial,0.012052980132450375,100,151,FALSE,NA
+H2a,Permutation test,supplementary,median_diff,-0.2958733954198891,0.9056,NA,NA,100,151,FALSE,NA
+H2b,Mann-Whitney U,secondary,U,1135,0.8316498138027415,rank_biserial,-0.0266847580280416,67,33,FALSE,NA
+H2a,Mann-Whitney U (excl. NT/ACT),sensitivity,U,7459,0.8723194421815925,rank_biserial,0.012052980132450375,100,151,FALSE,Sensitivity: NT and ACT excluded from CV computation
+H2b,Mann-Whitney U (excl. NT/ACT),sensitivity,U,1135,0.8316498138027415,NA,NA,67,33,FALSE,Sensitivity: NT and ACT excluded from CV computation

@@ -19,7 +19,7 @@ AGGREGATE RESULT (DESCRIPTIVE):
     Female:  3.0
     Ratio:   1.62 (male MUR is 62% higher)
 
-H5a PRIMARY: Paired Wilcoxon Signed-Rank
+H3a PRIMARY: Paired Wilcoxon Signed-Rank
   Null: No difference in male vs female MUR for mental disorders
   Test statistic V: 2.24 
   p-value (exact, two-tailed): 0.0234375 
@@ -27,29 +27,29 @@ H5a PRIMARY: Paired Wilcoxon Signed-Rank
   n block-level pairs: 8 
   Positive differences (male > female): 7 of 8 
 
-H5a SUPPLEMENTARY: Exact Binomial Sign Test
+H3a SUPPLEMENTARY: Exact Binomial Sign Test
   p-value: 0.0703125 
 
-H5a SUPPLEMENTARY: Bootstrap 95% CI
+H3a SUPPLEMENTARY: Bootstrap 95% CI
   Mean (male MUR - female MUR): 40.783 
   95% Percentile CI: 7.689 to 82.329 
 
-H5a SUPPLEMENTARY: Permutation Test
+H3a SUPPLEMENTARY: Permutation Test
   p-value: 0.0253 
 
-H5b SECONDARY: Substance Use (F10-F19)
+H3b SECONDARY: Substance Use (F10-F19)
   n conditions: 5 
   p-value: 0.625 
   Effect size r: 0.219 
   Mean diff: 167.1 
 
-H5b SECONDARY: Non-Substance (F20-F99)
+H3b SECONDARY: Non-Substance (F20-F99)
   n conditions: 6 
   p-value: 0.03125 
   Effect size r: 0.879 
   Mean diff: 55.2 
 
-H5c SECONDARY: Temporal Trend (crude death rates, not MUR)
+H3c SECONDARY: Temporal Trend (crude death rates, not MUR)
   Spearman rho: 0.627 
   p-value: 0.0388453 
   n years: 11 

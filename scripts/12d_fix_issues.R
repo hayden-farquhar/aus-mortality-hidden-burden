@@ -1,25 +1,25 @@
 ###############################################################################
-# Script 12d: Fix H4 rate conversion, H5c/H1c population adjustment,
-#             H1 obstetric code filtering, H4 avoidability merge
+# Script 12d: Fix H2 rate conversion, H3c/H1c population adjustment,
+#             H1 obstetric code filtering, H2 avoidability merge
 #
 # Run AFTER Scripts 12, 12b, and 12c have completed successfully.
 # Working directory should be Analysis/ (the RStudio project root).
 #
 # Fixes three issues identified during data verification:
-#   1. CRITICAL: H4 geographic CVs used raw death COUNTS instead of rates.
+#   1. CRITICAL: H2 geographic CVs used raw death COUNTS instead of rates.
 #      The coefficient of variation was reflecting population size differences
 #      between states, not actual geographic variation in mortality patterns.
-#   2. MODERATE: H5c and H1c temporal trends are raw counts without
+#   2. MODERATE: H3c and H1c temporal trends are raw counts without
 #      population denominators. Cannot distinguish real change from
 #      demographic growth (~14% over 2014-2024).
 #   3. MINOR: H1 data includes obstetric codes O10-O16 which have
 #      near-zero counts and should be filtered for cleanliness.
-#   4. CRITICAL: H4 avoidability classification merge produced all NAs.
+#   4. CRITICAL: H2 avoidability classification merge produced all NAs.
 #      Rebuilds classification from AIHW NHA definitions and re-merges.
 #
 # OUTPUTS (overwrites existing files in outputs/confirmatory/):
-#   confirmatory_h4_data.csv      - CVs on ASR (not counts) + avoidability
-#   confirmatory_h5c_temporal.csv - with crude rate per 100,000 column
+#   confirmatory_h2_data.csv      - CVs on ASR (not counts) + avoidability
+#   confirmatory_h3c_temporal.csv - with crude rate per 100,000 column
 #   confirmatory_h1c_temporal.csv - with crude rate per 100,000 column
 #   confirmatory_h1_data.csv      - obstetric codes removed
 ###############################################################################
@@ -31,7 +31,7 @@ OUTPUT_DIR <- "outputs"
 DATA_ROOT <- "../Confirmatory exploration/Data from sources"
 
 cat("============================================================\n")
-cat("Script 12d: Fix H4 rates, H5c/H1c population, H1 obstetric\n")
+cat("Script 12d: Fix H2 rates, H3c/H1c population, H1 obstetric\n")
 cat("============================================================\n\n")
 
 
@@ -162,10 +162,10 @@ if (file.exists(h1_file)) {
 
 
 ###############################################################################
-# PART 2: Fix H4 — Recalculate CVs using rates, rebuild avoidability merge
+# PART 2: Fix H2 — Recalculate CVs using rates, rebuild avoidability merge
 ###############################################################################
 
-cat("--- PART 2: Fix H4 geographic variation (rates + avoidability) ---\n\n")
+cat("--- PART 2: Fix H2 geographic variation (rates + avoidability) ---\n\n")
 
 state_file <- file.path(OUTPUT_DIR, "exploratory", "deaths_underlying_by_state.csv")
 
@@ -219,7 +219,7 @@ if (file.exists(state_file)) {
     mutate(rate_for_cv = ifelse(!is.na(asr), asr, crude_rate))
 
   # Compute CVs on RATES (not counts!)
-  h4_cv <- cv_input %>%
+  h2_cv <- cv_input %>%
     filter(!is.na(rate_for_cv), rate_for_cv > 0) %>%
     group_by(cause) %>%
     summarise(
@@ -243,13 +243,13 @@ if (file.exists(state_file)) {
     arrange(desc(cv))
 
   cat(sprintf("  Computed CVs for %d conditions (using rates, min 6 states)\n",
-              nrow(h4_cv)))
+              nrow(h2_cv)))
 
   # Sanity check: show some key conditions
   cat("\n  Sample CVs (should be much lower than before):\n")
   key_checks <- c("I21", "I10", "J45", "G30", "C34")
   for (code in key_checks) {
-    row <- h4_cv %>% filter(str_detect(icd_code, code))
+    row <- h2_cv %>% filter(str_detect(icd_code, code))
     if (nrow(row) > 0) {
       cat(sprintf("    %-50s CV: %5.1f%% (mean ASR: %.1f, %d states)\n",
                   substr(row$cause[1], 1, 50),
@@ -377,14 +377,14 @@ if (file.exists(state_file)) {
     return(NA_character_)
   }
 
-  h4_cv <- h4_cv %>%
+  h2_cv <- h2_cv %>%
     mutate(
       avoidability = map_chr(icd_code, classify_condition),
       avoidable_group = map_chr(icd_code, classify_group)
     )
 
   # Count matches
-  avoid_counts <- h4_cv %>% count(avoidability)
+  avoid_counts <- h2_cv %>% count(avoidability)
   cat("\n  Avoidability classification results:\n")
   for (i in 1:nrow(avoid_counts)) {
     cat(sprintf("    %-15s: %d conditions\n",
@@ -393,7 +393,7 @@ if (file.exists(state_file)) {
 
   # Quick check: conditions classified as avoidable
   cat("\n  Sample avoidable conditions (top 10 by CV):\n")
-  h4_cv %>%
+  h2_cv %>%
     filter(avoidability != "non-avoidable") %>%
     arrange(desc(cv)) %>%
     head(10) %>%
@@ -404,7 +404,7 @@ if (file.exists(state_file)) {
     }}
 
   cat("\n  Sample non-avoidable conditions (top 10 by CV):\n")
-  h4_cv %>%
+  h2_cv %>%
     filter(avoidability == "non-avoidable") %>%
     arrange(desc(cv)) %>%
     head(10) %>%
@@ -414,11 +414,11 @@ if (file.exists(state_file)) {
                   .$cv[i]))
     }}
 
-  # --- 2D: Preliminary H4 test (for verification) ---
-  avoidable_cvs <- h4_cv %>%
+  # --- 2D: Preliminary H2 test (for verification) ---
+  avoidable_cvs <- h2_cv %>%
     filter(avoidability %in% c("preventable", "treatable")) %>%
     pull(cv)
-  nonavoidable_cvs <- h4_cv %>%
+  nonavoidable_cvs <- h2_cv %>%
     filter(avoidability == "non-avoidable") %>%
     pull(cv)
 
@@ -433,15 +433,15 @@ if (file.exists(state_file)) {
     cat(sprintf("    Mann-Whitney U p-value: %.4f\n", prelim_test$p.value))
   }
 
-  # --- 2E: Save corrected H4 data ---
-  h4_out <- h4_cv %>%
+  # --- 2E: Save corrected H2 data ---
+  h2_out <- h2_cv %>%
     select(cause, icd_code, n_states, mean_rate, sd_rate, cv,
            min_rate, max_rate, total_deaths, rate_type,
            avoidability, avoidable_group)
 
-  h4_outfile <- file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h4_data.csv")
-  write_csv(h4_out, h4_outfile)
-  cat(sprintf("\n  Saved corrected H4 data: %s (%d rows)\n\n", h4_outfile, nrow(h4_out)))
+  h2_outfile <- file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h2_data.csv")
+  write_csv(h2_out, h2_outfile)
+  cat(sprintf("\n  Saved corrected H2 data: %s (%d rows)\n\n", h2_outfile, nrow(h2_out)))
 
 } else {
   cat("  WARNING: State death data not found at:", state_file, "\n\n")
@@ -449,30 +449,30 @@ if (file.exists(state_file)) {
 
 
 ###############################################################################
-# PART 3: Fix H5c and H1c — Add population-adjusted rates
+# PART 3: Fix H3c and H1c — Add population-adjusted rates
 ###############################################################################
 
 cat("--- PART 3: Add population-adjusted rates to temporal data ---\n\n")
 
-# --- 3A: Fix H5c (Mental health temporal) ---
-h5c_file <- file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5c_temporal.csv")
+# --- 3A: Fix H3c (Mental health temporal) ---
+h3c_file <- file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3c_temporal.csv")
 
-if (file.exists(h5c_file)) {
-  h5c <- read_csv(h5c_file, show_col_types = FALSE)
-  cat(sprintf("  H5c: loaded %d rows, years %d-%d\n",
-              nrow(h5c), min(h5c$year), max(h5c$year)))
+if (file.exists(h3c_file)) {
+  h3c <- read_csv(h3c_file, show_col_types = FALSE)
+  cat(sprintf("  H3c: loaded %d rows, years %d-%d\n",
+              nrow(h3c), min(h3c$year), max(h3c$year)))
 
   # Merge population
-  h5c_adj <- h5c %>%
+  h3c_adj <- h3c %>%
     left_join(pop_national_annual, by = "year") %>%
     mutate(
       crude_rate_per_100k = (deaths / population) * 100000
     )
 
   # Check for unmatched years
-  n_unmatched <- sum(is.na(h5c_adj$population))
+  n_unmatched <- sum(is.na(h3c_adj$population))
   if (n_unmatched > 0) {
-    unmatched_years <- unique(h5c_adj$year[is.na(h5c_adj$population)])
+    unmatched_years <- unique(h3c_adj$year[is.na(h3c_adj$population)])
     cat(sprintf("  WARNING: %d rows have no population match (years: %s)\n",
                 n_unmatched, paste(unmatched_years, collapse = ", ")))
 
@@ -487,7 +487,7 @@ if (file.exists(h5c_file)) {
       pop_lm <- lm(population ~ year, data = recent_pop)
       for (yr in unmatched_years) {
         extrap_pop <- predict(pop_lm, newdata = data.frame(year = yr))
-        h5c_adj <- h5c_adj %>%
+        h3c_adj <- h3c_adj %>%
           mutate(
             population = ifelse(year == yr & is.na(population),
                                 round(extrap_pop), population),
@@ -501,13 +501,13 @@ if (file.exists(h5c_file)) {
     }
   }
 
-  write_csv(h5c_adj, h5c_file)
-  cat(sprintf("  Saved: %s\n", h5c_file))
+  write_csv(h3c_adj, h3c_file)
+  cat(sprintf("  Saved: %s\n", h3c_file))
 
   # Show the correction effect
   cat("\n  Mental health (F00-F99) underlying deaths, persons:\n")
   cat("    Year    Deaths     Population    Crude Rate/100k\n")
-  h5c_adj %>%
+  h3c_adj %>%
     filter(str_detect(cause, "F00-F99"), sex == "persons") %>%
     arrange(year) %>%
     {for (i in 1:nrow(.)) {
@@ -519,13 +519,13 @@ if (file.exists(h5c_file)) {
     }}
 
   # Check: is the trend still present after adjustment?
-  h5c_persons <- h5c_adj %>%
+  h3c_persons <- h3c_adj %>%
     filter(str_detect(cause, "F00-F99"), sex == "persons", !is.na(crude_rate_per_100k))
 
-  if (nrow(h5c_persons) >= 3) {
-    raw_change <- (max(h5c_persons$deaths) / min(h5c_persons$deaths) - 1) * 100
-    rate_change <- (max(h5c_persons$crude_rate_per_100k) /
-                    min(h5c_persons$crude_rate_per_100k) - 1) * 100
+  if (nrow(h3c_persons) >= 3) {
+    raw_change <- (max(h3c_persons$deaths) / min(h3c_persons$deaths) - 1) * 100
+    rate_change <- (max(h3c_persons$crude_rate_per_100k) /
+                    min(h3c_persons$crude_rate_per_100k) - 1) * 100
     cat(sprintf("\n  Raw count change: +%.1f%%\n", raw_change))
     cat(sprintf("  Crude rate change: +%.1f%% (after population adjustment)\n", rate_change))
     cat("  Difference reflects population growth + ageing over the period.\n")
@@ -533,7 +533,7 @@ if (file.exists(h5c_file)) {
   cat("\n")
 
 } else {
-  cat("  WARNING: H5c temporal file not found at:", h5c_file, "\n\n")
+  cat("  WARNING: H3c temporal file not found at:", h3c_file, "\n\n")
 }
 
 # --- 3B: Fix H1c (Hypertension temporal) ---
@@ -610,34 +610,34 @@ cat("============================================================\n")
 cat("VALIDATION SUMMARY\n")
 cat("============================================================\n\n")
 
-# Check H4
-if (file.exists(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h4_data.csv"))) {
-  h4_check <- read_csv(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h4_data.csv"),
+# Check H2
+if (file.exists(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h2_data.csv"))) {
+  h2_check <- read_csv(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h2_data.csv"),
                         show_col_types = FALSE)
 
-  cat("H4 Geographic Variation (FIXED):\n")
-  cat(sprintf("  Total conditions with CV: %d\n", nrow(h4_check)))
-  cat(sprintf("  Median CV: %.1f%% (was ~88%% with raw counts)\n", median(h4_check$cv)))
+  cat("H2 Geographic Variation (FIXED):\n")
+  cat(sprintf("  Total conditions with CV: %d\n", nrow(h2_check)))
+  cat(sprintf("  Median CV: %.1f%% (was ~88%% with raw counts)\n", median(h2_check$cv)))
   cat(sprintf("  Rate type used: %s\n",
-              paste(unique(h4_check$rate_type), collapse = ", ")))
+              paste(unique(h2_check$rate_type), collapse = ", ")))
 
-  avoid_n <- sum(h4_check$avoidability %in% c("preventable", "treatable"))
-  nonavoid_n <- sum(h4_check$avoidability == "non-avoidable")
-  na_n <- sum(is.na(h4_check$avoidability))
+  avoid_n <- sum(h2_check$avoidability %in% c("preventable", "treatable"))
+  nonavoid_n <- sum(h2_check$avoidability == "non-avoidable")
+  na_n <- sum(is.na(h2_check$avoidability))
   cat(sprintf("  Avoidable: %d, Non-avoidable: %d, Unclassified: %d\n",
               avoid_n, nonavoid_n, na_n))
   cat(sprintf("  (Previously: 19 avoidability columns all NA)\n\n"))
 }
 
-# Check H5c
-if (file.exists(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5c_temporal.csv"))) {
-  h5c_check <- read_csv(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5c_temporal.csv"),
+# Check H3c
+if (file.exists(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3c_temporal.csv"))) {
+  h3c_check <- read_csv(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3c_temporal.csv"),
                           show_col_types = FALSE)
-  has_rate <- "crude_rate_per_100k" %in% names(h5c_check)
-  cat(sprintf("H5c Temporal (FIXED): crude_rate_per_100k column present = %s\n", has_rate))
+  has_rate <- "crude_rate_per_100k" %in% names(h3c_check)
+  cat(sprintf("H3c Temporal (FIXED): crude_rate_per_100k column present = %s\n", has_rate))
   if (has_rate) {
-    n_with_rate <- sum(!is.na(h5c_check$crude_rate_per_100k))
-    cat(sprintf("  Rows with valid rate: %d of %d\n\n", n_with_rate, nrow(h5c_check)))
+    n_with_rate <- sum(!is.na(h3c_check$crude_rate_per_100k))
+    cat(sprintf("  Rows with valid rate: %d of %d\n\n", n_with_rate, nrow(h3c_check)))
   }
 }
 

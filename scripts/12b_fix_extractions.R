@@ -1,5 +1,5 @@
 ###############################################################################
-# Script 12b: Fix H1/H5 extraction + PBS data
+# Script 12b: Fix H1/H3 extraction + PBS data
 # Run AFTER Script 12 has completed successfully
 ###############################################################################
 
@@ -12,7 +12,7 @@ DATA_ROOT <- "../Confirmatory exploration/Data from sources"
 OUTPUT_DIR <- "outputs"
 
 cat("============================================================\n")
-cat("Script 12b: Structuring H1, H5, and PBS data\n")
+cat("Script 12b: Structuring H1, H3, and PBS data\n")
 cat("============================================================\n\n")
 
 ###############################################################################
@@ -100,28 +100,28 @@ if (file.exists(h1_file)) {
 
 
 ###############################################################################
-# PART 2: Structure H5 (Mental Health MUR) from raw Table 10.2 extract
+# PART 2: Structure H3 (Mental Health MUR) from raw Table 10.2 extract
 ###############################################################################
 
-cat("--- PART 2: Structuring H5 (Mental Health MUR) ---\n\n")
+cat("--- PART 2: Structuring H3 (Mental Health MUR) ---\n\n")
 
-h5_file <- file.path(OUTPUT_DIR, "confirmatory", "raw_mental_health_Table_10_2.csv")
+h3_file <- file.path(OUTPUT_DIR, "confirmatory", "raw_mental_health_Table_10_2.csv")
 
-if (file.exists(h5_file)) {
+if (file.exists(h3_file)) {
   
-  h5_raw <- read_csv(h5_file, col_names = FALSE, show_col_types = FALSE)
+  h3_raw <- read_csv(h3_file, col_names = FALSE, show_col_types = FALSE)
   
-  colnames(h5_raw) <- c("cause", "unit",
+  colnames(h3_raw) <- c("cause", "unit",
                          "underlying_male", "underlying_female", "underlying_persons",
                          "multiple_male", "multiple_female", "multiple_persons",
                          "ratio")
   
-  h5_raw <- h5_raw %>%
+  h3_raw <- h3_raw %>%
     mutate(across(c(underlying_male:multiple_persons), ~ as.numeric(gsub("[^0-9.]", "", as.character(.)))),
            ratio = as.numeric(ifelse(ratio == "—" | ratio == "\u2014", NA, ratio)))
   
   # Chapter-level mental health MUR
-  h5_chapter <- h5_raw %>%
+  h3_chapter <- h3_raw %>%
     filter(str_detect(cause, "CHAPTER V|F00-F99")) %>%
     mutate(
       mur_male   = multiple_male / underlying_male,
@@ -131,7 +131,7 @@ if (file.exists(h5_file)) {
     )
   
   # Sub-group MURs (F00-F09, F10-F19, F20-F29, F30-F39, F40-F48, etc.)
-  h5_subgroups <- h5_raw %>%
+  h3_subgroups <- h3_raw %>%
     filter(str_detect(cause, "^[A-Z].*\\(F\\d{2}-F\\d{2}\\)")) %>%
     mutate(
       mur_male   = ifelse(underlying_male > 0, multiple_male / underlying_male, NA),
@@ -143,7 +143,7 @@ if (file.exists(h5_file)) {
     )
   
   # Full detail (all F-codes)
-  h5_detail <- h5_raw %>%
+  h3_detail <- h3_raw %>%
     filter(str_detect(cause, "\\(F\\d{2}")) %>%
     mutate(
       mur_male   = ifelse(underlying_male > 0, multiple_male / underlying_male, NA),
@@ -153,36 +153,36 @@ if (file.exists(h5_file)) {
       data_year  = 2023
     )
   
-  write_csv(h5_detail, file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5_data.csv"))
+  write_csv(h3_detail, file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3_data.csv"))
   
-  cat("  ✓ H5 data structured:\n")
+  cat("  ✓ H3 data structured:\n")
   cat("    Chapter V Mental & Behavioural Disorders (F00-F99) overall MUR:\n")
-  if (nrow(h5_chapter) > 0) {
+  if (nrow(h3_chapter) > 0) {
     cat(sprintf("      Males:   %.1f (underlying: %s, multiple: %s)\n",
-                h5_chapter$mur_male[1],
-                format(h5_chapter$underlying_male[1], big.mark = ","),
-                format(h5_chapter$multiple_male[1], big.mark = ",")))
+                h3_chapter$mur_male[1],
+                format(h3_chapter$underlying_male[1], big.mark = ","),
+                format(h3_chapter$multiple_male[1], big.mark = ",")))
     cat(sprintf("      Females: %.1f (underlying: %s, multiple: %s)\n",
-                h5_chapter$mur_female[1],
-                format(h5_chapter$underlying_female[1], big.mark = ","),
-                format(h5_chapter$multiple_female[1], big.mark = ",")))
+                h3_chapter$mur_female[1],
+                format(h3_chapter$underlying_female[1], big.mark = ","),
+                format(h3_chapter$multiple_female[1], big.mark = ",")))
     cat(sprintf("      Persons: %.1f (underlying: %s, multiple: %s)\n",
-                h5_chapter$mur_persons[1],
-                format(h5_chapter$underlying_persons[1], big.mark = ","),
-                format(h5_chapter$multiple_persons[1], big.mark = ",")))
+                h3_chapter$mur_persons[1],
+                format(h3_chapter$underlying_persons[1], big.mark = ","),
+                format(h3_chapter$multiple_persons[1], big.mark = ",")))
   }
-  cat("    Saved to: outputs/confirmatory/confirmatory_h5_data.csv\n\n")
+  cat("    Saved to: outputs/confirmatory/confirmatory_h3_data.csv\n\n")
   
   # Print sub-group MURs
   cat("    Sub-group MURs (persons):\n")
-  h5_subgroups %>%
+  h3_subgroups %>%
     select(condition_group, icd_range, underlying_persons, multiple_persons, mur_persons) %>%
     arrange(desc(mur_persons)) %>%
     print(n = 20)
   cat("\n")
   
 } else {
-  cat("  ✗ Raw H5 extract not found. Re-run Script 12 first.\n\n")
+  cat("  ✗ Raw H3 extract not found. Re-run Script 12 first.\n\n")
 }
 
 
@@ -339,13 +339,13 @@ cat("\n============================================================\n")
 cat("IMPORTANT NOTE ON TEMPORAL DATA\n")
 cat("============================================================\n\n")
 cat("The ABS 2024 release of Cube 10 (Multiple Causes of Death) contains\n")
-cat("data for a SINGLE YEAR only. To test H1 and H5 as temporal trends\n")
+cat("data for a SINGLE YEAR only. To test H1 and H3 as temporal trends\n")
 cat("(MUR increasing over time), you would need to either:\n\n")
 cat("  Option A: Download historical Cube 10 files from prior ABS releases\n")
 cat("            (2023 release, 2022 release, etc.) from the ABS website.\n")
 cat("            Each year's release should have a Cube 10 with that year's\n")
 cat("            multiple cause data.\n\n")
-cat("  Option B: Reframe H1 and H5 as cross-sectional hypotheses:\n")
+cat("  Option B: Reframe H1 and H3 as cross-sectional hypotheses:\n")
 cat("            e.g., 'Hypertension has a higher MUR than cardiovascular\n")
 cat("            diseases overall' or 'Mental health MUR varies by sex'\n\n")
 cat("  Option C: Use Cube 14 (year of occurrence) which may have multi-year\n")

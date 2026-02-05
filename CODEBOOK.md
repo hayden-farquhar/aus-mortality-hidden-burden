@@ -259,8 +259,8 @@ H1 temporal data: Hypertension underlying deaths 2014-2024 with population-adjus
 | population | numeric | Mid-year population estimate |
 | crude_rate_per_100k | numeric | Crude death rate per 100,000 |
 
-### confirmatory_h4_data.csv
-H2/H4 input data: Geographic CVs with avoidability classification.
+### confirmatory_h2_data.csv
+H2 input data: Geographic CVs with avoidability classification.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -277,8 +277,8 @@ H2/H4 input data: Geographic CVs with avoidability classification.
 | avoidability | character | "preventable", "treatable", "not_avoidable", or NA |
 | avoidable_group | character | Specific avoidable death category |
 
-### confirmatory_h5_data.csv
-H3/H5 input data: Mental health MUR by sex (2023 cross-section).
+### confirmatory_h3_data.csv
+H3 input data: Mental health MUR by sex (2023 cross-section).
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -292,8 +292,8 @@ H3/H5 input data: Mental health MUR by sex (2023 cross-section).
 | icd_code | character | ICD-10 code |
 | data_year | integer | Data year (2023) |
 
-### confirmatory_h5c_temporal.csv
-H3/H5 temporal data: Mental health underlying deaths 2014-2024 with population-adjusted rates.
+### confirmatory_h3c_temporal.csv
+H3 temporal data: Mental health underlying deaths 2014-2024 with population-adjusted rates.
 
 Same structure as `confirmatory_h1c_temporal.csv`.
 
@@ -316,12 +316,12 @@ Statistical test results for H1 (hypertension).
 | significant_uncorrected | logical | Significant at alpha=0.05 uncorrected |
 | deviation_note | character | Note on any deviation from pre-registration |
 
-### h4_results.csv
-Statistical test results for H2/H4 (geographic variation).
+### h2_results.csv
+Statistical test results for H2 (geographic variation).
 
 | Column | Type | Description |
 |--------|------|-------------|
-| hypothesis | character | Test identifier (H4a, H4b) |
+| hypothesis | character | Test identifier (H2a, H2b) |
 | test | character | Test name |
 | test_type | character | "primary" or "secondary" |
 | statistic_name | character | Test statistic name |
@@ -334,8 +334,8 @@ Statistical test results for H2/H4 (geographic variation).
 | significant_uncorrected | logical | Significant uncorrected |
 | deviation_note | character | Deviation note |
 
-### h5_results.csv
-Statistical test results for H3/H5 (mental health). Same structure as `h1_results.csv`.
+### h3_results.csv
+Statistical test results for H3 (mental health). Same structure as `h1_results.csv`.
 
 ### holm_bonferroni_results.csv
 Combined Holm-Bonferroni correction results across all hypothesis tests.
@@ -343,7 +343,7 @@ Combined Holm-Bonferroni correction results across all hypothesis tests.
 | Column | Type | Description |
 |--------|------|-------------|
 | test_id | character | Test identifier |
-| hypothesis | character | Parent hypothesis (H1, H4, H5) |
+| hypothesis | character | Parent hypothesis (H1, H2, H3) |
 | test_type | character | "primary" or "secondary" |
 | description | character | Human-readable test description |
 | p_uncorrected | numeric | Uncorrected p-value |

@@ -14,9 +14,9 @@ CORRECTION SCOPE 1: Primary Tests Only (n=3)
 Per D6: 'supported if primary test achieves p < 0.05 after
 Holm-Bonferroni correction.'
 
-  H5a  p_uncorrected = 0.0234375  p_holm = 0.0703125  
+  H3a  p_uncorrected = 0.0234375  p_holm = 0.0703125  
   H1a  p_uncorrected = 0.125  p_holm = 0.25  
-  H4a  p_uncorrected = 0.87162  p_holm = 0.87162  
+  H2a  p_uncorrected = 0.87162  p_holm = 0.87162  
 
   Supported: 0 / 3
 
@@ -25,13 +25,13 @@ CORRECTION SCOPE 2: All Tests (n=8)
 ================================================================
 
   H1b          [secondary]  p = 0.0145521     p_holm = 0.116416      
-  H5a          [primary  ]  p = 0.0234375     p_holm = 0.164062      
-  H5b_nonsub   [secondary]  p = 0.03125       p_holm = 0.1875        
-  H5c          [secondary]  p = 0.0388453     p_holm = 0.194226      
+  H3a          [primary  ]  p = 0.0234375     p_holm = 0.164062      
+  H3b_nonsub   [secondary]  p = 0.03125       p_holm = 0.1875        
+  H3c          [secondary]  p = 0.0388453     p_holm = 0.194226      
   H1a          [primary  ]  p = 0.125         p_holm = 0.5           
-  H5b_sub      [secondary]  p = 0.625         p_holm = 1             
-  H4b          [secondary]  p = 0.83165       p_holm = 1             
-  H4a          [primary  ]  p = 0.87162       p_holm = 1             
+  H3b_sub      [secondary]  p = 0.625         p_holm = 1             
+  H2b          [secondary]  p = 0.83165       p_holm = 1             
+  H2a          [primary  ]  p = 0.87162       p_holm = 1             
 
   Significant: 0 / 8
 
@@ -43,15 +43,15 @@ H1 (Hypertension hidden burden):
   Primary (H1a): Not supported (p_holm = 0.25 )
   Direction consistent, bootstrap CI excludes zero, but n=4 limits power.
 
-H4 (Geographic variation x preventability):
-  Primary (H4a): Not supported (p_holm = 0.8716 )
+H2 (Geographic variation x preventability):
+  Primary (H2a): Not supported (p_holm = 0.8716 )
   Clear null finding. Median CVs nearly identical.
 
-H5 (Mental health hidden burden):
-  Primary (H5a): Not supported (p_holm = 0.07031 )
+H3 (Mental health hidden burden):
+  Primary (H3a): Not supported (p_holm = 0.07031 )
   Strong uncorrected effect (p=0.023, r=0.80); 7/8 blocks male > female.
   Marginal after correction -- warrants replication with multi-year data.
-  H5b reversal: sex gap driven by NON-SUBSTANCE disorders, not substance use.
+  H3b reversal: sex gap driven by NON-SUBSTANCE disorders, not substance use.
 
 ================================================================
 NOTES
@@ -66,7 +66,7 @@ NOTES
    Adapted to use sub-conditions as paired observations.
    Reduced sample sizes limit statistical power.
 
-3. Temporal analyses (H1b, H5c) use crude death rates from
+3. Temporal analyses (H1b, H3c) use crude death rates from
    Cube 14 (underlying cause), not MUR.
 
 4. Exploratory analyses (E1-E7, E-HM1-E-HM4) are reported

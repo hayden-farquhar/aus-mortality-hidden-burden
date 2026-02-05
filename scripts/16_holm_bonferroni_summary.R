@@ -12,14 +12,14 @@
 # correction."
 #
 # Two correction scopes are presented:
-#   1. PRIMARY ONLY (3 tests: H1a, H4a, H5a) -- most directly
+#   1. PRIMARY ONLY (3 tests: H1a, H2a, H3a) -- most directly
 #      addresses D6
 #   2. FULL (all primary + secondary tests) -- more conservative,
 #      controls FWER across all confirmatory inferences
 #
 # INPUT: outputs/confirmatory/h1_results.csv  (Script 13)
-#        outputs/confirmatory/h4_results.csv  (Script 14)
-#        outputs/confirmatory/h5_results.csv  (Script 15)
+#        outputs/confirmatory/h2_results.csv  (Script 14)
+#        outputs/confirmatory/h3_results.csv  (Script 15)
 #
 # OUTPUT: outputs/confirmatory/holm_bonferroni_results.csv
 #         outputs/confirmatory/confirmatory_summary.txt
@@ -38,8 +38,8 @@ cat("============================================================\n\n")
 
 results_files <- c(
   "outputs/confirmatory/h1_results.csv",
-  "outputs/confirmatory/h4_results.csv",
-  "outputs/confirmatory/h5_results.csv"
+  "outputs/confirmatory/h2_results.csv",
+  "outputs/confirmatory/h3_results.csv"
 )
 
 missing <- !file.exists(results_files)
@@ -51,8 +51,8 @@ if (any(missing)) {
 }
 
 h1 <- read_csv("outputs/confirmatory/h1_results.csv", show_col_types = FALSE)
-h4 <- read_csv("outputs/confirmatory/h4_results.csv", show_col_types = FALSE)
-h5 <- read_csv("outputs/confirmatory/h5_results.csv", show_col_types = FALSE)
+h2 <- read_csv("outputs/confirmatory/h2_results.csv", show_col_types = FALSE)
+h3 <- read_csv("outputs/confirmatory/h3_results.csv", show_col_types = FALSE)
 
 # Build the collection of tests for correction
 # Each row = one distinct hypothesis test with a p-value
@@ -63,21 +63,21 @@ p_values <- tribble(
   # Primary tests (3)
   "H1a", "H1", "primary",
     "Hypertension MUR: male vs female (Wilcoxon signed-rank)",
-  "H4a", "H4", "primary",
+  "H2a", "H2", "primary",
     "Geographic CV: avoidable vs non-avoidable (Mann-Whitney U)",
-  "H5a", "H5", "primary",
+  "H3a", "H3", "primary",
     "Mental health MUR: male vs female (Wilcoxon signed-rank)",
 
   # Secondary tests
   "H1b", "H1", "secondary",
     "Hypertension sex gap temporal trend (Spearman, crude rates)",
-  "H4b", "H4", "secondary",
+  "H2b", "H2", "secondary",
     "Geographic CV: preventable vs treatable (Mann-Whitney U)",
-  "H5b_sub", "H5", "secondary",
+  "H3b_sub", "H3", "secondary",
     "Substance use (F10-F19) MUR: male vs female (Wilcoxon)",
-  "H5b_nonsub", "H5", "secondary",
+  "H3b_nonsub", "H3", "secondary",
     "Non-substance (F20-F99) MUR: male vs female (Wilcoxon)",
-  "H5c", "H5", "secondary",
+  "H3c", "H3", "secondary",
     "Mental health sex gap temporal trend (Spearman, crude rates)"
 )
 
@@ -95,12 +95,12 @@ p_values <- p_values %>%
     p_uncorrected = case_when(
       test_id == "H1a" ~ get_p(h1, "H1a", "primary"),
       test_id == "H1b" ~ get_p(h1, "H1b", "secondary"),
-      test_id == "H4a" ~ get_p(h4, "H4a", "primary"),
-      test_id == "H4b" ~ get_p(h4, "H4b", "secondary"),
-      test_id == "H5a" ~ get_p(h5, "H5a", "primary"),
-      test_id == "H5b_sub" ~ get_p(h5, "H5b_substance", "secondary"),
-      test_id == "H5b_nonsub" ~ get_p(h5, "H5b_non_substance", "secondary"),
-      test_id == "H5c" ~ get_p(h5, "H5c", "secondary")
+      test_id == "H2a" ~ get_p(h2, "H2a", "primary"),
+      test_id == "H2b" ~ get_p(h2, "H2b", "secondary"),
+      test_id == "H3a" ~ get_p(h3, "H3a", "primary"),
+      test_id == "H3b_sub" ~ get_p(h3, "H3b_substance", "secondary"),
+      test_id == "H3b_nonsub" ~ get_p(h3, "H3b_non_substance", "secondary"),
+      test_id == "H3c" ~ get_p(h3, "H3c", "secondary")
     )
   ) %>%
   filter(!is.na(p_uncorrected))
@@ -207,50 +207,50 @@ if (h1a_sig) {
   cat("  statistical power (n=4 pairs), not absence of effect.\n\n")
 }
 
-# H4: Geographic variation
-h4a_sig <- primary_tests %>%
-  filter(test_id == "H4a") %>% pull(significant_corrected)
-h4a_p_holm <- primary_tests %>%
-  filter(test_id == "H4a") %>% pull(p_holm_primary)
+# H2: Geographic variation
+h2a_sig <- primary_tests %>%
+  filter(test_id == "H2a") %>% pull(significant_corrected)
+h2a_p_holm <- primary_tests %>%
+  filter(test_id == "H2a") %>% pull(p_holm_primary)
 
-cat("H4: Geographic Variation x Preventability\n")
-cat("  H4a (primary): NOT SUPPORTED (p_holm = ",
-    format(h4a_p_holm, digits = 4), ")\n")
-cat("  H4b (secondary): not interpreted (primary not significant)\n")
+cat("H2: Geographic Variation x Preventability\n")
+cat("  H2a (primary): NOT SUPPORTED (p_holm = ",
+    format(h2a_p_holm, digits = 4), ")\n")
+cat("  H2b (secondary): not interpreted (primary not significant)\n")
 cat("  Geographic variation in mortality is NOT systematically higher\n")
 cat("  for avoidable conditions. Median CVs nearly identical.\n\n")
 
-# H5: Mental health
-h5a_sig <- primary_tests %>%
-  filter(test_id == "H5a") %>% pull(significant_corrected)
-h5a_p_holm <- primary_tests %>%
-  filter(test_id == "H5a") %>% pull(p_holm_primary)
-h5b_sub_p <- p_values %>% filter(test_id == "H5b_sub") %>% pull(p_uncorrected)
-h5b_nonsub_p <- p_values %>% filter(test_id == "H5b_nonsub") %>% pull(p_uncorrected)
-h5c_p <- p_values %>% filter(test_id == "H5c") %>% pull(p_uncorrected)
+# H3: Mental health
+h3a_sig <- primary_tests %>%
+  filter(test_id == "H3a") %>% pull(significant_corrected)
+h3a_p_holm <- primary_tests %>%
+  filter(test_id == "H3a") %>% pull(p_holm_primary)
+h3b_sub_p <- p_values %>% filter(test_id == "H3b_sub") %>% pull(p_uncorrected)
+h3b_nonsub_p <- p_values %>% filter(test_id == "H3b_nonsub") %>% pull(p_uncorrected)
+h3c_p <- p_values %>% filter(test_id == "H3c") %>% pull(p_uncorrected)
 
-cat("H5: Mental Health Sex-Differentiated Hidden Burden\n")
-if (h5a_sig) {
-  cat("  H5a (primary): SUPPORTED (p_holm = ",
-      format(h5a_p_holm, digits = 4), ")\n")
-  cat("  H5b substance (secondary): p = ", format(h5b_sub_p, digits = 4),
+cat("H3: Mental Health Sex-Differentiated Hidden Burden\n")
+if (h3a_sig) {
+  cat("  H3a (primary): SUPPORTED (p_holm = ",
+      format(h3a_p_holm, digits = 4), ")\n")
+  cat("  H3b substance (secondary): p = ", format(h3b_sub_p, digits = 4),
       " -- NOT significant\n")
-  cat("  H5b non-substance (secondary): p = ", format(h5b_nonsub_p, digits = 4),
+  cat("  H3b non-substance (secondary): p = ", format(h3b_nonsub_p, digits = 4),
       " -- SIGNIFICANT (uncorrected)\n")
-  cat("  H5b interpretation: Sex gap driven by NON-SUBSTANCE disorders\n")
+  cat("  H3b interpretation: Sex gap driven by NON-SUBSTANCE disorders\n")
   cat("  (mood, psychotic, neurotic, developmental), NOT substance use.\n")
   cat("  This REVERSES the pre-registered expectation.\n")
-  cat("  H5c temporal: p = ", format(h5c_p, digits = 4),
+  cat("  H3c temporal: p = ", format(h3c_p, digits = 4),
       " -- gap narrowing over time\n\n")
 } else {
-  cat("  H5a (primary): NOT SUPPORTED (p_holm = ",
-      format(h5a_p_holm, digits = 4), ")\n")
+  cat("  H3a (primary): NOT SUPPORTED (p_holm = ",
+      format(h3a_p_holm, digits = 4), ")\n")
   # Still report descriptive findings
   cat("  NOTE: p_uncorrected = 0.023 with large effect (r=0.80).\n")
   cat("  7 of 8 block-level sub-conditions show male > female MUR.\n")
   cat("  Non-significance after correction reflects multiplicity\n")
   cat("  adjustment, not absence of effect.\n")
-  cat("  H5b, H5c: not formally interpreted (primary not significant)\n")
+  cat("  H3b, H3c: not formally interpreted (primary not significant)\n")
   cat("  but descriptive patterns are noted:\n")
   cat("    - Non-substance disorders drive the sex gap (not substance use)\n")
   cat("    - Temporal trend shows gap narrowing (rho=0.63, p=0.039)\n\n")
@@ -264,13 +264,13 @@ cat("============================================================\n\n")
 cat("Of 3 pre-registered confirmatory hypotheses:\n")
 cat("  H1 (hypertension hidden burden): ",
     ifelse(h1a_sig, "SUPPORTED", "Not supported"), "\n")
-cat("  H4 (geographic x preventability): Not supported\n")
-cat("  H5 (mental health hidden burden): ",
-    ifelse(h5a_sig, "SUPPORTED", "Not supported"), "\n\n")
+cat("  H2 (geographic x preventability): Not supported\n")
+cat("  H3 (mental health hidden burden): ",
+    ifelse(h3a_sig, "SUPPORTED", "Not supported"), "\n\n")
 
-if (!h1a_sig & !h5a_sig) {
+if (!h1a_sig & !h3a_sig) {
   cat("No primary hypotheses survived Holm-Bonferroni correction.\n")
-  cat("However, H5a (p_uncorrected=0.023) and H1b temporal trend\n")
+  cat("However, H3a (p_uncorrected=0.023) and H1b temporal trend\n")
   cat("(p_uncorrected=0.015) show meaningful uncorrected effects.\n")
   cat("The MUR as a metric reveals substantial hidden burden patterns\n")
   cat("that warrant further investigation with multi-year data.\n\n")
@@ -343,18 +343,18 @@ cat("  Primary (H1a):", ifelse(h1a_sig, "SUPPORTED", "Not supported"),
     "(p_holm =", format(h1a_p_holm, digits = 4), ")\n")
 cat("  Direction consistent, bootstrap CI excludes zero, but n=4 limits power.\n\n")
 
-cat("H4 (Geographic variation x preventability):\n")
-cat("  Primary (H4a): Not supported (p_holm =", format(h4a_p_holm, digits = 4), ")\n")
+cat("H2 (Geographic variation x preventability):\n")
+cat("  Primary (H2a): Not supported (p_holm =", format(h2a_p_holm, digits = 4), ")\n")
 cat("  Clear null finding. Median CVs nearly identical.\n\n")
 
-cat("H5 (Mental health hidden burden):\n")
-cat("  Primary (H5a):", ifelse(h5a_sig, "SUPPORTED", "Not supported"),
-    "(p_holm =", format(h5a_p_holm, digits = 4), ")\n")
-if (!h5a_sig) {
+cat("H3 (Mental health hidden burden):\n")
+cat("  Primary (H3a):", ifelse(h3a_sig, "SUPPORTED", "Not supported"),
+    "(p_holm =", format(h3a_p_holm, digits = 4), ")\n")
+if (!h3a_sig) {
   cat("  Strong uncorrected effect (p=0.023, r=0.80); 7/8 blocks male > female.\n")
   cat("  Marginal after correction -- warrants replication with multi-year data.\n")
 }
-cat("  H5b reversal: sex gap driven by NON-SUBSTANCE disorders, not substance use.\n\n")
+cat("  H3b reversal: sex gap driven by NON-SUBSTANCE disorders, not substance use.\n\n")
 
 cat("================================================================\n")
 cat("NOTES\n")
@@ -366,7 +366,7 @@ cat("2. Pre-registered design assumed n=17 year-level MUR pairs.\n")
 cat("   Actual data: single-year cross-sectional MUR (Cube 10, 2023).\n")
 cat("   Adapted to use sub-conditions as paired observations.\n")
 cat("   Reduced sample sizes limit statistical power.\n\n")
-cat("3. Temporal analyses (H1b, H5c) use crude death rates from\n")
+cat("3. Temporal analyses (H1b, H3c) use crude death rates from\n")
 cat("   Cube 14 (underlying cause), not MUR.\n\n")
 cat("4. Exploratory analyses (E1-E7, E-HM1-E-HM4) are reported\n")
 cat("   separately without correction, clearly labelled.\n\n")

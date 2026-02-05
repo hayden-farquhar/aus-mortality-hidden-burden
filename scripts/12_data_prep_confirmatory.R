@@ -4,7 +4,7 @@
 #
 # This script replaces the earlier skeleton version. It:
 #   1. Discovers the internal structure of every downloaded data source
-#   2. Extracts and parses the data needed for confirmatory hypotheses (H1, H4, H5)
+#   2. Extracts and parses the data needed for confirmatory hypotheses (H1, H2, H3)
 #   3. Extracts and parses data needed for exploratory analyses (E1–E7)
 #   4. Outputs clean, analysis-ready CSVs
 #
@@ -48,8 +48,8 @@
 # OUTPUT FILES:
 #   outputs/confirmatory/
 #     confirmatory_h1_data.csv        – year-level hypertension MUR by sex
-#     confirmatory_h4_data.csv        – condition CVs with avoidability labels
-#     confirmatory_h5_data.csv        – year-level mental health MUR by sex
+#     confirmatory_h2_data.csv        – condition CVs with avoidability labels
+#     confirmatory_h3_data.csv        – year-level mental health MUR by sex
 #   outputs/exploratory/
 #     deaths_underlying_national.csv  – national underlying cause data
 #     deaths_underlying_by_state.csv  – state-level underlying cause data
@@ -458,7 +458,7 @@ write_log("============================================================\n")
 
 
 # ============================================================================
-# SECTION 2: PRIORITY 1A — ABS Multiple Causes of Death (H1, H5)
+# SECTION 2: PRIORITY 1A — ABS Multiple Causes of Death (H1, H3)
 # ============================================================================
 #
 # The key file is Data Cube 10: "Multiple causes of death (Australia)"
@@ -469,7 +469,7 @@ write_log("============================================================\n")
 #
 # We extract:
 #   (a) Hypertensive diseases (I10–I15) — for H1
-#   (b) Mental & behavioural disorders (F00–F99, F10–F19) — for H5
+#   (b) Mental & behavioural disorders (F00–F99, F10–F19) — for H3
 # ============================================================================
 
 cat("\n============================================================\n")
@@ -736,13 +736,13 @@ if (length(cube10_path) > 0) {
     cat("    ", nrow(h1_data), "rows\n")
   }
   
-  cat("\n  --- Building H5 MUR (Mental Health) ---\n")
-  h5_data <- build_mur_from_extract(mh_raw, "Mental and behavioural disorders (F00-F99)")
+  cat("\n  --- Building H3 MUR (Mental Health) ---\n")
+  h3_data <- build_mur_from_extract(mh_raw, "Mental and behavioural disorders (F00-F99)")
   
-  if (!is.null(h5_data)) {
-    write_csv(h5_data, "outputs/confirmatory/confirmatory_h5_data.csv")
-    cat("  ✓ Saved: outputs/confirmatory/confirmatory_h5_data.csv\n")
-    cat("    ", nrow(h5_data), "rows\n")
+  if (!is.null(h3_data)) {
+    write_csv(h3_data, "outputs/confirmatory/confirmatory_h3_data.csv")
+    cat("  ✓ Saved: outputs/confirmatory/confirmatory_h3_data.csv\n")
+    cat("    ", nrow(h3_data), "rows\n")
   }
   
 } else {
@@ -752,7 +752,7 @@ if (length(cube10_path) > 0) {
 
 
 # ============================================================================
-# SECTION 3: ABS Underlying Causes by State (H4, exploratory)
+# SECTION 3: ABS Underlying Causes by State (H2, exploratory)
 # ============================================================================
 #
 # Read Data Cubes 1–9 (Australia + 8 states/territories) to build a
@@ -953,7 +953,7 @@ if (length(cube14_path) > 0) {
 
 
 # ============================================================================
-# SECTION 5: PRIORITY 1B — AIHW Avoidability Classification (H4)
+# SECTION 5: PRIORITY 1B — AIHW Avoidability Classification (H2)
 # ============================================================================
 
 cat("\n============================================================\n")
@@ -1008,7 +1008,7 @@ if (length(avoid_file) > 0) {
     }
   }
   
-  # Also look for sheets with death rates by state (for H4 geographic analysis)
+  # Also look for sheets with death rates by state (for H2 geographic analysis)
   for (s in names(avoid_all)) {
     df <- avoid_all[[s]]
     has_state <- any(sapply(df, function(col) {
@@ -1033,11 +1033,11 @@ if (length(avoid_file) > 0) {
 
 
 # ============================================================================
-# SECTION 6: H4 — Compute Geographic CVs and Merge Avoidability
+# SECTION 6: H2 — Compute Geographic CVs and Merge Avoidability
 # ============================================================================
 
 cat("\n============================================================\n")
-cat("SECTION 6: Building H4 Data (Geographic CVs + Avoidability)\n")
+cat("SECTION 6: Building H2 Data (Geographic CVs + Avoidability)\n")
 cat("============================================================\n\n")
 
 # Check if we have state-level death data from Section 3
@@ -1106,14 +1106,14 @@ if (file.exists(state_data_file)) {
       # First try exact join on the first column
       avoid_col1 <- names(avoid_class)[1]
       
-      h4_data <- cv_data %>%
+      h2_data <- cv_data %>%
         left_join(avoid_class, by = c("cause" = avoid_col1))
       
       # Check match rate
       avoidability_cols <- names(avoid_class)[str_detect(tolower(names(avoid_class)), 
                                                           "avoid|prevent|treat|categ|class")]
       if (length(avoidability_cols) > 0) {
-        n_matched <- sum(!is.na(h4_data[[avoidability_cols[1]]]))
+        n_matched <- sum(!is.na(h2_data[[avoidability_cols[1]]]))
         cat("  Matched", n_matched, "of", nrow(cv_data), "conditions.\n")
         
         if (n_matched < 5) {
@@ -1121,20 +1121,20 @@ if (file.exists(state_data_file)) {
           cat("  Saving unmatched data — you'll need to create a manual concordance.\n")
           
           # Save both for manual matching
-          write_csv(cv_data, "outputs/confirmatory/h4_condition_cvs.csv")
-          write_csv(avoid_class, "outputs/confirmatory/h4_avoidability_lookup.csv")
-          cat("  → Saved: outputs/confirmatory/h4_condition_cvs.csv\n")
-          cat("  → Saved: outputs/confirmatory/h4_avoidability_lookup.csv\n")
+          write_csv(cv_data, "outputs/confirmatory/h2_condition_cvs.csv")
+          write_csv(avoid_class, "outputs/confirmatory/h2_avoidability_lookup.csv")
+          cat("  → Saved: outputs/confirmatory/h2_condition_cvs.csv\n")
+          cat("  → Saved: outputs/confirmatory/h2_avoidability_lookup.csv\n")
         }
       }
       
-      write_csv(h4_data, "outputs/confirmatory/confirmatory_h4_data.csv")
-      cat("  ✓ Saved: outputs/confirmatory/confirmatory_h4_data.csv\n")
+      write_csv(h2_data, "outputs/confirmatory/confirmatory_h2_data.csv")
+      cat("  ✓ Saved: outputs/confirmatory/confirmatory_h2_data.csv\n")
       
     } else {
       cat("  Avoidability classification not yet available — saving CVs only.\n")
-      write_csv(cv_data, "outputs/confirmatory/h4_condition_cvs.csv")
-      cat("  → Saved: outputs/confirmatory/h4_condition_cvs.csv\n")
+      write_csv(cv_data, "outputs/confirmatory/h2_condition_cvs.csv")
+      cat("  → Saved: outputs/confirmatory/h2_condition_cvs.csv\n")
     }
     
   } else {
@@ -1608,10 +1608,10 @@ check_and_report <- function(filepath, label) {
 write_log("CONFIRMATORY (Priority 1):")
 check_and_report("outputs/confirmatory/confirmatory_h1_data.csv",
                  "H1: Hypertension MUR by year × sex")
-check_and_report("outputs/confirmatory/confirmatory_h4_data.csv",
-                 "H4: Geographic CVs with avoidability")
-check_and_report("outputs/confirmatory/confirmatory_h5_data.csv",
-                 "H5: Mental health MUR by year × sex")
+check_and_report("outputs/confirmatory/confirmatory_h2_data.csv",
+                 "H2: Geographic CVs with avoidability")
+check_and_report("outputs/confirmatory/confirmatory_h3_data.csv",
+                 "H3: Mental health MUR by year × sex")
 
 write_log("")
 write_log("EXPLORATORY (Priority 2):")
@@ -1657,10 +1657,10 @@ write_log("")
 write_log("1. Review outputs/data_structure_report.txt for file structures.")
 write_log("2. Check any raw_* files in outputs/confirmatory/ — these may need")
 write_log("   manual column mapping if auto-detection didn't find the right columns.")
-write_log("3. If H1/H5 data couldn't be auto-extracted, the raw extracts contain")
+write_log("3. If H1/H3 data couldn't be auto-extracted, the raw extracts contain")
 write_log("   the relevant rows from Cube 10. You'll need to identify which columns")
 write_log("   represent underlying vs multiple cause counts and restructure.")
-write_log("4. For H4, if the avoidability classification didn't auto-match,")
+write_log("4. For H2, if the avoidability classification didn't auto-match,")
 write_log("   create a manual concordance between condition names.")
 write_log("5. Once confirmatory data is ready, run Scripts 13–16 in order.")
 write_log("")

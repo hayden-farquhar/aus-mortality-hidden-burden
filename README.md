@@ -12,7 +12,7 @@ This repository contains all analysis code, derived data, and results for a seco
 
 A MUR of 1.0 means a condition is only ever the underlying cause (e.g., intentional self-harm). A MUR of 27.7 (hypertension) means the condition appears nearly 28 times more often as *any* cause than as the *underlying* cause, revealing a massive hidden burden invisible to standard mortality statistics.
 
-**Pre-registration:** [OSF — insert DOI here]
+**Pre-registration:** [OSF](https://osf.io/k46rn)
 **Ethics:** Not required (publicly available aggregated data, no individual-level records).
 **Code:** https://github.com/hayden-farquhar/aus-mortality-hidden-burden
 
@@ -94,16 +94,16 @@ All scripts assume the working directory is `Analysis/` (set automatically by op
 | Script | Description |
 |--------|------------|
 | `12_data_prep_confirmatory.R` | Extract all data needed for hypothesis tests |
-| `12b_fix_extractions.R` | Structure H1/H5 data, fix PBS extraction |
+| `12b_fix_extractions.R` | Structure H1/H3 data, fix PBS extraction |
 | `12c_temporal_pbs_ed_cv.R` | Cube 14 temporal data, PBS fix, ED data, full MUR table |
-| `12d_fix_issues.R` | Fix H4 rate conversion, population adjustment, avoidability merge |
+| `12d_fix_issues.R` | Fix H2 rate conversion, population adjustment, avoidability merge |
 
 ### Phase 5: Confirmatory Tests
 | Script | Description |
 |--------|------------|
 | `13_confirmatory_H1_hypertension.R` | H1: Hypertension MUR sex difference |
-| `14_confirmatory_H4_geographic.R` | H2/H4: Geographic variation by avoidability |
-| `15_confirmatory_H5_mental_health.R` | H3/H5: Mental health MUR sex difference |
+| `14_confirmatory_H2_geographic.R` | H2: Geographic variation by avoidability |
+| `15_confirmatory_H3_mental_health.R` | H3: Mental health MUR sex difference |
 | `16_holm_bonferroni_summary.R` | Holm-Bonferroni correction across all tests |
 
 ### Phase 6: Exploratory Extensions

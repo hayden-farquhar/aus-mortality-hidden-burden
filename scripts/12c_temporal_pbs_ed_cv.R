@@ -150,23 +150,23 @@ if (file.exists(cube14_file)) {
       cat("  ⚠ No hypertension rows found in Cube 14\n")
     }
     
-    # ---- 1D: Extract H5c — Mental health temporal trend ----
-    h5c <- cube14_long %>%
+    # ---- 1D: Extract H3c — Mental health temporal trend ----
+    h3c <- cube14_long %>%
       filter(str_detect(cause, "\\(F\\d{2}|F00-F99|Mental and behav"))
     
-    if (nrow(h5c) > 0) {
-      write_csv(h5c, file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5c_temporal.csv"))
-      cat("\n  ✓ H5c (Mental health temporal): ", nrow(h5c), "rows\n")
+    if (nrow(h3c) > 0) {
+      write_csv(h3c, file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3c_temporal.csv"))
+      cat("\n  ✓ H3c (Mental health temporal): ", nrow(h3c), "rows\n")
       
-      h5c_summary <- h5c %>%
+      h3c_summary <- h3c %>%
         filter(str_detect(cause, "F00-F99|CHAPTER V"), sex == "persons") %>%
         arrange(year)
       
-      if (nrow(h5c_summary) > 0) {
+      if (nrow(h3c_summary) > 0) {
         cat("    Chapter V Mental & Behavioural (F00-F99) as underlying cause, persons:\n")
-        for (i in 1:nrow(h5c_summary)) {
-          cat(sprintf("      %d: %s deaths\n", h5c_summary$year[i],
-                      format(h5c_summary$deaths[i], big.mark = ",")))
+        for (i in 1:nrow(h3c_summary)) {
+          cat(sprintf("      %d: %s deaths\n", h3c_summary$year[i],
+                      format(h3c_summary$deaths[i], big.mark = ",")))
         }
       }
     } else {
@@ -533,12 +533,12 @@ check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h1a_cv_mur.csv"),
            "H1a: CV comparison MURs")
 check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h1c_temporal.csv"),
            "H1c: Hypertension temporal trend")
-check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h4_data.csv"),
-           "H4: Geographic CVs + avoidability")
-check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5_data.csv"),
-           "H5a: Mental health MUR (cross-sectional)")
-check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h5c_temporal.csv"),
-           "H5c: Mental health temporal trend")
+check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h2_data.csv"),
+           "H2: Geographic CVs + avoidability")
+check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3_data.csv"),
+           "H3a: Mental health MUR (cross-sectional)")
+check_file(file.path(OUTPUT_DIR, "confirmatory", "confirmatory_h3c_temporal.csv"),
+           "H3c: Mental health temporal trend")
 
 cat("\nEXPLORATORY:\n")
 check_file(file.path(OUTPUT_DIR, "exploratory", "deaths_underlying_national.csv"),
