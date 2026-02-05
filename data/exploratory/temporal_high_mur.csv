@@ -1,0 +1,16 @@
+icd_code,cause,mur_persons,n_years,first_year,last_year,deaths_first,deaths_last,rho,p_value,pct_change,direction,condition_name
+Y40-Y84,Complications of medical and surgical care (Y40-Y84),94.30882352941175,11,2014,2024,192,66,-0.1,0.7698749998921365,-65.625,Stable/unclear,Complications of medical and surgical care
+J96,"Respiratory failure, not elsewhere classified (J96)",82.41304347826087,11,2014,2024,60,95,0.6909090909090909,0.01856503338159502,58.33333333333333,Increasing,"Respiratory failure, not elsewhere classified"
+R40-R46,"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",77.27272727272727,11,2014,2024,7,52,0.8949864993553573,1.978811010817971e-4,642.8571428571429,Increasing,"Symptoms and signs involving cognition, perception, emotional state and behaviour"
+F32,Depressive episode (F32),52.436619718309856,11,2014,2024,57,79,0.4328029451992949,0.18364949835388192,38.596491228070185,Stable/unclear,Depressive episode
+R00-R09,Symptoms and signs involving the circulatory and respiratory systems (R00-R09),51.68,11,2014,2024,61,82,-0.3789993849310952,0.2503569293235065,34.42622950819671,Stable/unclear,Symptoms and signs involving the circulatory and respiratory systems
+F30-F39,Mood [affective] disorders (F30-F39),46.80434782608695,11,2014,2024,75,101,0.4246619614288175,0.19295986646587399,34.66666666666667,Stable/unclear,Mood [affective] disorders
+R41,Other symptoms and signs involving cognitive functions and awareness (R41),44.236363636363635,11,2014,2024,6,52,0.9,1.5997142806871369e-4,766.6666666666666,Increasing,Other symptoms and signs involving cognitive functions and awareness
+R09,Other symptoms and signs involving the circulatory and respiratory systems (R09),40.3968253968254,11,2014,2024,50,70,-0.3607343543320063,0.2757678065067445,39.99999999999999,Stable/unclear,Other symptoms and signs involving the circulatory and respiratory systems
+F05,"Delirium, not induced by alcohol and other psychoactive substances (F05)",39.5,11,2014,2024,264,67,-0.5818181818181819,0.06041989621564824,-74.62121212121212,Decreasing,"Delirium, not induced by alcohol and other psychoactive substances"
+R53,Malaise and fatigue (R53),31.44984802431611,11,2014,2024,36,334,1,0,827.7777777777778,Increasing,Malaise and fatigue
+J81,Pulmonary oedema (J81),29.933333333333337,11,2014,2024,48,58,0.3698668696315507,0.2628883680576431,20.833333333333325,Stable/unclear,Pulmonary oedema
+J95-J99,Other diseases of the respiratory system (J95-J99),29.16913946587537,11,2014,2024,410,336,-0.6818181818181818,0.02084285361094508,-18.048780487804883,Decreasing,Other diseases of the respiratory system
+I10,Essential (primary) hypertension (I10),27.748815165876778,11,2014,2024,579,833,0.6454545454545454,0.03196279932801748,43.868739205526765,Increasing,Essential (primary) hypertension
+M19,Other arthrosis (M19),23.989795918367346,11,2014,2024,121,97,-0.49090909090909096,0.12520440713849532,-19.834710743801654,Stable/unclear,Other arthrosis
+G47,Sleep disorders (G47),23.66304347826087,11,2014,2024,32,83,0.9248315565837565,4.5937178318385934e-5,159.375,Increasing,Sleep disorders

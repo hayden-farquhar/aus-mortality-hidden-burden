@@ -1,0 +1,17 @@
+clinical_domain,icd10_chapter_pattern,achi_chapter_pattern,diag_seps,proc_seps,underlying_deaths
+Nervous system,G00.G99,^01 ,358623,667611,12544
+Endocrine/metabolic,E00.E89,^02 ,261097,24934,8514
+Eye,H00.H59,^03 ,524367,971421,13
+Ear,H60.H95,^04 ,78393,81606,19
+Respiratory,J00.J99,^07 ,521269,300089,17088
+Cardiovascular,I00.I99,^08 ,634202,615696,42298
+Blood/immune,D50.D89,^09 ,218553,96485,634
+Digestive,K00.K93,^10 ,1211749,2479030,7958
+Genitourinary,N00.N99,^11 ,568309,2325579,5002
+Musculoskeletal,M00.M99,^15 ,899470,1069361,1820
+Skin,L00.L99,^16 ,190900,1044415,780
+Neoplasms,C00.D48,^17|^18,812168,130728,52819
+Obstetric,O00.O99,^14 ,529723,718903,5
+Mental/behavioural,F00.F99,NA,489706,NA,12337
+Infectious diseases,A00.B99,NA,193898,NA,3108
+Injury/poisoning,S00.T98,NA,848585,NA,NA

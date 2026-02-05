@@ -1,0 +1,546 @@
+year,proc_chapter,sex,total_separations
+2017-18,01 Procedures on nervous system,1- Male,206593
+2017-18,01 Procedures on nervous system,2- Female,232436
+2017-18,01 Procedures on nervous system,3- Not reported,1
+2017-18,01 Procedures on nervous system,n.p.,6696
+2017-18,02 Procedures on endocrine system,1- Male,6256
+2017-18,02 Procedures on endocrine system,2- Female,16352
+2017-18,02 Procedures on endocrine system,n.p.,193
+2017-18,03 Procedures on eye and adnexa,1- Male,361717
+2017-18,03 Procedures on eye and adnexa,2- Female,417904
+2017-18,03 Procedures on eye and adnexa,3- Not reported,11
+2017-18,03 Procedures on eye and adnexa,n.p.,576
+2017-18,04 Procedures on ear and mastoid process,1- Male,45897
+2017-18,04 Procedures on ear and mastoid process,2- Female,34826
+2017-18,04 Procedures on ear and mastoid process,n.p.,1784
+2017-18,"05 Procedures on nose, mouth and pharynx",1- Male,172946
+2017-18,"05 Procedures on nose, mouth and pharynx",2- Female,143236
+2017-18,"05 Procedures on nose, mouth and pharynx",3- Not reported,12
+2017-18,"05 Procedures on nose, mouth and pharynx",n.p.,820
+2017-18,06 Dental services,1- Male,182988
+2017-18,06 Dental services,2- Female,198692
+2017-18,06 Dental services,3- Not reported,7
+2017-18,06 Dental services,n.p.,2744
+2017-18,07 Procedures on respiratory system,1- Male,150903
+2017-18,07 Procedures on respiratory system,2- Female,107756
+2017-18,07 Procedures on respiratory system,3- Not reported,4
+2017-18,07 Procedures on respiratory system,n.p.,1018
+2017-18,08 Procedures on cardiovascular system,1- Male,392013
+2017-18,08 Procedures on cardiovascular system,2- Female,221995
+2017-18,08 Procedures on cardiovascular system,3- Not reported,10
+2017-18,08 Procedures on cardiovascular system,n.p.,1779
+2017-18,09 Procedures on blood and blood-forming organs,1- Male,33787
+2017-18,09 Procedures on blood and blood-forming organs,2- Female,46358
+2017-18,09 Procedures on blood and blood-forming organs,n.p.,124
+2017-18,10 Procedures on digestive system,1- Male,1007091
+2017-18,10 Procedures on digestive system,2- Female,1158745
+2017-18,10 Procedures on digestive system,3- Not reported,25
+2017-18,10 Procedures on digestive system,n.p.,3115
+2017-18,11 Procedures on urinary system,1- Male,1222558
+2017-18,11 Procedures on urinary system,2- Female,798585
+2017-18,11 Procedures on urinary system,3- Not reported,38
+2017-18,11 Procedures on urinary system,n.p.,869
+2017-18,12 Procedures on male genital organs,1- Male,132567
+2017-18,12 Procedures on male genital organs,2- Female,97
+2017-18,12 Procedures on male genital organs,3- Not reported,40
+2017-18,12 Procedures on male genital organs,n.p.,1184
+2017-18,13 Gynaecological procedures,1- Male,95
+2017-18,13 Gynaecological procedures,2- Female,628271
+2017-18,13 Gynaecological procedures,3- Not reported,68
+2017-18,13 Gynaecological procedures,n.p.,3056
+2017-18,14 Obstetric procedures,2- Female,723073
+2017-18,14 Obstetric procedures,n.p.,51880
+2017-18,15 Procedures on musculoskeletal system,1- Male,557019
+2017-18,15 Procedures on musculoskeletal system,2- Female,456549
+2017-18,15 Procedures on musculoskeletal system,3- Not reported,11
+2017-18,15 Procedures on musculoskeletal system,n.p.,2749
+2017-18,16 Dermatological and plastic procedures,1- Male,494695
+2017-18,16 Dermatological and plastic procedures,2- Female,397474
+2017-18,16 Dermatological and plastic procedures,3- Not reported,85
+2017-18,16 Dermatological and plastic procedures,n.p.,1644
+2017-18,17 Procedures on breast,1- Male,2477
+2017-18,17 Procedures on breast,2- Female,93188
+2017-18,17 Procedures on breast,3- Not reported,101
+2017-18,17 Procedures on breast,n.p.,313
+2017-18,18 Radiation oncology procedures,1- Male,11629
+2017-18,18 Radiation oncology procedures,2- Female,6740
+2017-18,18 Radiation oncology procedures,n.p.,4653
+2017-18,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,5646289
+2017-18,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,6412484
+2017-18,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Not reported,293
+2017-18,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,800163
+2017-18,20 Imaging services,1- Male,64767
+2017-18,20 Imaging services,2- Female,40132
+2017-18,20 Imaging services,3- Not reported,1
+2017-18,20 Imaging services,n.p.,15547
+2018-19,01 Procedures on nervous system,1- Male,217020
+2018-19,01 Procedures on nervous system,2- Female,241971
+2018-19,01 Procedures on nervous system,3- Not reported,4
+2018-19,01 Procedures on nervous system,n.p.,6823
+2018-19,02 Procedures on endocrine system,1- Male,6482
+2018-19,02 Procedures on endocrine system,2- Female,16410
+2018-19,02 Procedures on endocrine system,n.p.,212
+2018-19,03 Procedures on eye and adnexa,1- Male,377464
+2018-19,03 Procedures on eye and adnexa,2- Female,435034
+2018-19,03 Procedures on eye and adnexa,3- Not reported,15
+2018-19,03 Procedures on eye and adnexa,n.p.,806
+2018-19,04 Procedures on ear and mastoid process,1- Male,47288
+2018-19,04 Procedures on ear and mastoid process,2- Female,36457
+2018-19,04 Procedures on ear and mastoid process,n.p.,36
+2018-19,"05 Procedures on nose, mouth and pharynx",1- Male,178064
+2018-19,"05 Procedures on nose, mouth and pharynx",2- Female,145284
+2018-19,"05 Procedures on nose, mouth and pharynx",3- Not reported,2
+2018-19,"05 Procedures on nose, mouth and pharynx",n.p.,1290
+2018-19,06 Dental services,1- Male,189459
+2018-19,06 Dental services,2- Female,198534
+2018-19,06 Dental services,3- Not reported,10
+2018-19,06 Dental services,n.p.,6459
+2018-19,07 Procedures on respiratory system,1- Male,156356
+2018-19,07 Procedures on respiratory system,2- Female,111961
+2018-19,07 Procedures on respiratory system,3- Not reported,4
+2018-19,07 Procedures on respiratory system,n.p.,742
+2018-19,08 Procedures on cardiovascular system,1- Male,401701
+2018-19,08 Procedures on cardiovascular system,2- Female,223829
+2018-19,08 Procedures on cardiovascular system,3- Not reported,20
+2018-19,08 Procedures on cardiovascular system,n.p.,2245
+2018-19,09 Procedures on blood and blood-forming organs,1- Male,34571
+2018-19,09 Procedures on blood and blood-forming organs,2- Female,47513
+2018-19,09 Procedures on blood and blood-forming organs,3- Not reported,2
+2018-19,09 Procedures on blood and blood-forming organs,n.p.,63
+2018-19,10 Procedures on digestive system,1- Male,1040728
+2018-19,10 Procedures on digestive system,2- Female,1186414
+2018-19,10 Procedures on digestive system,3- Not reported,60
+2018-19,10 Procedures on digestive system,n.p.,2510
+2018-19,11 Procedures on urinary system,1- Male,1227433
+2018-19,11 Procedures on urinary system,2- Female,782439
+2018-19,11 Procedures on urinary system,3- Not reported,69
+2018-19,11 Procedures on urinary system,n.p.,1487
+2018-19,12 Procedures on male genital organs,1- Male,138479
+2018-19,12 Procedures on male genital organs,2- Female,85
+2018-19,12 Procedures on male genital organs,3- Not reported,63
+2018-19,12 Procedures on male genital organs,n.p.,1221
+2018-19,13 Gynaecological procedures,1- Male,103
+2018-19,13 Gynaecological procedures,2- Female,650100
+2018-19,13 Gynaecological procedures,3- Not reported,129
+2018-19,13 Gynaecological procedures,n.p.,2379
+2018-19,14 Obstetric procedures,1- Male,6
+2018-19,14 Obstetric procedures,2- Female,731264
+2018-19,14 Obstetric procedures,n.p.,55903
+2018-19,15 Procedures on musculoskeletal system,1- Male,563917
+2018-19,15 Procedures on musculoskeletal system,2- Female,465636
+2018-19,15 Procedures on musculoskeletal system,3- Not reported,17
+2018-19,15 Procedures on musculoskeletal system,n.p.,2086
+2018-19,16 Dermatological and plastic procedures,1- Male,513369
+2018-19,16 Dermatological and plastic procedures,2- Female,417368
+2018-19,16 Dermatological and plastic procedures,3- Not reported,115
+2018-19,16 Dermatological and plastic procedures,n.p.,1806
+2018-19,17 Procedures on breast,1- Male,2521
+2018-19,17 Procedures on breast,2- Female,93929
+2018-19,17 Procedures on breast,3- Not reported,182
+2018-19,17 Procedures on breast,n.p.,585
+2018-19,18 Radiation oncology procedures,1- Male,11273
+2018-19,18 Radiation oncology procedures,2- Female,5788
+2018-19,18 Radiation oncology procedures,n.p.,3342
+2018-19,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,5855013
+2018-19,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,6615707
+2018-19,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Not reported,489
+2018-19,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,836534
+2018-19,20 Imaging services,1- Male,67703
+2018-19,20 Imaging services,2- Female,41728
+2018-19,20 Imaging services,n.p.,16732
+2019-20,01 Procedures on nervous system,1- Male,225794
+2019-20,01 Procedures on nervous system,2- Female,243104
+2019-20,01 Procedures on nervous system,3- Not reported,3
+2019-20,01 Procedures on nervous system,n.p.,6014
+2019-20,02 Procedures on endocrine system,1- Male,6348
+2019-20,02 Procedures on endocrine system,2- Female,15231
+2019-20,02 Procedures on endocrine system,3- Not reported,1
+2019-20,02 Procedures on endocrine system,n.p.,64
+2019-20,03 Procedures on eye and adnexa,1- Male,343787
+2019-20,03 Procedures on eye and adnexa,2- Female,391779
+2019-20,03 Procedures on eye and adnexa,3- Not reported,34
+2019-20,03 Procedures on eye and adnexa,n.p.,3016
+2019-20,04 Procedures on ear and mastoid process,1- Male,39596
+2019-20,04 Procedures on ear and mastoid process,2- Female,29594
+2019-20,04 Procedures on ear and mastoid process,3- Not reported,1
+2019-20,04 Procedures on ear and mastoid process,n.p.,75
+2019-20,"05 Procedures on nose, mouth and pharynx",1- Male,141228
+2019-20,"05 Procedures on nose, mouth and pharynx",2- Female,112885
+2019-20,"05 Procedures on nose, mouth and pharynx",3- Not reported,6
+2019-20,"05 Procedures on nose, mouth and pharynx",n.p.,5976
+2019-20,06 Dental services,1- Male,169785
+2019-20,06 Dental services,2- Female,178880
+2019-20,06 Dental services,3- Not reported,17
+2019-20,06 Dental services,n.p.,5913
+2019-20,07 Procedures on respiratory system,1- Male,151226
+2019-20,07 Procedures on respiratory system,2- Female,107951
+2019-20,07 Procedures on respiratory system,3- Not reported,11
+2019-20,07 Procedures on respiratory system,n.p.,578
+2019-20,08 Procedures on cardiovascular system,1- Male,400375
+2019-20,08 Procedures on cardiovascular system,2- Female,218039
+2019-20,08 Procedures on cardiovascular system,3- Not reported,21
+2019-20,08 Procedures on cardiovascular system,n.p.,1295
+2019-20,09 Procedures on blood and blood-forming organs,1- Male,35227
+2019-20,09 Procedures on blood and blood-forming organs,2- Female,49806
+2019-20,09 Procedures on blood and blood-forming organs,3- Not reported,2
+2019-20,09 Procedures on blood and blood-forming organs,n.p.,83
+2019-20,10 Procedures on digestive system,1- Male,982540
+2019-20,10 Procedures on digestive system,2- Female,1109918
+2019-20,10 Procedures on digestive system,3- Not reported,39
+2019-20,10 Procedures on digestive system,n.p.,2657
+2019-20,11 Procedures on urinary system,1- Male,1220847
+2019-20,11 Procedures on urinary system,2- Female,783451
+2019-20,11 Procedures on urinary system,3- Not reported,29
+2019-20,11 Procedures on urinary system,n.p.,54720
+2019-20,12 Procedures on male genital organs,1- Male,130832
+2019-20,12 Procedures on male genital organs,2- Female,89
+2019-20,12 Procedures on male genital organs,3- Not reported,17
+2019-20,12 Procedures on male genital organs,n.p.,1646
+2019-20,13 Gynaecological procedures,1- Male,117
+2019-20,13 Gynaecological procedures,2- Female,642613
+2019-20,13 Gynaecological procedures,3- Not reported,46
+2019-20,13 Gynaecological procedures,n.p.,4880
+2019-20,14 Obstetric procedures,2- Female,782489
+2019-20,14 Obstetric procedures,3- Not reported,3
+2019-20,14 Obstetric procedures,n.p.,1112
+2019-20,15 Procedures on musculoskeletal system,1- Male,529890
+2019-20,15 Procedures on musculoskeletal system,2- Female,435901
+2019-20,15 Procedures on musculoskeletal system,3- Not reported,24
+2019-20,15 Procedures on musculoskeletal system,n.p.,2100
+2019-20,16 Dermatological and plastic procedures,1- Male,524605
+2019-20,16 Dermatological and plastic procedures,2- Female,411616
+2019-20,16 Dermatological and plastic procedures,3- Not reported,87
+2019-20,16 Dermatological and plastic procedures,n.p.,1810
+2019-20,17 Procedures on breast,1- Male,2166
+2019-20,17 Procedures on breast,2- Female,87482
+2019-20,17 Procedures on breast,3- Not reported,146
+2019-20,17 Procedures on breast,n.p.,505
+2019-20,18 Radiation oncology procedures,1- Male,12768
+2019-20,18 Radiation oncology procedures,2- Female,6356
+2019-20,18 Radiation oncology procedures,n.p.,2409
+2019-20,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,5851370
+2019-20,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,6559968
+2019-20,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Not reported,507
+2019-20,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,706248
+2019-20,20 Imaging services,1- Male,66498
+2019-20,20 Imaging services,2- Female,40209
+2019-20,20 Imaging services,3- Not reported,1
+2019-20,20 Imaging services,n.p.,16969
+2020-21,01 Procedures on nervous system,1- Male,257301
+2020-21,01 Procedures on nervous system,2- Female,291540
+2020-21,01 Procedures on nervous system,3- Not reported,23
+2020-21,01 Procedures on nervous system,n.p.,7162
+2020-21,02 Procedures on endocrine system,1- Male,6262
+2020-21,02 Procedures on endocrine system,2- Female,15797
+2020-21,02 Procedures on endocrine system,3- Not reported,1
+2020-21,02 Procedures on endocrine system,n.p.,156
+2020-21,03 Procedures on eye and adnexa,1- Male,407255
+2020-21,03 Procedures on eye and adnexa,2- Female,468595
+2020-21,03 Procedures on eye and adnexa,3- Not reported,65
+2020-21,03 Procedures on eye and adnexa,n.p.,1970
+2020-21,04 Procedures on ear and mastoid process,1- Male,35740
+2020-21,04 Procedures on ear and mastoid process,2- Female,26797
+2020-21,04 Procedures on ear and mastoid process,3- Not reported,1
+2020-21,04 Procedures on ear and mastoid process,n.p.,50
+2020-21,"05 Procedures on nose, mouth and pharynx",1- Male,170312
+2020-21,"05 Procedures on nose, mouth and pharynx",2- Female,136216
+2020-21,"05 Procedures on nose, mouth and pharynx",3- Not reported,11
+2020-21,"05 Procedures on nose, mouth and pharynx",n.p.,517
+2020-21,06 Dental services,1- Male,214063
+2020-21,06 Dental services,2- Female,229192
+2020-21,06 Dental services,3- Not reported,59
+2020-21,06 Dental services,n.p.,8532
+2020-21,07 Procedures on respiratory system,1- Male,149224
+2020-21,07 Procedures on respiratory system,2- Female,106965
+2020-21,07 Procedures on respiratory system,3- Not reported,23
+2020-21,07 Procedures on respiratory system,n.p.,1102
+2020-21,08 Procedures on cardiovascular system,1- Male,413556
+2020-21,08 Procedures on cardiovascular system,2- Female,227543
+2020-21,08 Procedures on cardiovascular system,3- Not reported,51
+2020-21,08 Procedures on cardiovascular system,n.p.,2394
+2020-21,09 Procedures on blood and blood-forming organs,1- Male,36480
+2020-21,09 Procedures on blood and blood-forming organs,2- Female,51897
+2020-21,09 Procedures on blood and blood-forming organs,n.p.,129
+2020-21,10 Procedures on digestive system,1- Male,1073836
+2020-21,10 Procedures on digestive system,2- Female,1267913
+2020-21,10 Procedures on digestive system,3- Not reported,137
+2020-21,10 Procedures on digestive system,n.p.,7877
+2020-21,11 Procedures on urinary system,1- Male,1260663
+2020-21,11 Procedures on urinary system,2- Female,810735
+2020-21,11 Procedures on urinary system,3- Not reported,57
+2020-21,11 Procedures on urinary system,n.p.,81518
+2020-21,12 Procedures on male genital organs,1- Male,139489
+2020-21,12 Procedures on male genital organs,2- Female,103
+2020-21,12 Procedures on male genital organs,3- Not reported,72
+2020-21,12 Procedures on male genital organs,n.p.,1835
+2020-21,13 Gynaecological procedures,1- Male,152
+2020-21,13 Gynaecological procedures,2- Female,723287
+2020-21,13 Gynaecological procedures,3- Not reported,87
+2020-21,13 Gynaecological procedures,n.p.,6071
+2020-21,14 Obstetric procedures,1- Male,1
+2020-21,14 Obstetric procedures,2- Female,796907
+2020-21,14 Obstetric procedures,3- Not reported,4
+2020-21,14 Obstetric procedures,n.p.,1084
+2020-21,15 Procedures on musculoskeletal system,1- Male,588142
+2020-21,15 Procedures on musculoskeletal system,2- Female,488802
+2020-21,15 Procedures on musculoskeletal system,3- Not reported,52
+2020-21,15 Procedures on musculoskeletal system,n.p.,1487
+2020-21,16 Dermatological and plastic procedures,1- Male,547912
+2020-21,16 Dermatological and plastic procedures,2- Female,453326
+2020-21,16 Dermatological and plastic procedures,3- Not reported,178
+2020-21,16 Dermatological and plastic procedures,n.p.,1865
+2020-21,17 Procedures on breast,1- Male,2398
+2020-21,17 Procedures on breast,2- Female,101742
+2020-21,17 Procedures on breast,3- Not reported,243
+2020-21,17 Procedures on breast,n.p.,214
+2020-21,18 Radiation oncology procedures,1- Male,12412
+2020-21,18 Radiation oncology procedures,2- Female,6458
+2020-21,18 Radiation oncology procedures,3- Not reported,4
+2020-21,18 Radiation oncology procedures,n.p.,2394
+2020-21,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,6282702
+2020-21,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,7091358
+2020-21,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Not reported,1332
+2020-21,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,701635
+2020-21,20 Imaging services,1- Male,68667
+2020-21,20 Imaging services,2- Female,42309
+2020-21,20 Imaging services,3- Not reported,4
+2020-21,20 Imaging services,n.p.,19016
+2021-22,01 Procedures on nervous system,1- Male,252911
+2021-22,01 Procedures on nervous system,2- Female,293068
+2021-22,01 Procedures on nervous system,3- Not reported,31
+2021-22,01 Procedures on nervous system,n.p.,6177
+2021-22,02 Procedures on endocrine system,1- Male,6244
+2021-22,02 Procedures on endocrine system,2- Female,14953
+2021-22,02 Procedures on endocrine system,n.p.,58
+2021-22,03 Procedures on eye and adnexa,1- Male,386824
+2021-22,03 Procedures on eye and adnexa,2- Female,443617
+2021-22,03 Procedures on eye and adnexa,3- Not reported,61
+2021-22,03 Procedures on eye and adnexa,n.p.,2864
+2021-22,04 Procedures on ear and mastoid process,1- Male,34790
+2021-22,04 Procedures on ear and mastoid process,2- Female,25752
+2021-22,04 Procedures on ear and mastoid process,3- Not reported,6
+2021-22,04 Procedures on ear and mastoid process,n.p.,222
+2021-22,"05 Procedures on nose, mouth and pharynx",1- Male,153765
+2021-22,"05 Procedures on nose, mouth and pharynx",2- Female,123895
+2021-22,"05 Procedures on nose, mouth and pharynx",3- Not reported,23
+2021-22,"05 Procedures on nose, mouth and pharynx",n.p.,676
+2021-22,06 Dental services,1- Male,202014
+2021-22,06 Dental services,2- Female,211985
+2021-22,06 Dental services,3- Not reported,73
+2021-22,06 Dental services,n.p.,7276
+2021-22,07 Procedures on respiratory system,1- Male,155469
+2021-22,07 Procedures on respiratory system,2- Female,111297
+2021-22,07 Procedures on respiratory system,3- Not reported,35
+2021-22,07 Procedures on respiratory system,n.p.,685
+2021-22,08 Procedures on cardiovascular system,1- Male,371997
+2021-22,08 Procedures on cardiovascular system,2- Female,202925
+2021-22,08 Procedures on cardiovascular system,3- Not reported,22
+2021-22,08 Procedures on cardiovascular system,n.p.,2955
+2021-22,09 Procedures on blood and blood-forming organs,1- Male,36809
+2021-22,09 Procedures on blood and blood-forming organs,2- Female,51826
+2021-22,09 Procedures on blood and blood-forming organs,3- Not reported,2
+2021-22,09 Procedures on blood and blood-forming organs,n.p.,69
+2021-22,10 Procedures on digestive system,1- Male,1011460
+2021-22,10 Procedures on digestive system,2- Female,1202011
+2021-22,10 Procedures on digestive system,3- Not reported,213
+2021-22,10 Procedures on digestive system,n.p.,2312
+2021-22,11 Procedures on urinary system,1- Male,1276139
+2021-22,11 Procedures on urinary system,2- Female,817871
+2021-22,11 Procedures on urinary system,3- Not reported,38
+2021-22,11 Procedures on urinary system,n.p.,88716
+2021-22,12 Procedures on male genital organs,1- Male,137211
+2021-22,12 Procedures on male genital organs,2- Female,168
+2021-22,12 Procedures on male genital organs,3- Not reported,31
+2021-22,12 Procedures on male genital organs,n.p.,947
+2021-22,13 Gynaecological procedures,1- Male,108
+2021-22,13 Gynaecological procedures,2- Female,665140
+2021-22,13 Gynaecological procedures,3- Not reported,43
+2021-22,13 Gynaecological procedures,n.p.,4947
+2021-22,14 Obstetric procedures,1- Male,10
+2021-22,14 Obstetric procedures,2- Female,788386
+2021-22,14 Obstetric procedures,3- Not reported,18
+2021-22,14 Obstetric procedures,n.p.,1096
+2021-22,15 Procedures on musculoskeletal system,1- Male,525939
+2021-22,15 Procedures on musculoskeletal system,2- Female,428027
+2021-22,15 Procedures on musculoskeletal system,3- Not reported,63
+2021-22,15 Procedures on musculoskeletal system,n.p.,1909
+2021-22,16 Dermatological and plastic procedures,1- Male,524041
+2021-22,16 Dermatological and plastic procedures,2- Female,433983
+2021-22,16 Dermatological and plastic procedures,3- Not reported,141
+2021-22,16 Dermatological and plastic procedures,n.p.,2004
+2021-22,17 Procedures on breast,1- Male,2280
+2021-22,17 Procedures on breast,2- Female,96464
+2021-22,17 Procedures on breast,3- Not reported,301
+2021-22,17 Procedures on breast,n.p.,208
+2021-22,18 Radiation oncology procedures,1- Male,12778
+2021-22,18 Radiation oncology procedures,2- Female,5667
+2021-22,18 Radiation oncology procedures,n.p.,2685
+2021-22,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,6123849
+2021-22,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,6883644
+2021-22,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Not reported,1917
+2021-22,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,488143
+2021-22,20 Imaging services,1- Male,63776
+2021-22,20 Imaging services,2- Female,38424
+2021-22,20 Imaging services,3- Not reported,13
+2021-22,20 Imaging services,n.p.,19442
+2022-23,01 Procedures on nervous system,1- Male,283115
+2022-23,01 Procedures on nervous system,2- Female,329761
+2022-23,01 Procedures on nervous system,3- Other/Not reported,71
+2022-23,01 Procedures on nervous system,n.p.,8241
+2022-23,02 Procedures on endocrine system,1- Male,6788
+2022-23,02 Procedures on endocrine system,2- Female,16564
+2022-23,02 Procedures on endocrine system,3- Other/Not reported,1
+2022-23,02 Procedures on endocrine system,n.p.,172
+2022-23,03 Procedures on eye and adnexa,1- Male,428023
+2022-23,03 Procedures on eye and adnexa,2- Female,493874
+2022-23,03 Procedures on eye and adnexa,3- Other/Not reported,61
+2022-23,03 Procedures on eye and adnexa,n.p.,4201
+2022-23,04 Procedures on ear and mastoid process,1- Male,43415
+2022-23,04 Procedures on ear and mastoid process,2- Female,32337
+2022-23,04 Procedures on ear and mastoid process,3- Other/Not reported,2
+2022-23,04 Procedures on ear and mastoid process,n.p.,288
+2022-23,"05 Procedures on nose, mouth and pharynx",1- Male,178389
+2022-23,"05 Procedures on nose, mouth and pharynx",2- Female,141597
+2022-23,"05 Procedures on nose, mouth and pharynx",3- Other/Not reported,52
+2022-23,"05 Procedures on nose, mouth and pharynx",n.p.,1032
+2022-23,06 Dental services,1- Male,221130
+2022-23,06 Dental services,2- Female,225172
+2022-23,06 Dental services,3- Other/Not reported,116
+2022-23,06 Dental services,n.p.,5814
+2022-23,07 Procedures on respiratory system,1- Male,160283
+2022-23,07 Procedures on respiratory system,2- Female,118116
+2022-23,07 Procedures on respiratory system,3- Other/Not reported,33
+2022-23,07 Procedures on respiratory system,n.p.,8416
+2022-23,08 Procedures on cardiovascular system,1- Male,384985
+2022-23,08 Procedures on cardiovascular system,2- Female,211435
+2022-23,08 Procedures on cardiovascular system,3- Other/Not reported,34
+2022-23,08 Procedures on cardiovascular system,n.p.,2141
+2022-23,09 Procedures on blood and blood-forming organs,1- Male,37872
+2022-23,09 Procedures on blood and blood-forming organs,2- Female,54711
+2022-23,09 Procedures on blood and blood-forming organs,3- Other/Not reported,6
+2022-23,09 Procedures on blood and blood-forming organs,n.p.,196
+2022-23,10 Procedures on digestive system,1- Male,1098133
+2022-23,10 Procedures on digestive system,2- Female,1301259
+2022-23,10 Procedures on digestive system,3- Other/Not reported,293
+2022-23,10 Procedures on digestive system,n.p.,2538
+2022-23,11 Procedures on urinary system,1- Male,1309649
+2022-23,11 Procedures on urinary system,2- Female,848115
+2022-23,11 Procedures on urinary system,3- Other/Not reported,82
+2022-23,11 Procedures on urinary system,n.p.,81298
+2022-23,12 Procedures on male genital organs,1- Male,149992
+2022-23,12 Procedures on male genital organs,2- Female,296
+2022-23,12 Procedures on male genital organs,3- Other/Not reported,53
+2022-23,12 Procedures on male genital organs,n.p.,611
+2022-23,13 Gynaecological procedures,1- Male,283
+2022-23,13 Gynaecological procedures,2- Female,711933
+2022-23,13 Gynaecological procedures,3- Other/Not reported,175
+2022-23,13 Gynaecological procedures,n.p.,5970
+2022-23,14 Obstetric procedures,1- Male,17
+2022-23,14 Obstetric procedures,2- Female,723318
+2022-23,14 Obstetric procedures,3- Other/Not reported,28
+2022-23,14 Obstetric procedures,n.p.,796
+2022-23,15 Procedures on musculoskeletal system,1- Male,565979
+2022-23,15 Procedures on musculoskeletal system,2- Female,467855
+2022-23,15 Procedures on musculoskeletal system,3- Other/Not reported,123
+2022-23,15 Procedures on musculoskeletal system,n.p.,2245
+2022-23,16 Dermatological and plastic procedures,1- Male,550177
+2022-23,16 Dermatological and plastic procedures,2- Female,447816
+2022-23,16 Dermatological and plastic procedures,3- Other/Not reported,315
+2022-23,16 Dermatological and plastic procedures,n.p.,1950
+2022-23,17 Procedures on breast,1- Male,2625
+2022-23,17 Procedures on breast,2- Female,102579
+2022-23,17 Procedures on breast,3- Other/Not reported,677
+2022-23,17 Procedures on breast,n.p.,247
+2022-23,18 Radiation oncology procedures,1- Male,14521
+2022-23,18 Radiation oncology procedures,2- Female,5989
+2022-23,18 Radiation oncology procedures,3- Other/Not reported,2
+2022-23,18 Radiation oncology procedures,n.p.,2074
+2022-23,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,6720763
+2022-23,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,7502854
+2022-23,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Other/Not reported,2910
+2022-23,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,611600
+2022-23,20 Imaging services,1- Male,81700
+2022-23,20 Imaging services,2- Female,51701
+2022-23,20 Imaging services,3- Other/Not reported,13
+2022-23,20 Imaging services,n.p.,1404
+2023-24,01 Procedures on nervous system,1- Male,302144
+2023-24,01 Procedures on nervous system,2- Female,359646
+2023-24,01 Procedures on nervous system,3- Other/Not reported,115
+2023-24,01 Procedures on nervous system,n.p.,5706
+2023-24,02 Procedures on endocrine system,1- Male,7200
+2023-24,02 Procedures on endocrine system,2- Female,17557
+2023-24,02 Procedures on endocrine system,3- Other/Not reported,7
+2023-24,02 Procedures on endocrine system,n.p.,170
+2023-24,03 Procedures on eye and adnexa,1- Male,444671
+2023-24,03 Procedures on eye and adnexa,2- Female,512515
+2023-24,03 Procedures on eye and adnexa,3- Other/Not reported,75
+2023-24,03 Procedures on eye and adnexa,n.p.,14160
+2023-24,04 Procedures on ear and mastoid process,1- Male,46660
+2023-24,04 Procedures on ear and mastoid process,2- Female,34653
+2023-24,04 Procedures on ear and mastoid process,3- Other/Not reported,9
+2023-24,04 Procedures on ear and mastoid process,n.p.,284
+2023-24,"05 Procedures on nose, mouth and pharynx",1- Male,189052
+2023-24,"05 Procedures on nose, mouth and pharynx",2- Female,147052
+2023-24,"05 Procedures on nose, mouth and pharynx",3- Other/Not reported,84
+2023-24,"05 Procedures on nose, mouth and pharynx",n.p.,1131
+2023-24,06 Dental services,1- Male,225789
+2023-24,06 Dental services,2- Female,230759
+2023-24,06 Dental services,3- Other/Not reported,133
+2023-24,06 Dental services,n.p.,8004
+2023-24,07 Procedures on respiratory system,1- Male,166071
+2023-24,07 Procedures on respiratory system,2- Female,124429
+2023-24,07 Procedures on respiratory system,3- Other/Not reported,99
+2023-24,07 Procedures on respiratory system,n.p.,9490
+2023-24,08 Procedures on cardiovascular system,1- Male,393640
+2023-24,08 Procedures on cardiovascular system,2- Female,216813
+2023-24,08 Procedures on cardiovascular system,3- Other/Not reported,113
+2023-24,08 Procedures on cardiovascular system,n.p.,5130
+2023-24,09 Procedures on blood and blood-forming organs,1- Male,38751
+2023-24,09 Procedures on blood and blood-forming organs,2- Female,57605
+2023-24,09 Procedures on blood and blood-forming organs,3- Other/Not reported,21
+2023-24,09 Procedures on blood and blood-forming organs,n.p.,108
+2023-24,10 Procedures on digestive system,1- Male,1134833
+2023-24,10 Procedures on digestive system,2- Female,1342074
+2023-24,10 Procedures on digestive system,3- Other/Not reported,537
+2023-24,10 Procedures on digestive system,n.p.,1586
+2023-24,11 Procedures on urinary system,1- Male,1406936
+2023-24,11 Procedures on urinary system,2- Female,907686
+2023-24,11 Procedures on urinary system,3- Other/Not reported,153
+2023-24,11 Procedures on urinary system,n.p.,10804
+2023-24,12 Procedures on male genital organs,1- Male,151443
+2023-24,12 Procedures on male genital organs,2- Female,250
+2023-24,12 Procedures on male genital organs,3- Other/Not reported,50
+2023-24,12 Procedures on male genital organs,n.p.,770
+2023-24,13 Gynaecological procedures,1- Male,294
+2023-24,13 Gynaecological procedures,2- Female,744369
+2023-24,13 Gynaecological procedures,3- Other/Not reported,216
+2023-24,13 Gynaecological procedures,n.p.,6452
+2023-24,14 Obstetric procedures,1- Male,15
+2023-24,14 Obstetric procedures,2- Female,717885
+2023-24,14 Obstetric procedures,3- Other/Not reported,131
+2023-24,14 Obstetric procedures,n.p.,872
+2023-24,15 Procedures on musculoskeletal system,1- Male,582621
+2023-24,15 Procedures on musculoskeletal system,2- Female,484919
+2023-24,15 Procedures on musculoskeletal system,3- Other/Not reported,169
+2023-24,15 Procedures on musculoskeletal system,n.p.,1652
+2023-24,16 Dermatological and plastic procedures,1- Male,582654
+2023-24,16 Dermatological and plastic procedures,2- Female,458606
+2023-24,16 Dermatological and plastic procedures,3- Other/Not reported,381
+2023-24,16 Dermatological and plastic procedures,n.p.,2774
+2023-24,17 Procedures on breast,1- Male,2454
+2023-24,17 Procedures on breast,2- Female,103825
+2023-24,17 Procedures on breast,3- Other/Not reported,719
+2023-24,18 Radiation oncology procedures,1- Male,14869
+2023-24,18 Radiation oncology procedures,2- Female,5879
+2023-24,18 Radiation oncology procedures,3- Other/Not reported,3
+2023-24,18 Radiation oncology procedures,n.p.,2979
+2023-24,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",1- Male,6830118
+2023-24,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",2- Female,7619786
+2023-24,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",3- Other/Not reported,7608
+2023-24,"19 Non-invasive, cognitive and other interventions, not elsewhere classified",n.p.,861109
+2023-24,20 Imaging services,1- Male,88308
+2023-24,20 Imaging services,2- Female,56299
+2023-24,20 Imaging services,3- Other/Not reported,32
+2023-24,20 Imaging services,n.p.,1299
+2023-24,21 Codes for special purposes,1- Male,73
+2023-24,21 Codes for special purposes,2- Female,25

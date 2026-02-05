@@ -1,0 +1,60 @@
+============================================================
+CONFIRMATORY HYPOTHESIS 5: Mental Health Sex-Differentiated
+Hidden Burden -- Full Results
+============================================================
+
+Date: 2026-02-05 17:09 
+Pre-registration: OSF [insert DOI]
+
+DEVIATION FROM PRE-REGISTRATION:
+  Pre-registered test: Paired Wilcoxon across n=17 years (2006-2022)
+  Actual test: Paired Wilcoxon across n= 8  block-level sub-conditions
+  Reason: ABS Cube 10 (multiple causes) contains only single-year
+  data (2023). Historical multi-year MUR extraction not possible
+  from the 2024 data release.
+
+AGGREGATE RESULT (DESCRIPTIVE):
+  Mental & behavioural disorders (F00-F99) MUR, 2023:
+    Male:    4.9
+    Female:  3.0
+    Ratio:   1.62 (male MUR is 62% higher)
+
+H5a PRIMARY: Paired Wilcoxon Signed-Rank
+  Null: No difference in male vs female MUR for mental disorders
+  Test statistic V: 2.24 
+  p-value (exact, two-tailed): 0.0234375 
+  Effect size r: 0.801 
+  n block-level pairs: 8 
+  Positive differences (male > female): 7 of 8 
+
+H5a SUPPLEMENTARY: Exact Binomial Sign Test
+  p-value: 0.0703125 
+
+H5a SUPPLEMENTARY: Bootstrap 95% CI
+  Mean (male MUR - female MUR): 40.783 
+  95% Percentile CI: 7.689 to 82.329 
+
+H5a SUPPLEMENTARY: Permutation Test
+  p-value: 0.0253 
+
+H5b SECONDARY: Substance Use (F10-F19)
+  n conditions: 5 
+  p-value: 0.625 
+  Effect size r: 0.219 
+  Mean diff: 167.1 
+
+H5b SECONDARY: Non-Substance (F20-F99)
+  n conditions: 6 
+  p-value: 0.03125 
+  Effect size r: 0.879 
+  Mean diff: 55.2 
+
+H5c SECONDARY: Temporal Trend (crude death rates, not MUR)
+  Spearman rho: 0.627 
+  p-value: 0.0388453 
+  n years: 11 
+  Direction: Gap narrowing 
+
+NOTE: p-values are UNCORRECTED. Apply Holm-Bonferroni correction
+across all confirmatory tests using Script 16 before interpreting
+significance.

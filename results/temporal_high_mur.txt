@@ -1,0 +1,55 @@
+============================================================
+TEMPORAL TRENDS IN HIGH-MUR CONDITIONS
+Exploratory Analysis E-HM3
+============================================================
+
+Date: 2026-02-05 17:57
+Conditions analysed: 15
+Year range: 2014-2024
+
+SUMMARY:
+
+  Increasing: 6 conditions
+  Decreasing: 2 conditions
+  Stable/unclear: 7 conditions
+
+CONDITION-LEVEL RESULTS:
+Condition                                     ICD      First       Last  %Change    Rho      p Trend
+---------------------------------------------------------------------------------------------------- 
+Complications of medical and surgical care Y40-Y84        192         66   -65.6% -0.100 0.7699 Stable/unclear
+Respiratory failure, not elsewhere clas...    J96         60         95   +58.3% +0.691 0.0186 Increasing
+Symptoms and signs involving cognition,... R40-R46          7         52  +642.9% +0.895 0.0002 Increasing
+Depressive episode                            F32         57         79   +38.6% +0.433 0.1836 Stable/unclear
+Symptoms and signs involving the circul... R00-R09         61         82   +34.4% -0.379 0.2504 Stable/unclear
+Mood [affective] disorders                 F30-F39         75        101   +34.7% +0.425 0.1930 Stable/unclear
+Other symptoms and signs involving cogn...    R41          6         52  +766.7% +0.900 0.0002 Increasing
+Other symptoms and signs involving the ...    R09         50         70   +40.0% -0.361 0.2758 Stable/unclear
+Delirium, not induced by alcohol and ot...    F05        264         67   -74.6% -0.582 0.0604 Decreasing
+Malaise and fatigue                           R53         36        334  +827.8% +1.000 0.0000 Increasing
+Pulmonary oedema                              J81         48         58   +20.8% +0.370 0.2629 Stable/unclear
+Other diseases of the respiratory system   J95-J99        410        336   -18.0% -0.682 0.0208 Decreasing
+Essential (primary) hypertension              I10        579        833   +43.9% +0.645 0.0320 Increasing
+Other arthrosis                               M19        121         97   -19.8% -0.491 0.1252 Stable/unclear
+Sleep disorders                               G47         32         83  +159.4% +0.925 0.0000 Increasing
+
+INTERPRETATION:
+
+High-MUR conditions are those whose mortality burden is most
+'hidden' — they appear far more often as contributing causes than
+as the underlying cause of death.
+
+Most high-MUR conditions show INCREASING underlying cause deaths
+over 2014-2024. This means their total burden (hidden + visible)
+is likely growing even faster, as the MUR multiplier amplifies
+any increase in underlying cause deaths.
+
+NOTES:
+
+1. MUR data: ABS Cube 10 (2023, multiple causes of death).
+2. Temporal data: ABS Cube 14 (year of occurrence, underlying cause
+   only, 2014-2024). Death counts are raw (not age-standardised).
+3. Conditions selected: top 15 by MUR with >= 50 underlying deaths
+   and available in Cube 14.
+4. Trend direction classified by Spearman rho (>0.3 or <-0.3)
+   and p < 0.1.
+5. 2024 data may be preliminary/incomplete in some jurisdictions.

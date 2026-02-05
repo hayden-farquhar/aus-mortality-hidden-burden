@@ -1,0 +1,664 @@
+rank,icd_code,condition_name,level,chapter_name,underlying_persons,multiple_persons,mur_persons,mur_male,mur_female,hidden_deaths,pct_hidden,sex_ratio
+1,Y83-Y84,"Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",block,XX: External causes,15,4217,281.1,475.6,183.9,4202,99.6,2.59
+2,R57,"Shock, not elsewhere classified",code,XVIII: Symptoms/signs,24,3442,143.4,178,114.2,3418,99.3,1.56
+3,R10-R19,Symptoms and signs involving the digestive system and abdomen,block,XVIII: Symptoms/signs,20,2403,120.2,185.3,85.1,2383,99.2,2.18
+4,F40-F48,"Neurotic, stress-related and somatoform disorders",block,V: Mental/behavioural,22,2325,105.7,230,69.1,2303,99.1,3.33
+5,R64,Cachexia,code,XVIII: Symptoms/signs,14,1382,98.7,183.7,75.5,1368,99,2.43
+6,Y40-Y84,Complications of medical and surgical care,block,XX: External causes,68,6413,94.3,106.6,82.1,6345,98.9,1.3
+7,F41,Other anxiety disorders,code,V: Mental/behavioural,19,1739,91.5,269.3,58.2,1720,98.9,4.63
+8,J96,"Respiratory failure, not elsewhere classified",code,X: Respiratory,92,7582,82.4,87.3,77.9,7490,98.8,1.12
+9,R40-R46,"Symptoms and signs involving cognition, perception, emotional state and behaviour",block,XVIII: Symptoms/signs,55,4250,77.3,139,49.7,4195,98.7,2.8
+10,R63,Symptoms and signs concerning food and fluid intake,code,XVIII: Symptoms/signs,23,1746,75.9,90.3,69.6,1723,98.7,1.3
+11,F15,"Mental and behavioural disorders due to use of other stimulants, including caffeine",code,V: Mental/behavioural,16,1063,66.4,70.5,54.2,1047,98.5,1.3
+12,F32,Depressive episode,code,V: Mental/behavioural,71,3723,52.4,81.2,37.8,3652,98.1,2.15
+13,R00-R09,Symptoms and signs involving the circulatory and respiratory systems,block,XVIII: Symptoms/signs,75,3876,51.7,67.1,41.4,3801,98.1,1.62
+14,Y40-Y59,"Drugs, medicaments and biological substances causing adverse effects in therapeutic use",block,XX: External causes,42,2121,50.5,50.3,50.7,2079,98,0.99
+15,F30-F39,Mood [affective] disorders,block,V: Mental/behavioural,92,4306,46.8,72.3,33.9,4214,97.9,2.14
+16,R41,Other symptoms and signs involving cognitive functions and awareness,code,XVIII: Symptoms/signs,55,2433,44.2,63.8,35.5,2378,97.7,1.8
+17,R09,Other symptoms and signs involving the circulatory and respiratory systems,code,XVIII: Symptoms/signs,63,2545,40.4,49.2,34.2,2482,97.5,1.44
+18,I95-I99,Other and unspecified disorders of the circulatory system,block,IX: Circulatory system,23,916,39.8,40.2,39.4,893,97.5,1.02
+19,F05,"Delirium, not induced by alcohol and other psychoactive substances",code,V: Mental/behavioural,62,2449,39.5,65.7,27.9,2387,97.5,2.36
+20,M50-M54,Other dorsopathies,block,XIII: Musculoskeletal,15,592,39.5,84,23.3,577,97.5,3.61
+21,G45,Transient cerebral ischaemic attacks and related syndromes,code,VI: Nervous system,26,955,36.7,39.7,34.9,929,97.3,1.14
+22,I99,Other and unspecified disorders of circulatory system,code,IX: Circulatory system,15,531,35.4,35.2,35.6,516,97.2,0.99
+23,R53,Malaise and fatigue,code,XVIII: Symptoms/signs,329,10347,31.4,40.1,27.5,10018,96.8,1.46
+24,J81,Pulmonary oedema,code,X: Respiratory,60,1796,29.9,30.8,29.2,1736,96.7,1.06
+25,F19,Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances,code,V: Mental/behavioural,23,686,29.8,32,24.9,663,96.6,1.29
+26,J95-J99,Other diseases of the respiratory system,block,X: Respiratory,337,9830,29.2,32.1,26.6,9493,96.6,1.21
+27,I10,Essential (primary) hypertension,code,IX: Circulatory system,844,23420,27.7,41.8,21.2,22576,96.4,1.98
+28,F31,Bipolar affective disorder,code,V: Mental/behavioural,20,543,27.1,45.8,19.1,523,96.3,2.39
+29,M10,Gout,code,XIII: Musculoskeletal,24,628,26.2,34.6,14.3,604,96.2,2.42
+30,M19,Other arthrosis,code,XIII: Musculoskeletal,98,2351,24,39.2,20.1,2253,95.8,1.95
+31,G47,Sleep disorders,code,VI: Nervous system,92,2177,23.7,24.9,21.8,2085,95.8,1.14
+32,M81,Osteoporosis without pathological fracture,code,XIII: Musculoskeletal,100,2326,23.3,28.1,22.2,2226,95.7,1.26
+33,R50-R69,General symptoms and signs,block,XVIII: Symptoms/signs,1478,32073,21.7,29.8,18,30595,95.4,1.65
+34,D70,Agranulocytosis,code,III: Blood/immune,20,433,21.6,34.4,14.8,413,95.4,2.33
+35,M15-M19,Arthrosis,block,XIII: Musculoskeletal,113,2441,21.6,31.7,18.6,2328,95.4,1.7
+36,F20-F29,"Schizophrenia, schizotypal and delusional disorders",block,V: Mental/behavioural,69,1482,21.5,29,15.3,1413,95.3,1.9
+37,F10-F19,Mental and behavioural disorders due to psychoactive substance use,block,V: Mental/behavioural,503,10466,20.8,19.7,24.9,9963,95.2,0.79
+38,F20,Schizophrenia,code,V: Mental/behavioural,55,1127,20.5,25.7,15.5,1072,95.1,1.66
+39,E03,Other hypothyroidism,code,IV: Endocrine/metabolic,73,1421,19.5,34,16.9,1348,94.9,2.01
+40,M25,"Other joint disorders, not elsewhere classified",code,XIII: Musculoskeletal,39,751,19.3,21.8,17.3,712,94.8,1.26
+41,R68,Other general symptoms and signs,code,XVIII: Symptoms/signs,357,6758,18.9,25.7,15.4,6401,94.7,1.67
+42,M20-M25,Other joint disorders,block,XIII: Musculoskeletal,43,778,18.1,20.2,16.5,735,94.5,1.22
+43,I70,Atherosclerosis,code,IX: Circulatory system,42,755,18,20.7,15.5,713,94.4,1.34
+44,K21,Gastro-oesophageal reflux disease,code,XI: Digestive,83,1333,16.1,17.9,14.7,1250,93.8,1.22
+45,I82,Other venous embolism and thrombosis,code,IX: Circulatory system,15,239,15.9,18.3,13.9,224,93.7,1.32
+46,M80-M85,Disorders of bone density and structure,block,XIII: Musculoskeletal,196,2981,15.2,18.2,14.5,2785,93.4,1.26
+47,B49,Unspecified mycosis,code,I: Infectious diseases,10,151,15.1,14.1,17.3,141,93.4,0.82
+48,F25,Schizoaffective disorders,code,V: Mental/behavioural,11,162,14.7,20,11.7,151,93.2,1.71
+49,R19,Other symptoms and signs involving the digestive system and abdomen,code,XVIII: Symptoms/signs,14,203,14.5,17.8,12.7,189,93.1,1.41
+50,E00-E07,Disorders of thyroid gland,block,IV: Endocrine/metabolic,136,1898,14,26.1,12,1762,92.8,2.18
+51,N17,Acute renal failure,code,XIV: Genitourinary,439,5930,13.5,15.9,11.7,5491,92.6,1.36
+52,J90,"Pleural effusion, not elsewhere classified",code,X: Respiratory,91,1217,13.4,13.7,13,1126,92.5,1.06
+53,I89,Other noninfective disorders of lymphatic vessels and lymph nodes,code,IX: Circulatory system,15,199,13.3,21,11.3,184,92.5,1.85
+54,G62,Other polyneuropathies,code,VI: Nervous system,24,315,13.1,16.5,10.7,291,92.4,1.54
+55,E50-E64,Other nutritional deficiencies,block,IV: Endocrine/metabolic,22,286,13,16.8,10.9,264,92.3,1.54
+56,I45,Other conduction disorders,code,IX: Circulatory system,77,973,12.6,12.6,12.8,896,92.1,0.98
+57,M84,Disorders of continuity of bone,code,XIII: Musculoskeletal,19,238,12.5,16.3,10.8,219,92,1.52
+58,D64,Other anaemias,code,III: Blood/immune,149,1807,12.1,13.7,10.9,1658,91.8,1.25
+59,J90-J94,Other diseases of pleura,block,X: Respiratory,129,1544,12,11.9,12.1,1415,91.6,0.99
+60,J93,Pneumothorax,code,X: Respiratory,15,178,11.9,11,14.2,163,91.6,0.77
+61,L40-L45,Papulosquamous disorders,block,XII: Skin,12,141,11.8,12.5,11,129,91.5,1.14
+62,D70-D77,Other diseases of blood and blood-forming organs,block,III: Blood/immune,70,798,11.4,11.6,11.2,728,91.2,1.03
+63,L40,Psoriasis,code,XII: Skin,12,134,11.2,12,10.3,122,91,1.16
+64,D65,Disseminated intravascular coagulation [defibrination syndrome],code,III: Blood/immune,13,144,11.1,13.1,8.7,131,91,1.52
+65,M48,Other spondylopathies,code,XIII: Musculoskeletal,21,229,10.9,9.6,12.1,208,90.8,0.79
+66,E83,Disorders of mineral metabolism,code,IV: Endocrine/metabolic,65,699,10.8,14.6,8.4,634,90.7,1.74
+67,G40-G47,Episodic and paroxysmal disorders,block,VI: Nervous system,438,4670,10.7,10.6,10.8,4232,90.6,0.98
+68,M47,Spondylosis,code,XIII: Musculoskeletal,12,126,10.5,11,10.1,114,90.5,1.08
+69,I47,Paroxysmal tachycardia,code,IX: Circulatory system,37,388,10.5,12.5,8.4,351,90.5,1.49
+70,I81,Portal vein thrombosis,code,IX: Circulatory system,13,133,10.2,12.4,7.7,120,90.2,1.62
+71,P07,"Disorders related to short gestation and low birth weight, not elsewhere classified",code,XVI: Perinatal,46,463,10.1,13,7.6,417,90.1,1.71
+72,M40-M43,Deforming dorsopathies,block,XIII: Musculoskeletal,20,200,10,9.6,10.2,180,90,0.94
+73,D60-D64,Aplastic and other anaemias,block,III: Blood/immune,220,2186,9.9,10.5,9.4,1966,89.9,1.11
+74,K72,"Hepatic failure, not elsewhere classified",code,XI: Digestive,244,2416,9.9,10,9.7,2172,89.9,1.03
+75,P05-P08,Disorders related to length of gestation and fetal growth,block,XVI: Perinatal,50,494,9.9,13.1,7.4,444,89.9,1.78
+76,I49,Other cardiac arrhythmias,code,IX: Circulatory system,199,1948,9.8,10.7,8.6,1749,89.8,1.24
+77,M41,Scoliosis,code,XIII: Musculoskeletal,12,116,9.7,10,9.5,104,89.7,1.05
+78,M40-M54,Dorsopathies,block,XIII: Musculoskeletal,138,1309,9.5,10.8,8.4,1171,89.5,1.29
+79,I10-I15,Hypertensive diseases,block,IX: Circulatory system,2862,27093,9.5,11.1,8.3,24231,89.4,1.34
+80,N28,"Other disorders of kidney and ureter, not elsewhere classified",code,XIV: Genitourinary,60,566,9.4,12.1,7.1,506,89.4,1.71
+81,E87,"Other disorders of fluid, electrolyte and acid-base balance",code,IV: Endocrine/metabolic,246,2319,9.4,11.2,8.3,2073,89.4,1.35
+82,M13,Other arthritis,code,XIII: Musculoskeletal,26,245,9.4,12.5,8.1,219,89.4,1.55
+83,B99,Other infectious diseases,code,I: Infectious diseases,54,501,9.3,9.3,9.3,447,89.2,1
+84,B99,Other and unspecified infectious diseases,code,I: Infectious diseases,54,501,9.3,9.3,9.3,447,89.2,1
+85,B18,Chronic viral hepatitis,code,I: Infectious diseases,80,741,9.3,8.9,10.7,661,89.2,0.83
+86,F50-F59,Behavioural syndromes associated with physiological disturbances and physical factors,block,V: Mental/behavioural,15,138,9.2,19.3,6.7,123,89.1,2.9
+87,B15-B19,Viral hepatitis,block,I: Infectious diseases,84,768,9.1,8.9,9.8,684,89.1,0.91
+88,J98,Other respiratory disorders,code,X: Respiratory,245,2234,9.1,10.6,7.9,1989,89,1.34
+89,Y85-Y98,Sequelae and supplementary factors of external cause,block,XX: External causes,143,1294,9,8.5,10.5,1151,88.9,0.81
+90,W80,Inhalation and ingestion of other objects causing obstruction of respiratory tract,code,XX: External causes,131,1183,9,9.5,8.5,1052,88.9,1.12
+91,F10,Mental and behavioural disorders due to use of alcohol,code,V: Mental/behavioural,450,4060,9,8.8,10,3610,88.9,0.88
+92,D69,Purpura and other haemorrhagic conditions,code,III: Blood/immune,44,396,9,11.7,6.8,352,88.9,1.72
+93,K90,Intestinal malabsorption,code,XI: Digestive,12,108,9,37,6.5,96,88.9,5.73
+94,K65,Peritonitis,code,XI: Digestive,40,359,9,10.6,7.5,319,88.9,1.41
+95,M00-M25,Arthropathies,block,XIII: Musculoskeletal,663,5752,8.7,9.9,8,5089,88.5,1.25
+96,E16,Other disorders of pancreatic internal secretion,code,IV: Endocrine/metabolic,15,130,8.7,9.7,7.8,115,88.5,1.25
+97,D50,Iron deficiency anaemia,code,III: Blood/immune,37,318,8.6,7.6,9.5,281,88.4,0.8
+98,E86,Volume depletion,code,IV: Endocrine/metabolic,84,718,8.5,17.6,6.7,634,88.3,2.61
+99,A41,Other sepsis,code,I: Infectious diseases,1618,13809,8.5,9.6,7.6,12191,88.3,1.26
+100,I26,Pulmonary embolism,code,IX: Circulatory system,408,3470,8.5,9,8.1,3062,88.2,1.11
+101,N17-N19,Renal failure,block,XIV: Genitourinary,3161,26597,8.4,9.1,7.8,23436,88.1,1.18
+102,E15-E16,Other disorders of glucose regulation and pancreatic internal secretion,block,IV: Endocrine/metabolic,16,133,8.3,10,7,117,88,1.43
+103,I87,Other disorders of veins,code,IX: Circulatory system,14,116,8.3,10.8,6.9,102,87.9,1.57
+104,N25-N29,Other disorders of kidney and ureter,block,XIV: Genitourinary,75,620,8.3,11.1,6,545,87.9,1.85
+105,E78,Disorders of lipoprotein metabolism and other lipidaemias,code,IV: Endocrine/metabolic,722,5942,8.2,9,7.4,5220,87.8,1.22
+106,N19,Unspecified kidney failure,code,XIV: Genitourinary,487,3991,8.2,9.4,7.2,3504,87.8,1.3
+107,R54,Senility,code,XVIII: Symptoms/signs,712,5783,8.1,9.8,7.4,5071,87.7,1.32
+108,Y85-Y89,Sequelae of external causes of morbidity and mortality,block,XX: External causes,143,1152,8.1,7.2,10.1,1009,87.6,0.71
+109,E27,Other disorders of adrenal gland,code,IV: Endocrine/metabolic,20,161,8.1,12.5,6.1,141,87.6,2.03
+110,E20-E35,Disorders of other endocrine glands,block,IV: Endocrine/metabolic,66,528,8,10.6,6.7,462,87.5,1.58
+111,M80-M94,Osteopathies and chondropathies,block,XIII: Musculoskeletal,473,3777,8,5.7,9.8,3304,87.5,0.58
+112,G93,Other disorders of brain,code,VI: Nervous system,207,1643,7.9,7.6,8.7,1436,87.4,0.88
+113,L89,Decubitus ulcer,code,XII: Skin,71,558,7.9,9.8,6.9,487,87.3,1.42
+114,D50-D53,Nutritional anaemias,block,III: Blood/immune,46,361,7.8,6.8,8.9,315,87.3,0.77
+115,A30-A49,Other bacterial diseases,block,I: Infectious diseases,2002,15578,7.8,8.4,7.2,13576,87.1,1.18
+116,D65-D69,"Coagulation defects, purpura and other haemorrhagic conditions",block,III: Blood/immune,107,826,7.7,9.1,6.4,719,87,1.42
+117,D73,Diseases of spleen,code,III: Blood/immune,15,115,7.7,6.1,10,100,87,0.61
+118,J69,Pneumonitis due to solids and liquids,code,X: Respiratory,1327,10148,7.6,8.5,6.6,8821,86.9,1.28
+119,J12,"Viral pneumonia, not elsewhere classified",code,X: Respiratory,174,1313,7.5,9.5,6.2,1139,86.7,1.53
+120,N18,Chronic kidney disease,code,XIV: Genitourinary,2235,16676,7.5,7.9,7,14441,86.6,1.13
+121,L98,"Other disorders of skin and subcutaneous tissue, not elsewhere classified",code,XII: Skin,38,283,7.4,6.4,8.6,245,86.6,0.75
+122,K65-K67,Diseases of peritoneum,block,XI: Digestive,83,617,7.4,9.3,6.1,534,86.5,1.52
+123,J15,"Bacterial pneumonia, not elsewhere classified",code,X: Respiratory,83,603,7.3,6.9,7.8,520,86.2,0.88
+124,B35-B49,Mycoses,block,I: Infectious diseases,69,497,7.2,7.2,7.3,428,86.1,0.98
+125,E46,Unspecified protein-energy malnutrition,code,IV: Endocrine/metabolic,124,892,7.2,8.8,6.1,768,86.1,1.43
+126,I20,Angina pectoris,code,IX: Circulatory system,19,135,7.1,6.2,8.1,116,85.9,0.76
+127,B37,Candidiasis,code,I: Infectious diseases,15,106,7.1,6.2,9.5,91,85.8,0.65
+128,I48,Atrial fibrillation and flutter,code,IX: Circulatory system,2437,17216,7.1,9.3,5.7,14779,85.8,1.62
+129,J60-J70,Lung diseases due to external agents,block,X: Respiratory,1520,10724,7.1,7.5,6.4,9204,85.8,1.18
+130,G91,Hydrocephalus,code,VI: Nervous system,40,281,7,9.5,5.4,241,85.8,1.77
+131,I80-I89,"Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified",block,IX: Circulatory system,283,1986,7,7.3,6.7,1703,85.8,1.09
+132,Y60-Y69,Misadventures to patients during surgical and medical care,block,XX: External causes,10,70,7,8,6.3,60,85.7,1.26
+133,M05-M14,Inflammatory polyarthropathies,block,XIII: Musculoskeletal,314,2188,7,10.8,5.3,1874,85.6,2.01
+134,N30,Cystitis,code,XIV: Genitourinary,15,104,6.9,8.6,5,89,85.6,1.73
+135,I50,Heart failure,code,IX: Circulatory system,3700,25605,6.9,7.7,6.3,21905,85.5,1.22
+136,G90-G99,Other disorders of the nervous system,block,VI: Nervous system,337,2327,6.9,7.2,6.5,1990,85.5,1.1
+137,M35,Other systemic involvement of connective tissue,code,XIII: Musculoskeletal,64,437,6.8,5,8.3,373,85.4,0.6
+138,E05,Thyrotoxicosis [hyperthyroidism],code,IV: Endocrine/metabolic,44,297,6.8,14.5,5.5,253,85.2,2.62
+139,L80-L99,Other disorders of the skin and subcutaneous tissue,block,XII: Skin,219,1450,6.6,7.9,5.8,1231,84.9,1.36
+140,I30-I52,Other forms of heart disease,block,IX: Circulatory system,10396,68633,6.6,7.3,6,58237,84.9,1.22
+141,G60-G64,Polyneuropathies and other disorders of the peripheral nervous system,block,VI: Nervous system,68,442,6.5,6.2,6.9,374,84.6,0.89
+142,K20,Oesophagitis,code,XI: Digestive,10,65,6.5,7.6,5.4,55,84.6,1.41
+143,E70-E90,Metabolic disorders,block,IV: Endocrine/metabolic,1690,10963,6.5,6.9,6.1,9273,84.6,1.12
+144,P20-P29,Respiratory and cardiovascular disorders specific to the perinatal period,block,XVI: Perinatal,41,265,6.5,5.1,8.6,224,84.5,0.6
+145,I26-I28,Pulmonary heart disease and diseases of pulmonary circulation,block,IX: Circulatory system,923,5909,6.4,7,6,4986,84.4,1.16
+146,N40,Hyperplasia of prostate,code,XIV: Genitourinary,89,565,6.3,6.3,NA,476,84.2,NA
+147,B48,"Other mycoses, not elsewhere classified",code,I: Infectious diseases,16,101,6.3,9.1,4.1,85,84.2,2.22
+148,I31,Other diseases of pericardium,code,IX: Circulatory system,96,605,6.3,6.3,6.3,509,84.1,1
+149,E40-E46,Malnutrition,block,IV: Endocrine/metabolic,158,995,6.3,7.8,5.3,837,84.1,1.45
+150,K76,Other diseases of liver,code,XI: Digestive,230,1408,6.1,7.4,4.8,1178,83.7,1.53
+151,J22,Unspecified acute lower respiratory infection,code,X: Respiratory,291,1771,6.1,7.9,5,1480,83.6,1.57
+152,J20-J22,Other acute lower respiratory infections,block,X: Respiratory,302,1832,6.1,7.7,5.1,1530,83.5,1.51
+153,K66,Other disorders of peritoneum,code,XI: Digestive,43,258,6,7.7,5.1,215,83.3,1.52
+154,G95,Other diseases of spinal cord,code,VI: Nervous system,32,189,5.9,5.2,7.9,157,83.1,0.67
+155,D68,Other coagulation defects,code,III: Blood/immune,45,263,5.8,5.5,6.2,218,82.9,0.88
+156,L02,"Cutaneous abscess, furuncle and carbuncle",code,XII: Skin,12,70,5.8,5.3,6.3,58,82.9,0.84
+157,J70,Respiratory conditions due to other external agents,code,X: Respiratory,17,99,5.8,5.9,5.8,82,82.8,1.02
+158,E04,Other nontoxic goitre,code,IV: Endocrine/metabolic,12,69,5.8,16,4.8,57,82.6,3.32
+159,J18,"Pneumonia, organism unspecified",code,X: Respiratory,2558,14516,5.7,6.5,4.9,11958,82.4,1.32
+160,I80,Phlebitis and thrombophlebitis,code,IX: Circulatory system,174,986,5.7,5.2,6.1,812,82.4,0.86
+161,I51,Complications and ill-defined descriptions of heart disease,code,IX: Circulatory system,557,3144,5.6,6.3,4.9,2587,82.3,1.29
+162,W75-W84,Other accidental threats to breathing,block,XX: External causes,255,1439,5.6,5.4,6,1184,82.3,0.91
+163,L08,Other local infections of skin and subcutaneous tissue,code,XII: Skin,90,505,5.6,5.7,5.5,415,82.2,1.03
+164,K31,Other diseases of stomach and duodenum,code,XI: Digestive,74,414,5.6,5.7,5.5,340,82.1,1.03
+165,Y85,Sequelae of transport accidents,code,XX: External causes,24,133,5.5,5.3,7.3,109,82,0.72
+166,D61,Other aplastic anaemias,code,III: Blood/immune,66,364,5.5,5.6,5.4,298,81.9,1.04
+167,B44,Aspergillosis,code,I: Infectious diseases,17,93,5.5,5.3,5.8,76,81.7,0.9
+168,L97,"Ulcer of lower limb, not elsewhere classified",code,XII: Skin,92,503,5.5,7.2,4.4,411,81.7,1.64
+169,M62,Other disorders of muscle,code,XIII: Musculoskeletal,94,506,5.4,5.5,5.3,412,81.4,1.04
+170,N13,Obstructive and reflux uropathy,code,XIV: Genitourinary,98,527,5.4,6,4.6,429,81.4,1.3
+171,E66,Obesity,code,IV: Endocrine/metabolic,460,2457,5.3,5.8,4.9,1997,81.3,1.19
+172,I44,Atrioventricular and left bundle-branch block,code,IX: Circulatory system,98,523,5.3,6.3,4.5,425,81.3,1.41
+173,E65-E68,Obesity and other hyperalimentation,block,IV: Endocrine/metabolic,461,2458,5.3,5.8,4.9,1997,81.2,1.19
+174,K50,Crohn disease [regional enteritis],code,XI: Digestive,40,213,5.3,7.3,4.5,173,81.2,1.64
+175,J94,Other pleural conditions,code,X: Respiratory,22,117,5.3,5.1,5.8,95,81.2,0.88
+176,I74,Arterial embolism and thrombosis,code,IX: Circulatory system,54,287,5.3,6.1,4.6,233,81.2,1.32
+177,G40,Epilepsy,code,VI: Nervous system,245,1284,5.2,4.9,5.7,1039,80.9,0.86
+178,K59,Other functional intestinal disorders,code,XI: Digestive,41,213,5.2,5.6,4.9,172,80.8,1.15
+179,A49,Bacterial infection of unspecified site,code,I: Infectious diseases,276,1430,5.2,5.3,5,1154,80.7,1.05
+180,I73,Other peripheral vascular diseases,code,IX: Circulatory system,645,3331,5.2,6.4,4,2686,80.6,1.61
+181,F50,Eating disorders,code,V: Mental/behavioural,14,72,5.1,6,5,58,80.6,1.2
+182,N00,Acute nephritic syndrome,code,XIV: Genitourinary,42,215,5.1,7.5,3.8,173,80.5,1.96
+183,M06,Other rheumatoid arthritis,code,XIII: Musculoskeletal,251,1275,5.1,6.2,4.7,1024,80.3,1.32
+184,J45,Asthma,code,X: Respiratory,471,2385,5.1,6.1,4.6,1914,80.3,1.33
+185,M60-M63,Disorders of muscles,block,XIII: Musculoskeletal,113,572,5.1,5.2,5,459,80.2,1.05
+186,E21,Hyperparathyroidism and other disorders of parathyroid gland,code,IV: Endocrine/metabolic,27,136,5,4.8,5.2,109,80.1,0.93
+187,N40-N51,Diseases of male genital organs,block,XIV: Genitourinary,137,689,5,5,NA,552,80.1,NA
+188,M45-M49,Spondylopathies,block,XIII: Musculoskeletal,103,517,5,5,5.1,414,80.1,0.98
+189,E11,Non-insulin-dependent diabetes mellitus,code,IV: Endocrine/metabolic,3251,15984,4.9,5,4.8,12733,79.7,1.06
+190,E88,Other metabolic disorders,code,IV: Endocrine/metabolic,84,409,4.9,5.4,4.4,325,79.5,1.23
+191,J09-J18,Influenza and pneumonia,block,X: Respiratory,3665,17840,4.9,5.5,4.3,14175,79.5,1.27
+192,M60-M79,Soft tissue disorders,block,XIII: Musculoskeletal,187,910,4.9,4.5,5.2,723,79.5,0.87
+193,K63,Other diseases of intestine,code,XI: Digestive,224,1085,4.8,5.8,4.3,861,79.4,1.37
+194,B90-B94,Sequelae of infectious and parasitic diseases,block,I: Infectious diseases,22,106,4.8,6.1,3.8,84,79.2,1.63
+195,D55-D59,Haemolytic anaemias,block,III: Blood/immune,38,182,4.8,5.9,4.2,144,79.1,1.41
+196,I27,Other pulmonary heart diseases,code,IX: Circulatory system,506,2419,4.8,5.2,4.5,1913,79.1,1.15
+197,K20-K31,"Diseases of oesophagus, stomach and duodenum",block,XI: Digestive,671,3206,4.8,4.8,4.8,2535,79.1,1
+198,K50-K52,Noninfective enteritis and colitis,block,XI: Digestive,136,636,4.7,5.8,4.1,500,78.6,1.42
+199,L10-L14,Bullous disorders,block,XII: Skin,23,106,4.6,3.9,5.5,83,78.3,0.71
+200,K51,Ulcerative colitis,code,XI: Digestive,38,175,4.6,6.7,3.4,137,78.3,1.99
+201,G90,Disorders of autonomic nervous system,code,VI: Nervous system,18,82,4.6,6.3,2.8,64,78,2.28
+202,M70-M79,Other soft tissue disorders,block,XIII: Musculoskeletal,74,337,4.6,3.6,5.7,263,78,0.64
+203,N10-N16,Renal tubulo-interstitial diseases,block,XIV: Genitourinary,171,775,4.5,5.3,3.8,604,77.9,1.42
+204,C76-C80,"Malignant neoplasms of ill-defined, secondary and unspecified sites",block,II: Neoplasms,3064,13821,4.5,4.6,4.4,10757,77.8,1.03
+205,D89,"Other disorders involving the immune mechanism, not elsewhere classified",code,III: Blood/immune,18,81,4.5,4.1,5.1,63,77.8,0.8
+206,I67,Other cerebrovascular diseases,code,IX: Circulatory system,456,2051,4.5,5.2,4.1,1595,77.8,1.27
+207,I69,Sequelae of cerebrovascular disease,code,IX: Circulatory system,791,3537,4.5,4.5,4.4,2746,77.6,1.02
+208,N32,Other disorders of bladder,code,XIV: Genitourinary,36,159,4.4,4.4,4.5,123,77.4,0.97
+209,D59,Acquired haemolytic anaemia,code,III: Blood/immune,22,97,4.4,5,4.1,75,77.3,1.23
+210,K90-K93,Other diseases of the digestive system,block,XI: Digestive,748,3293,4.4,4.8,4,2545,77.3,1.19
+211,D84,Other immunodeficiencies,code,III: Blood/immune,59,258,4.4,6,3.4,199,77.1,1.77
+212,E10-E14,Diabetes mellitus,block,IV: Endocrine/metabolic,5965,26038,4.4,4.5,4.2,20073,77.1,1.08
+213,K00-K14,"Diseases of oral cavity, salivary glands and jaws",block,XI: Digestive,35,152,4.3,3.8,4.9,117,77,0.76
+214,E51,Thiamine deficiency,code,IV: Endocrine/metabolic,10,43,4.3,8,1.8,33,76.7,4.36
+215,K86,Other diseases of pancreas,code,XI: Digestive,77,331,4.3,5,3.7,254,76.7,1.35
+216,M80,Osteoporosis with pathological fracture,code,XIII: Musculoskeletal,74,318,4.3,5.1,4.1,244,76.7,1.23
+217,K52,Other noninfective gastroenteritis and colitis,code,XI: Digestive,58,248,4.3,4.3,4.3,190,76.6,1.01
+218,K92,Other diseases of digestive system,code,XI: Digestive,736,3125,4.2,4.6,3.9,2389,76.4,1.19
+219,B20-B24,Human immunodeficiency virus [HIV] disease,block,I: Infectious diseases,42,178,4.2,4.4,2.8,136,76.4,1.58
+220,J86,Pyothorax,code,X: Respiratory,45,190,4.2,3.8,5.7,145,76.3,0.67
+221,L50-L54,Urticaria and erythema,block,XII: Skin,10,42,4.2,4.6,3.8,32,76.2,1.21
+222,N30-N39,Other diseases of urinary system,block,XIV: Genitourinary,1189,4983,4.2,4.8,3.8,3794,76.1,1.25
+223,N80-N98,Noninflammatory disorders of female genital tract,block,XIV: Genitourinary,41,171,4.2,NA,4.2,130,76,NA
+224,N39,Other disorders of urinary system,code,XIV: Genitourinary,1122,4657,4.2,4.7,3.8,3535,75.9,1.23
+225,L12,Pemphigoid,code,XII: Skin,21,87,4.1,3.6,4.7,66,75.9,0.77
+226,Y86,Sequelae of other accidents,code,XX: External causes,106,434,4.1,4,4.2,328,75.6,0.96
+227,D35,Benign neoplasm of other and unspecified endocrine glands,code,II: Neoplasms,14,56,4,3.6,4.8,42,75,0.74
+228,K29,Gastritis and duodenitis,code,XI: Digestive,21,84,4,12,2.7,63,75,4.5
+229,N31,"Neuromuscular dysfunction of bladder, not elsewhere classified",code,XIV: Genitourinary,10,40,4,4.6,3.4,30,75,1.35
+230,P91,Other disturbances of cerebral status of newborn,code,XVI: Perinatal,17,68,4,3.4,4.6,51,75,0.74
+231,A40,Streptococcal sepsis,code,I: Infectious diseases,46,182,4,3.7,4.4,136,74.7,0.83
+232,N12,"Tubulo-interstitial nephritis, not specified as acute or chronic",code,XIV: Genitourinary,36,142,3.9,6.2,3,106,74.6,2.09
+233,N04,Nephrotic syndrome,code,XIV: Genitourinary,10,39,3.9,3.4,5,29,74.4,0.69
+234,B25-B34,Other viral diseases,block,I: Infectious diseases,180,701,3.9,4.4,3.5,521,74.3,1.25
+235,J85-J86,Suppurative and necrotic conditions of lower respiratory tract,block,X: Respiratory,72,278,3.9,3.7,4.2,206,74.1,0.87
+236,Q85,"Phakomatoses, not elsewhere classified",code,XVII: Congenital,14,54,3.9,4.3,3.4,40,74.1,1.25
+237,E14,Unspecified diabetes mellitus,code,IV: Endocrine/metabolic,2290,8803,3.8,4,3.6,6513,74,1.12
+238,M60,Myositis,code,XIII: Musculoskeletal,17,64,3.8,4.3,3,47,73.4,1.43
+239,J39,Other diseases of upper respiratory tract,code,X: Respiratory,15,56,3.7,4.8,3.2,41,73.2,1.5
+240,D80-D89,Certain disorders involving the immune mechanism,block,III: Blood/immune,153,571,3.7,4.2,3.3,418,73.2,1.25
+241,I05,Rheumatic mitral valve diseases,code,IX: Circulatory system,122,452,3.7,3.8,3.7,330,73,1.03
+242,D76,Other specified diseases with participation of lymphoreticular tissue and reticulohistiocytic tissue,code,III: Blood/immune,20,74,3.7,3.6,4,54,73,0.89
+243,B34,Viral infection of unspecified site,code,I: Infectious diseases,170,625,3.7,4.1,3.4,455,72.8,1.2
+244,J30-J39,Other diseases of upper respiratory tract,block,X: Respiratory,47,172,3.7,4,3.3,125,72.7,1.22
+245,N00-N08,Glomerular diseases,block,XIV: Genitourinary,115,419,3.6,4.4,2.9,304,72.6,1.48
+246,B02,Zoster [herpes zoster],code,I: Infectious diseases,45,161,3.6,4.1,3.3,116,72,1.23
+247,G06,Intracranial and intraspinal abscess and granuloma,code,VI: Nervous system,25,89,3.6,3.5,3.7,64,71.9,0.95
+248,I09,Other rheumatic heart diseases,code,IX: Circulatory system,42,149,3.5,3.8,3.5,107,71.8,1.08
+249,K11,Diseases of salivary glands,code,XI: Digestive,13,46,3.5,2.6,4.7,33,71.7,0.55
+250,K70-K77,Diseases of liver,block,XI: Digestive,2593,8951,3.5,3.5,3.3,6358,71,1.06
+251,P90-P96,Other disorders originating in the perinatal period,block,XVI: Perinatal,78,265,3.4,2.9,4.2,187,70.6,0.7
+252,I70-I79,"Diseases of arteries, arterioles and capillaries",block,IX: Circulatory system,2013,6830,3.4,3.7,3,4817,70.5,1.21
+253,D58,Other hereditary haemolytic anaemias,code,III: Blood/immune,11,37,3.4,3.4,3.3,26,70.3,1.02
+254,L00-L08,Infections of the skin and subcutaneous tissue,block,XII: Skin,506,1697,3.4,3.5,3.2,1191,70.2,1.1
+255,J38,"Diseases of vocal cords and larynx, not elsewhere classified",code,X: Respiratory,21,70,3.3,3.5,3,49,70,1.18
+256,Q25,Congenital malformations of great arteries,code,XVII: Congenital,15,50,3.3,5,2.7,35,70,1.83
+257,I07,Rheumatic tricuspid valve diseases,code,IX: Circulatory system,71,236,3.3,4,3,165,69.9,1.33
+258,K74,Fibrosis and cirrhosis of liver,code,XI: Digestive,906,2973,3.3,3.5,2.9,2067,69.5,1.22
+259,K27,"Peptic ulcer, site unspecified",code,XI: Digestive,57,187,3.3,3.3,3.3,130,69.5,0.99
+260,N85,"Other noninflammatory disorders of uterus, except cervix",code,XIV: Genitourinary,11,36,3.3,NA,3.3,25,69.4,NA
+261,G80-G83,Cerebral palsy and other paralytic syndromes,block,VI: Nervous system,207,677,3.3,3.4,3.1,470,69.4,1.12
+262,J85,Abscess of lung and mediastinum,code,X: Respiratory,27,88,3.3,3.5,2.9,61,69.3,1.2
+263,Q30-Q34,Congenital malformations of the respiratory system,block,XVII: Congenital,12,39,3.2,3.3,3.2,27,69.2,1.05
+264,G82,Paraplegia and tetraplegia,code,VI: Nervous system,61,197,3.2,3,3.9,136,69,0.76
+265,K82,Other diseases of gallbladder,code,XI: Digestive,35,113,3.2,3.6,2.9,78,69,1.21
+266,M30-M36,Systemic connective tissue disorders,block,XIII: Musculoskeletal,359,1158,3.2,3.2,3.2,799,69,0.98
+267,K55-K64,Other diseases of intestines,block,XI: Digestive,2202,7078,3.2,3.4,3.1,4876,68.9,1.13
+268,B00-B09,Viral infections characterized by skin and mucous membrane lesions,block,I: Infectious diseases,85,271,3.2,3,3.3,186,68.6,0.92
+269,K83,Other diseases of biliary tract,code,XI: Digestive,296,933,3.2,3.3,3,637,68.3,1.12
+270,J61,Pneumoconiosis due to asbestos and other mineral fibres,code,X: Respiratory,122,384,3.1,3.1,3.4,262,68.2,0.92
+271,I38,"Endocarditis, valve unspecified",code,IX: Circulatory system,364,1140,3.1,3.6,2.7,776,68.1,1.32
+272,P96,Other conditions originating in the perinatal period,code,XVI: Perinatal,61,191,3.1,2.8,3.8,130,68.1,0.74
+273,K56,Paralytic ileus and intestinal obstruction without hernia,code,XI: Digestive,1051,3290,3.1,3.2,3.1,2239,68.1,1.05
+274,Y57,Other and unspecified drugs and medicaments,code,XX: External causes,16,50,3.1,2.4,4.3,34,68,0.55
+275,I78,Diseases of capillaries,code,IX: Circulatory system,11,34,3.1,3.2,3,23,67.6,1.07
+276,A31,Infection due to other mycobacteria,code,I: Infectious diseases,24,74,3.1,3.6,2.6,50,67.6,1.39
+277,N26,Unspecified contracted kidney,code,XIV: Genitourinary,13,40,3.1,4,2.5,27,67.5,1.6
+278,K75,Other inflammatory liver diseases,code,XI: Digestive,140,430,3.1,3.5,2.8,290,67.4,1.26
+279,A04,Other bacterial intestinal infections,code,I: Infectious diseases,95,289,3,3.9,2.5,194,67.1,1.57
+280,D45,Polycythaemia vera,code,II: Neoplasms,30,90,3,3.9,2.2,60,66.7,1.71
+281,G03,Meningitis due to other and unspecified causes,code,VI: Nervous system,11,33,3,4,2.2,22,66.7,1.85
+282,N70-N77,Inflammatory diseases of female pelvic organs,block,XIV: Genitourinary,10,30,3,NA,3,20,66.7,NA
+283,P36,Bacterial sepsis of newborn,code,XVI: Perinatal,19,57,3,2.5,4.2,38,66.7,0.59
+284,E43,Unspecified severe protein-energy malnutrition,code,IV: Endocrine/metabolic,31,92,3,3.7,2.4,61,66.3,1.51
+285,I00-I02,Acute rheumatic fever,block,IX: Circulatory system,28,83,3,3.1,2.9,55,66.3,1.07
+286,D41,Neoplasm of uncertain or unknown behaviour of urinary organs,code,II: Neoplasms,20,59,3,3.1,2.7,39,66.1,1.13
+287,J47,Bronchiectasis,code,X: Respiratory,420,1236,2.9,3.3,2.8,816,66,1.2
+288,P50-P61,Haemorrhagic and haematological disorders of fetus and newborn,block,XVI: Perinatal,34,100,2.9,3.7,2.4,66,66,1.55
+289,K55,Vascular disorders of intestine,code,XI: Digestive,442,1299,2.9,3.1,2.8,857,66,1.1
+290,I77,Other disorders of arteries and arterioles,code,IX: Circulatory system,129,379,2.9,3.1,2.7,250,66,1.15
+291,I34,Nonrheumatic mitral valve disorders,code,IX: Circulatory system,263,771,2.9,3.2,2.7,508,65.9,1.19
+292,B00,Herpesviral [herpes simplex] infections,code,I: Infectious diseases,29,85,2.9,2.4,3.7,56,65.9,0.66
+293,E10,Insulin-dependent diabetes mellitus,code,IV: Endocrine/metabolic,417,1217,2.9,2.9,2.9,800,65.7,1.01
+294,K22,Other diseases of oesophagus,code,XI: Digestive,195,567,2.9,3.2,2.6,372,65.6,1.24
+295,D86,Sarcoidosis,code,III: Blood/immune,59,171,2.9,3,2.8,112,65.5,1.05
+296,J80-J84,Other respiratory diseases principally affecting the interstitium,block,X: Respiratory,1783,5164,2.9,2.7,3.2,3381,65.5,0.85
+297,I35,Nonrheumatic aortic valve disorders,code,IX: Circulatory system,1236,3548,2.9,3.2,2.6,2312,65.2,1.25
+298,M86-M90,Other osteopathies,block,XIII: Musculoskeletal,277,793,2.9,2.8,2.9,516,65.1,0.98
+299,J43,Emphysema,code,X: Respiratory,719,2054,2.9,3,2.7,1335,65,1.11
+300,N05,Unspecified nephritic syndrome,code,XIV: Genitourinary,29,82,2.8,3.7,2.1,53,64.6,1.74
+301,G96,Other disorders of central nervous system,code,VI: Nervous system,37,104,2.8,3.7,2.4,67,64.4,1.53
+302,I25,Chronic ischaemic heart disease,code,IX: Circulatory system,10244,28741,2.8,2.8,2.8,18497,64.4,1.02
+303,I05-I09,Chronic rheumatic heart diseases,block,IX: Circulatory system,348,974,2.8,3,2.7,626,64.3,1.11
+304,L03,Cellulitis,code,XII: Skin,403,1112,2.8,2.9,2.7,709,63.8,1.09
+305,Q21,Congenital malformations of cardiac septa,code,XVII: Congenital,37,102,2.8,2.8,2.8,65,63.7,1.01
+306,M32,Systemic lupus erythematosus,code,XIII: Musculoskeletal,61,168,2.8,3.6,2.6,107,63.7,1.36
+307,J40-J47,Chronic lower respiratory diseases,block,X: Respiratory,9229,25314,2.7,2.9,2.6,16085,63.5,1.11
+308,K62,Other diseases of anus and rectum,code,XI: Digestive,91,249,2.7,3,2.6,158,63.5,1.16
+309,Q05,Spina bifida,code,XVII: Congenital,13,35,2.7,2.2,3.4,22,62.9,0.66
+310,K25,Gastric ulcer,code,XI: Digestive,66,177,2.7,2.5,2.9,111,62.7,0.86
+311,A16,"Respiratory tuberculosis, not confirmed bacteriologically or histologically",code,I: Infectious diseases,38,101,2.7,2.4,3.5,63,62.4,0.67
+312,G09,Sequelae of inflammatory diseases of central nervous system,code,VI: Nervous system,13,34,2.6,2.2,4,21,61.8,0.55
+313,J13,Pneumonia due to Streptococcus pneumoniae,code,X: Respiratory,17,44,2.6,2.2,3.6,27,61.4,0.6
+314,J44,Other chronic obstructive pulmonary disease,code,X: Respiratory,7596,19524,2.6,2.7,2.4,11928,61.1,1.14
+315,P35-P39,Infections specific to the perinatal period,block,XVI: Perinatal,30,77,2.6,2.4,2.8,47,61,0.86
+316,M30,Polyarteritis nodosa and related conditions,code,XIII: Musculoskeletal,16,41,2.6,3,2.3,25,61,1.3
+317,N02,Recurrent and persistent haematuria,code,XIV: Genitourinary,28,71,2.5,3.2,1.6,43,60.6,2.05
+318,M86,Osteomyelitis,code,XIII: Musculoskeletal,263,663,2.5,2.6,2.5,400,60.3,1.03
+319,G00-G09,Inflammatory diseases of the central nervous system,block,VI: Nervous system,151,379,2.5,2.6,2.4,228,60.2,1.09
+320,I24,Other acute ischaemic heart diseases,code,IX: Circulatory system,469,1176,2.5,2.7,2.3,707,60.1,1.14
+321,G21,Secondary parkinsonism,code,VI: Nervous system,20,50,2.5,2.9,2,30,60,1.45
+322,N41,Inflammatory diseases of prostate,code,XIV: Genitourinary,12,30,2.5,2.5,NA,18,60,NA
+323,Q27,Other congenital malformations of peripheral vascular system,code,XVII: Congenital,10,25,2.5,2.8,2.2,15,60,1.27
+324,Q65-Q79,Congenital malformations and deformations of the musculoskeletal system,block,XVII: Congenital,30,75,2.5,2.3,2.7,45,60,0.85
+325,G70,Myasthenia gravis and other myoneural disorders,code,VI: Nervous system,65,162,2.5,2.7,2.3,97,59.9,1.18
+326,I42,Cardiomyopathy,code,IX: Circulatory system,1083,2696,2.5,2.4,2.7,1613,59.8,0.9
+327,D10-D36,Benign neoplasms,block,II: Neoplasms,172,428,2.5,2.6,2.4,256,59.8,1.06
+328,K57,Diverticular disease of intestine,code,XI: Digestive,340,845,2.5,2.7,2.4,505,59.8,1.15
+329,P52,Intracranial nontraumatic haemorrhage of fetus and newborn,code,XVI: Perinatal,29,72,2.5,2.9,2.1,43,59.7,1.42
+330,I72,Other aneurysm and dissection,code,IX: Circulatory system,80,198,2.5,2.3,2.7,118,59.6,0.88
+331,K80-K87,"Disorders of gallbladder, biliary tract and pancreas",block,XI: Digestive,1098,2711,2.5,2.6,2.3,1613,59.5,1.11
+332,A15-A19,Tuberculosis,block,I: Infectious diseases,47,116,2.5,2.2,3.2,69,59.5,0.7
+333,Q04,Other congenital malformations of brain,code,XVII: Congenital,15,37,2.5,2.3,2.7,22,59.5,0.88
+334,D47,"Other neoplasms of uncertain or unknown behaviour of lymphoid, haematopoietic and related tissue",code,II: Neoplasms,313,764,2.4,2.4,2.5,451,59,0.96
+335,G41,Status epilepticus,code,VI: Nervous system,75,183,2.4,2.3,2.6,108,59,0.86
+336,N20,Calculus of kidney and ureter,code,XIV: Genitourinary,91,222,2.4,3,2,131,59,1.49
+337,G61,Inflammatory polyneuropathy,code,VI: Nervous system,37,90,2.4,2.3,2.6,53,58.9,0.89
+338,Q80-Q89,Other congenital malformations,block,XVII: Congenital,85,206,2.4,2.6,2.2,121,58.7,1.19
+339,N20-N23,Urolithiasis,block,XIV: Genitourinary,99,239,2.4,2.7,2.1,140,58.6,1.3
+340,M31,Other necrotizing vasculopathies,code,XIII: Musculoskeletal,56,135,2.4,2.5,2.3,79,58.5,1.08
+341,I83,Varicose veins of lower extremities,code,IX: Circulatory system,44,106,2.4,2.3,2.5,62,58.5,0.93
+342,I20-I25,Ischaemic heart diseases,block,IX: Circulatory system,16275,38977,2.4,2.4,2.3,22702,58.2,1.05
+343,A08,Viral and other specified intestinal infections,code,I: Infectious diseases,28,67,2.4,2.8,2.1,39,58.2,1.37
+344,I60-I69,Cerebrovascular diseases,block,IX: Circulatory system,9147,21720,2.4,2.6,2.2,12573,57.9,1.14
+345,J62,Pneumoconiosis due to dust containing silica,code,X: Respiratory,11,26,2.4,2.3,NA,15,57.7,NA
+346,M34,Systemic sclerosis,code,XIII: Musculoskeletal,137,321,2.3,2.2,2.4,184,57.3,0.94
+347,Q20-Q28,Congenital malformations of the circulatory system,block,XVII: Congenital,170,398,2.3,2.5,2.2,228,57.3,1.11
+348,I64,"Stroke, not specified as haemorrhage or infarction",code,IX: Circulatory system,3308,7720,2.3,2.6,2.1,4412,57.2,1.24
+349,Q99,"Other chromosome abnormalities, not elsewhere classified",code,XVII: Congenital,12,28,2.3,2.4,2.2,16,57.1,1.06
+350,F00-F09,"Organic, including symptomatic, mental disorders",block,V: Mental/behavioural,11623,26980,2.3,2.6,2.2,15357,56.9,1.2
+351,A00-A09,Intestinal infectious diseases,block,I: Infectious diseases,414,959,2.3,2.7,2.1,545,56.8,1.32
+352,Q38-Q45,Other congenital malformations of the digestive system,block,XVII: Congenital,19,44,2.3,2,2.7,25,56.8,0.75
+353,K46,Unspecified abdominal hernia,code,XI: Digestive,51,118,2.3,2.3,2.3,67,56.8,1.03
+354,A20-A28,Certain zoonotic bacterial diseases,block,I: Infectious diseases,10,23,2.3,2.5,2,13,56.5,1.25
+355,G04,"Encephalitis, myelitis and encephalomyelitis",code,VI: Nervous system,74,170,2.3,2.4,2.1,96,56.5,1.16
+356,Q87,Other specified congenital malformation syndromes affecting multiple systems,code,XVII: Congenital,39,89,2.3,2.4,2.1,50,56.2,1.14
+357,A48,"Other bacterial diseases, not elsewhere classified",code,I: Infectious diseases,18,41,2.3,2.1,3.3,23,56.1,0.62
+358,K26,Duodenal ulcer,code,XI: Digestive,163,370,2.3,2.2,2.4,207,55.9,0.89
+359,I33,Acute and subacute endocarditis,code,IX: Circulatory system,216,489,2.3,2.2,2.3,273,55.8,0.98
+360,M33,Dermatopolymyositis,code,XIII: Musculoskeletal,25,56,2.2,2.9,1.9,31,55.4,1.48
+361,F01,Vascular dementia,code,V: Mental/behavioural,2092,4651,2.2,2.3,2.1,2559,55,1.11
+362,H65-H75,Diseases of middle ear and mastoid,block,VIII: Ear,14,31,2.2,2.1,2.5,17,54.8,0.84
+363,P03,Fetus and newborn affected by other complications of labour and delivery,code,XVI: Perinatal,46,101,2.2,1.9,3.2,55,54.5,0.59
+364,K80,Cholelithiasis,code,XI: Digestive,136,297,2.2,2.1,2.3,161,54.2,0.94
+365,D00-D48,Other Neoplasms,block,II: Neoplasms,1413,3049,2.2,2.2,2.1,1636,53.7,1.06
+366,N10,Acute tubulo-interstitial nephritis,code,XIV: Genitourinary,16,34,2.1,1.5,3.2,18,52.9,0.47
+367,I63,Cerebral infarction,code,IX: Circulatory system,1529,3247,2.1,2.2,2,1718,52.9,1.1
+368,K43,Ventral hernia,code,XI: Digestive,58,123,2.1,2.1,2.1,65,52.8,1
+369,D46,Myelodysplastic syndromes,code,II: Neoplasms,539,1143,2.1,2.2,2,604,52.8,1.11
+370,X45,Accidental poisoning by and exposure to alcohol,code,XX: External causes,142,300,2.1,2.1,2.1,158,52.7,1.01
+371,P75-P78,Digestive system disorders of fetus and newborn,block,XVI: Perinatal,19,40,2.1,2.1,2,21,52.5,1.07
+372,D37-D48,Neoplasms of uncertain or unknown behaviour,block,II: Neoplasms,1240,2608,2.1,2.2,2,1368,52.5,1.08
+373,X85-Y09,Assault,block,XX: External causes,267,559,2.1,2.1,2.1,292,52.2,0.97
+374,F03,Unspecified dementia,code,V: Mental/behavioural,9459,19766,2.1,2.3,2,10307,52.1,1.17
+375,K35-K38,Diseases of appendix,block,XI: Digestive,37,77,2.1,2.5,1.8,40,51.9,1.42
+376,K44,Diaphragmatic hernia,code,XI: Digestive,114,236,2.1,2,2.1,122,51.7,0.91
+377,G72,Other myopathies,code,VI: Nervous system,58,120,2.1,2.1,2.1,62,51.7,0.98
+378,A09,Other gastroenteritis and colitis of infectious and unspecified origin,code,I: Infectious diseases,283,584,2.1,2.3,1.9,301,51.5,1.22
+379,D44,Neoplasm of uncertain or unknown behaviour of endocrine glands,code,II: Neoplasms,17,35,2.1,1.7,3,18,51.4,0.56
+380,K40,Inguinal hernia,code,XI: Digestive,72,147,2,2.1,1.7,75,51,1.26
+381,M72,Fibroblastic disorders,code,XIII: Musculoskeletal,59,120,2,1.9,2.2,61,50.8,0.87
+382,K40-K46,Hernia,block,XI: Digestive,355,719,2,2.1,2,364,50.6,1.07
+383,K85,Acute pancreatitis,code,XI: Digestive,281,569,2,2.1,2,288,50.6,1.06
+384,Q00-Q07,Congenital malformations of the nervous system,block,XVII: Congenital,55,110,2,1.9,2.1,55,50,0.9
+385,Q23,Congenital malformations of aortic and mitral valves,code,XVII: Congenital,31,62,2,2.2,1.6,31,50,1.34
+386,X59,Exposure to unspecified factor,code,XX: External causes,1156,2288,2,2,2,1132,49.5,0.99
+387,X58-X59,Accidental exposure to other and unspecified factors,block,XX: External causes,1160,2292,2,2,2,1132,49.4,0.99
+388,D32,Benign neoplasm of meninges,code,II: Neoplasms,113,222,2,1.9,2,109,49.1,0.91
+389,G80,Cerebral palsy,code,VI: Nervous system,132,257,1.9,2.1,1.8,125,48.6,1.21
+390,Q79,"Congenital malformations of the musculoskeletal system, not elsewhere classified",code,XVII: Congenital,16,31,1.9,1.6,2.1,15,48.4,0.77
+391,Q24,Other congenital malformations of heart,code,XVII: Congenital,47,91,1.9,2.1,1.8,44,48.4,1.22
+392,I01,Rheumatic fever with heart involvement,code,IX: Circulatory system,28,54,1.9,2,1.9,26,48.1,1.06
+393,D48,Neoplasm of uncertain or unknown behaviour of other and unspecified sites,code,II: Neoplasms,54,104,1.9,1.9,1.9,50,48.1,0.99
+394,G70-G73,Diseases of myoneural junction and muscle,block,VI: Nervous system,251,474,1.9,2,1.8,223,47,1.11
+395,M46,Other inflammatory spondylopathies,code,XIII: Musculoskeletal,64,120,1.9,2.1,1.7,56,46.7,1.24
+396,C88,Malignant immunoproliferative diseases,code,II: Neoplasms,54,101,1.9,2,1.7,47,46.5,1.19
+397,J84,Other interstitial pulmonary diseases,code,X: Respiratory,1707,3192,1.9,1.9,1.8,1485,46.5,1.03
+398,G31,"Other degenerative diseases of nervous system, not elsewhere classified",code,VI: Nervous system,874,1634,1.9,1.9,1.8,760,46.5,1.05
+399,Q60,Renal agenesis and other reduction defects of kidney,code,XVII: Congenital,14,26,1.9,1.7,2,12,46.2,0.86
+400,I11,Hypertensive heart disease,code,IX: Circulatory system,1114,2068,1.9,2.3,1.5,954,46.1,1.55
+401,I62,Other nontraumatic intracranial haemorrhage,code,IX: Circulatory system,1095,2022,1.8,1.9,1.8,927,45.8,1.05
+402,Q20,Congenital malformations of cardiac chambers and connections,code,XVII: Congenital,12,22,1.8,2.2,1.6,10,45.5,1.4
+403,G35-G37,Demyelinating diseases of the central nervous system,block,VI: Nervous system,207,377,1.8,1.8,1.9,170,45.1,0.95
+404,K35,Acute appendicitis,code,XI: Digestive,25,45,1.8,2.2,1.5,20,44.4,1.48
+405,I13,Hypertensive heart and renal disease,code,IX: Circulatory system,493,885,1.8,1.9,1.7,392,44.3,1.15
+406,G20,Parkinson disease,code,VI: Nervous system,2599,4663,1.8,1.8,1.7,2064,44.3,1.07
+407,E84,Cystic fibrosis,code,IV: Endocrine/metabolic,19,34,1.8,1.8,1.8,15,44.1,0.96
+408,M00-M03,Infectious arthropathies,block,XIII: Musculoskeletal,193,345,1.8,1.8,1.8,152,44.1,0.99
+409,M00,Pyogenic arthritis,code,XIII: Musculoskeletal,193,345,1.8,1.8,1.8,152,44.1,0.99
+410,Q60-Q64,Congenital malformations of the urinary system,block,XVII: Congenital,88,157,1.8,1.9,1.6,69,43.9,1.19
+411,W79,Inhalation and ingestion of food causing obstruction of respiratory tract,code,XX: External causes,100,178,1.8,1.8,1.8,78,43.8,0.96
+412,C91,Lymphoid leukaemia,code,II: Neoplasms,496,880,1.8,1.9,1.6,384,43.6,1.13
+413,G11,Hereditary ataxia,code,VI: Nervous system,53,94,1.8,1.9,1.6,41,43.6,1.2
+414,G35,Multiple sclerosis,code,VI: Nervous system,197,348,1.8,1.7,1.8,151,43.4,0.91
+415,N49,"Inflammatory disorders of male genital organs, not elsewhere classified",code,XIV: Genitourinary,21,37,1.8,1.8,NA,16,43.2,NA
+416,I71,Aortic aneurysm and dissection,code,IX: Circulatory system,1052,1846,1.8,1.8,1.6,794,43,1.15
+417,G20-G26,Extrapyramidal and movement disorders,block,VI: Nervous system,3056,5337,1.7,1.8,1.7,2281,42.7,1.07
+418,E85,Amyloidosis,code,IV: Endocrine/metabolic,429,748,1.7,1.8,1.6,319,42.6,1.1
+419,K81,Cholecystitis,code,XI: Digestive,273,468,1.7,1.9,1.6,195,41.7,1.17
+420,Q61,Cystic kidney disease,code,XVII: Congenital,66,113,1.7,2,1.5,47,41.6,1.37
+421,D38,Neoplasm of uncertain or unknown behaviour of middle ear and respiratory and intrathoracic organs,code,II: Neoplasms,24,41,1.7,2,1.5,17,41.5,1.37
+422,P77,Necrotizing enterocolitis of fetus and newborn,code,XVI: Perinatal,13,22,1.7,1.7,1.8,9,40.9,0.95
+423,I61,Intracerebral haemorrhage,code,IX: Circulatory system,1348,2281,1.7,1.8,1.6,933,40.9,1.09
+424,Q89,"Other congenital malformations, not elsewhere classified",code,XVII: Congenital,29,49,1.7,1.8,1.6,20,40.8,1.18
+425,C44,Other malignant neoplasms of skin,code,II: Neoplasms,818,1362,1.7,1.7,1.7,544,39.9,0.99
+426,C82,Follicular lymphoma,code,II: Neoplasms,96,158,1.6,1.8,1.5,62,39.2,1.16
+427,I40,Acute myocarditis,code,IX: Circulatory system,19,31,1.6,1.5,1.9,12,38.7,0.78
+428,D37,Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs,code,II: Neoplasms,122,199,1.6,1.8,1.5,77,38.7,1.21
+429,G30-G32,Other degenerative diseases of the nervous system,block,VI: Nervous system,6872,11201,1.6,1.8,1.5,4329,38.6,1.14
+430,J10,Influenza due to other identified influenza virus,code,X: Respiratory,714,1162,1.6,1.6,1.6,448,38.6,1.02
+431,X67,Intentional self-poisoning by and exposure to other gases and vapours,code,XX: External causes,110,179,1.6,1.6,1.6,69,38.5,1.02
+432,K42,Umbilical hernia,code,XI: Digestive,34,55,1.6,2,1.3,21,38.2,1.57
+433,J11,"Influenza, virus not identified",code,X: Respiratory,111,179,1.6,1.8,1.4,68,38,1.26
+434,C14,"Malignant neoplasm of other and ill-defined sites in the lip, oral cavity and pharynx",code,II: Neoplasms,51,82,1.6,1.5,1.9,31,37.8,0.82
+435,I21,Acute myocardial infarction,code,IX: Circulatory system,5543,8911,1.6,1.6,1.6,3368,37.8,0.98
+436,Q93,"Monosomies and deletions from the autosomes, not elsewhere classified",code,XVII: Congenital,20,32,1.6,1.2,2.3,12,37.5,0.54
+437,G30,Alzheimer's disease,code,VI: Nervous system,5998,9567,1.6,1.7,1.5,3569,37.3,1.14
+438,C81,Hodgkin lymphoma,code,II: Neoplasms,95,151,1.6,1.8,1.4,56,37.1,1.31
+439,C85,Other and unspecified types of non-Hodgkin lymphoma,code,II: Neoplasms,789,1248,1.6,1.7,1.5,459,36.8,1.12
+440,K70,Alcoholic liver disease,code,XI: Digestive,1062,1677,1.6,1.6,1.5,615,36.7,1.09
+441,C61,Malignant neoplasm of prostate,code,II: Neoplasms,3835,6010,1.6,1.6,NA,2175,36.2,NA
+442,C60-C63,Malignant neoplasms of male genital organs,block,II: Neoplasms,3899,6094,1.6,1.6,NA,2195,36,NA
+443,Q90-Q99,"Chromosomal abnormalities, not elsewhere classified",block,XVII: Congenital,190,296,1.6,1.6,1.5,106,35.8,1.01
+444,E75,Disorders of sphingolipid metabolism and other lipid storage disorders,code,IV: Endocrine/metabolic,16,24,1.5,1.5,1.5,8,33.3,1
+445,G71,Primary disorders of muscles,code,VI: Nervous system,128,192,1.5,1.6,1.4,64,33.3,1.17
+446,P00-P04,"Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery",block,XVI: Perinatal,302,448,1.5,1.4,1.6,146,32.6,0.9
+447,C73,Malignant neoplasm of thyroid gland,code,II: Neoplasms,149,221,1.5,1.4,1.5,72,32.6,0.95
+448,A86,Unspecified viral encephalitis,code,I: Infectious diseases,15,22,1.5,1.6,1.3,7,31.8,1.17
+449,C43-C44,Melanoma and other malignant neoplasms of skin,block,II: Neoplasms,2301,3345,1.5,1.5,1.4,1044,31.2,1.03
+450,C93,Monocytic leukaemia,code,II: Neoplasms,157,227,1.4,1.4,1.4,70,30.8,1
+451,C67,Malignant neoplasm of bladder,code,II: Neoplasms,1189,1719,1.4,1.5,1.3,530,30.8,1.14
+452,C96,"Other and unspecified malignant neoplasms of lymphoid, haematopoietic and related tissue",code,II: Neoplasms,45,65,1.4,1.6,1.3,20,30.8,1.22
+453,C00-C97,Malignant neoplasms,block,II: Neoplasms,51406,73938,1.4,1.5,1.4,22532,30.5,1.03
+454,W00-X59,Other external causes of accidental injury,block,XX: External causes,7732,11041,1.4,1.4,1.5,3309,30,0.97
+455,C32,Malignant neoplasm of larynx,code,II: Neoplasms,200,284,1.4,1.4,1.4,84,29.6,1.05
+456,C26,Malignant neoplasm of other and ill-defined digestive organs,code,II: Neoplasms,1089,1538,1.4,1.5,1.4,449,29.2,1.06
+457,W50-W64,Exposure to animate mechanical forces,block,XX: External causes,17,24,1.4,1.5,1.2,7,29.2,1.32
+458,G00,"Bacterial meningitis, not elsewhere classified",code,VI: Nervous system,22,31,1.4,1.7,1.1,9,29,1.52
+459,Q90,Down syndrome,code,XVII: Congenital,127,178,1.4,1.5,1.3,51,28.7,1.09
+460,D43,Neoplasm of uncertain or unknown behaviour of brain and central nervous system,code,II: Neoplasms,116,162,1.4,1.4,1.4,46,28.4,0.98
+461,C50,Malignant neoplasm of breast,code,II: Neoplasms,3203,4472,1.4,1.9,1.4,1269,28.4,1.38
+462,C50,Malignant neoplasm of breast,code,II: Neoplasms,3203,4472,1.4,1.9,1.4,1269,28.4,1.38
+463,C73-C75,Malignant neoplasms of thyroid and other endocrine glands,block,II: Neoplasms,205,286,1.4,1.3,1.4,81,28.3,0.93
+464,X30-X39,Exposure to forces of nature,block,XX: External causes,59,82,1.4,1.4,1.4,23,28,1.04
+465,J67,Hypersensitivity pneumonitis due to organic dust,code,X: Respiratory,36,50,1.4,1.4,1.4,14,28,1.05
+466,P02,"Fetus and newborn affected by complications of placenta, cord and membranes",code,XVI: Perinatal,95,131,1.4,1.3,1.5,36,27.5,0.86
+467,X30,Exposure to excessive natural heat,code,XX: External causes,24,33,1.4,1.4,1.4,9,27.3,1
+468,I60,Subarachnoid haemorrhage,code,IX: Circulatory system,620,851,1.4,1.5,1.3,231,27.1,1.11
+469,C81-C96,"Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue",block,II: Neoplasms,5163,7081,1.4,1.4,1.3,1918,27.1,1.04
+470,C60,Malignant neoplasm of penis,code,II: Neoplasms,27,37,1.4,1.4,NA,10,27,NA
+471,C66,Malignant neoplasm of ureter,code,II: Neoplasms,19,26,1.4,1.6,1.2,7,26.9,1.3
+472,P01,Fetus and newborn affected by maternal complications of pregnancy,code,XVI: Perinatal,117,160,1.4,1.3,1.4,43,26.9,0.97
+473,C04,Malignant neoplasm of floor of mouth,code,II: Neoplasms,22,30,1.4,1.3,1.5,8,26.7,0.88
+474,C95,Leukaemia of unspecified cell type,code,II: Neoplasms,132,180,1.4,1.4,1.4,48,26.7,0.99
+475,X40,"Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics",code,XX: External causes,11,15,1.4,1.6,1.2,4,26.7,1.37
+476,X31,Exposure to excessive natural cold,code,XX: External causes,25,34,1.4,1.5,1.1,9,26.5,1.31
+477,C64-C68,Malignant neoplasms of urinary tract,block,II: Neoplasms,2830,3811,1.3,1.4,1.3,981,25.7,1.1
+478,C09,Malignant neoplasm of tonsil,code,II: Neoplasms,106,142,1.3,1.3,1.4,36,25.4,0.93
+479,C43,Malignant melanoma of skin,code,II: Neoplasms,1483,1983,1.3,1.4,1.3,500,25.2,1.04
+480,K41,Femoral hernia,code,XI: Digestive,18,24,1.3,1.5,1.2,6,25,1.2
+481,W65,Drowning and submersion while in bath-tub,code,XX: External causes,12,16,1.3,1,1.8,4,25,0.56
+482,U07.1-U07.2,COVID-19,block,NA,4025,5323,1.3,1.3,1.3,1298,24.4,1.03
+483,C64,"Malignant neoplasm of kidney, except renal pelvis",code,II: Neoplasms,1027,1346,1.3,1.3,1.3,319,23.7,1.06
+484,C12,Malignant neoplasm of pyriform sinus,code,II: Neoplasms,10,13,1.3,1.4,1,3,23.1,1.43
+485,G10,Huntington disease,code,VI: Nervous system,90,117,1.3,1.4,1.3,27,23.1,1.08
+486,C07,Malignant neoplasm of parotid gland,code,II: Neoplasms,85,110,1.3,1.3,1.2,25,22.7,1.14
+487,G23,Other degenerative diseases of basal ganglia,code,VI: Nervous system,424,548,1.3,1.3,1.3,124,22.6,1.06
+488,C90,Multiple myeloma and malignant plasma cell neoplasms,code,II: Neoplasms,1074,1382,1.3,1.3,1.3,308,22.3,1.01
+489,C62,Malignant neoplasm of testis,code,II: Neoplasms,35,45,1.3,1.3,NA,10,22.2,NA
+490,C24,Malignant neoplasm of other and unspecified parts of biliary tract,code,II: Neoplasms,155,199,1.3,1.3,1.3,44,22.1,1
+491,I12,Hypertensive renal disease,code,IX: Circulatory system,411,526,1.3,1.4,1.2,115,21.9,1.18
+492,C05,Malignant neoplasm of palate,code,II: Neoplasms,18,23,1.3,1.3,1.2,5,21.7,1.09
+493,C70,Malignant neoplasm of meninges,code,II: Neoplasms,11,14,1.3,1.3,1.2,3,21.4,1.11
+494,X60,"Intentional self-poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics",code,XX: External causes,11,14,1.3,1.2,1.3,3,21.4,0.94
+495,C20,Malignant neoplasm of rectum,code,II: Neoplasms,702,890,1.3,1.3,1.2,188,21.1,1.04
+496,C02,Malignant neoplasm of other and unspecified parts of tongue,code,II: Neoplasms,210,265,1.3,1.3,1.2,55,20.8,1.16
+497,C18,Malignant neoplasm of colon,code,II: Neoplasms,1427,1798,1.3,1.3,1.2,371,20.6,1.04
+498,P00,Fetus and newborn affected by maternal conditions that may be unrelated to present pregnancy,code,XVI: Perinatal,43,54,1.3,1.2,1.3,11,20.4,0.95
+499,C06,Malignant neoplasm of other and unspecified parts of mouth,code,II: Neoplasms,110,138,1.3,1.2,1.3,28,20.3,0.94
+500,C00-C14,"Malignant neoplasms of lip, oral cavity and pharynx",block,II: Neoplasms,1069,1340,1.3,1.3,1.2,271,20.2,1.06
+501,W17,Other fall from one level to another,code,XX: External causes,24,30,1.2,1.3,1.1,6,20,1.13
+502,A80-A89,Viral infections of the central nervous system,block,I: Infectious diseases,92,114,1.2,1.3,1.1,22,19.3,1.18
+503,C84,Mature T/NK-cell lymphomas,code,II: Neoplasms,139,172,1.2,1.2,1.3,33,19.2,0.96
+504,C83,Non-follicular lymphoma,code,II: Neoplasms,725,893,1.2,1.2,1.2,168,18.8,1.01
+505,Y00,Assault by blunt object,code,XX: External causes,13,16,1.2,1.4,1,3,18.8,1.43
+506,C03,Malignant neoplasm of gum,code,II: Neoplasms,74,91,1.2,1.3,1.1,17,18.7,1.16
+507,C76,Malignant neoplasm of other and ill-defined sites,code,II: Neoplasms,154,189,1.2,1.2,1.2,35,18.5,1.02
+508,C21,Malignant neoplasm of anus and anal canal,code,II: Neoplasms,128,157,1.2,1.2,1.2,29,18.5,1.03
+509,C68,Malignant neoplasm of other and unspecified urinary organs,code,II: Neoplasms,589,711,1.2,1.2,1.1,122,17.2,1.08
+510,C80,"Malignant neoplasm, without specification of site",code,II: Neoplasms,2910,3508,1.2,1.2,1.2,598,17,1.06
+511,C08,Malignant neoplasm of other and unspecified major salivary glands,code,II: Neoplasms,39,47,1.2,1.1,1.8,8,17,0.6
+512,C55,"Malignant neoplasm of uterus, part unspecified",code,II: Neoplasms,191,230,1.2,NA,1.2,39,17,NA
+513,W68,Drowning and submersion following fall into swimming-pool,code,XX: External causes,15,18,1.2,1.2,1,3,16.7,1.25
+514,W85-W99,"Exposure to electric current, radiation and extreme ambient air temperature and pressure",block,XX: External causes,10,12,1.2,1.2,1,2,16.7,1.22
+515,C92,Myeloid leukaemia,code,II: Neoplasms,1328,1588,1.2,1.2,1.2,260,16.4,1.01
+516,C49,Malignant neoplasm of other connective and soft tissue,code,II: Neoplasms,349,416,1.2,1.2,1.2,67,16.1,1.02
+517,C69,Malignant neoplasm of eye and adnexa,code,II: Neoplasms,53,63,1.2,1.3,1.1,10,15.9,1.19
+518,C38,"Malignant neoplasm of heart, mediastinum and pleura",code,II: Neoplasms,27,32,1.2,1.2,1.1,5,15.6,1.12
+519,W19,Unspecified fall,code,XX: External causes,3404,4024,1.2,1.2,1.2,620,15.4,1.03
+520,W76,Other accidental hanging and strangulation,code,XX: External causes,11,13,1.2,1.2,1,2,15.4,1.22
+521,Y12,"Poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified, undetermined intent",code,XX: External causes,11,13,1.2,1.1,1.2,2,15.4,0.91
+522,A81,Slow virus infections of central nervous system,code,I: Infectious diseases,73,86,1.2,1.3,1,13,15.1,1.27
+523,C72,"Malignant neoplasm of spinal cord, cranial nerves and other parts of central nervous system",code,II: Neoplasms,17,20,1.2,1.2,1.1,3,15,1.09
+524,C10,Malignant neoplasm of oropharynx,code,II: Neoplasms,142,167,1.2,1.2,1,25,15,1.16
+525,W67,Drowning and submersion while in swimming-pool,code,XX: External causes,23,27,1.2,1.3,1,4,14.8,1.27
+526,G10-G14,Systemic atrophies primarily affecting the central nervous system,block,VI: Nervous system,953,1118,1.2,1.2,1.2,165,14.8,1.02
+527,C51,Malignant neoplasm of vulva,code,II: Neoplasms,116,136,1.2,NA,1.2,20,14.7,NA
+528,C54,Malignant neoplasm of corpus uteri,code,II: Neoplasms,505,591,1.2,NA,1.2,86,14.6,NA
+529,W20-W49,Exposure to inanimate mechanical forces,block,XX: External causes,102,119,1.2,1.1,1.5,17,14.3,0.74
+530,W00-W19,Falls,block,XX: External causes,4273,4945,1.2,1.2,1.1,672,13.6,1.02
+531,C53,Malignant neoplasm of cervix uteri,code,II: Neoplasms,248,287,1.2,NA,1.2,39,13.6,NA
+532,V49,Car occupant injured in other and unspecified transport accidents,code,XX: External causes,13,15,1.2,1.2,1,2,13.3,1.22
+533,X40-X49,Accidental poisoning by and exposure to noxious substances,block,XX: External causes,1534,1769,1.2,1.2,1.2,235,13.3,1
+534,C11,Malignant neoplasm of nasopharynx,code,II: Neoplasms,66,76,1.2,1.2,1,10,13.2,1.16
+535,I08,Multiple valve diseases,code,IX: Circulatory system,112,128,1.1,1.2,1.1,16,12.5,1.06
+536,Y35-Y36,Legal intervention and operations of war,block,XX: External causes,14,16,1.1,1.2,1,2,12.5,1.15
+537,Y35,Legal intervention,code,XX: External causes,14,16,1.1,1.2,1,2,12.5,1.15
+538,C15-C26,Malignant neoplasms of digestive organs,block,II: Neoplasms,15035,17179,1.1,1.2,1.1,2144,12.5,1.02
+539,C30-C39,Malignant neoplasms of respiratory and intrathoracic organs,block,II: Neoplasms,9437,10777,1.1,1.1,1.1,1340,12.4,1.01
+540,C01,Malignant neoplasm of base of tongue,code,II: Neoplasms,71,81,1.1,1.2,1.1,10,12.3,1.04
+541,C34,Malignant neoplasm of bronchus and lung,code,II: Neoplasms,9113,10355,1.1,1.1,1.1,1242,12,1
+542,C51-C58,Malignant neoplasms of female genital organs,block,II: Neoplasms,2238,2538,1.1,NA,1.1,300,11.8,NA
+543,X60-Y36,Other external causes of mortality,block,XX: External causes,3916,4433,1.1,1.1,1.2,517,11.7,0.93
+544,C19,Malignant neoplasm of rectosigmoid junction,code,II: Neoplasms,2212,2503,1.1,1.1,1.1,291,11.6,1.04
+545,C57,Malignant neoplasm of other and unspecified female genital organs,code,II: Neoplasms,100,113,1.1,NA,1.1,13,11.5,NA
+546,C52,Malignant neoplasm of vagina,code,II: Neoplasms,32,36,1.1,NA,1.1,4,11.1,NA
+547,W20,"Struck by thrown, projected or falling object",code,XX: External causes,32,36,1.1,1.1,1.2,4,11.1,0.93
+548,X71,Intentional self-harm by drowning and submersion,code,XX: External causes,56,63,1.1,1.1,1.2,7,11.1,0.85
+549,C40-C41,Malignant neoplasms of bone and articular cartilage,block,II: Neoplasms,105,118,1.1,1.2,1.1,13,11,1.09
+550,X62,"Intentional self-poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified",code,XX: External causes,33,37,1.1,1.1,1.1,4,10.8,1.01
+551,C22,Malignant neoplasm of liver and intrahepatic bile ducts,code,II: Neoplasms,2452,2749,1.1,1.1,1.1,297,10.8,1.06
+552,X61,"Intentional self-poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified",code,XX: External causes,84,94,1.1,1.1,1.2,10,10.6,0.94
+553,C45-C49,Malignant neoplasms of mesothelial and soft tissue,block,II: Neoplasms,1113,1244,1.1,1.1,1.1,131,10.5,1
+554,C17,Malignant neoplasm of small intestine,code,II: Neoplasms,176,196,1.1,1.1,1.1,20,10.2,1
+555,W07,Fall involving chair,code,XX: External causes,53,59,1.1,1.1,1.2,6,10.2,0.92
+556,Y11,"Poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified,",code,XX: External causes,18,20,1.1,1.2,1,2,10,1.17
+557,C41,Malignant neoplasm of bone and articular cartilage of other and unspecified sites,code,II: Neoplasms,100,111,1.1,1.1,1.1,11,9.9,1.06
+558,X41,"Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified",code,XX: External causes,330,365,1.1,1.1,1.1,35,9.6,1.04
+559,C48,Malignant neoplasm of retroperitoneum and peritoneum,code,II: Neoplasms,85,94,1.1,1.2,1.1,9,9.6,1.14
+560,C13,Malignant neoplasm of hypopharynx,code,II: Neoplasms,57,63,1.1,1.1,1,6,9.5,1.14
+561,Q91,Edwards syndrome and Patau syndrome,code,XVII: Congenital,19,21,1.1,1,1.2,2,9.5,0.83
+562,C86,Other specified types of T/NK-cell lymphoma,code,II: Neoplasms,20,22,1.1,1.1,1,2,9.1,1.13
+563,W74,Unspecified drowning and submersion,code,XX: External causes,20,22,1.1,1.1,1.2,2,9.1,0.85
+564,Y33,"Other specified events, undetermined intent",code,XX: External causes,10,11,1.1,1,2,1,9.1,0.5
+565,C15,Malignant neoplasm of oesophagus,code,II: Neoplasms,1438,1577,1.1,1.1,1.1,139,8.8,1
+566,W65-W74,Accidental drowning and submersion,block,XX: External causes,230,252,1.1,1.1,1.1,22,8.7,0.98
+567,C56,Malignant neoplasm of ovary,code,II: Neoplasms,1045,1144,1.1,NA,1.1,99,8.7,NA
+568,G12,Spinal muscular atrophy and related syndromes,code,VI: Nervous system,806,881,1.1,1.1,1.1,75,8.5,1.01
+569,C37,Malignant neoplasm of thymus,code,II: Neoplasms,33,36,1.1,1.2,1,3,8.3,1.19
+570,C23,Malignant neoplasm of gallbladder,code,II: Neoplasms,181,197,1.1,1.1,1.1,16,8.1,0.98
+571,C16,Malignant neoplasm of stomach,code,II: Neoplasms,1202,1306,1.1,1.1,1.1,104,8,1
+572,C47,Malignant neoplasm of peripheral nerves and autonomic nervous system,code,II: Neoplasms,12,13,1.1,1,1.2,1,7.7,0.83
+573,X00-X09,"Exposure to smoke, fire and flames",block,XX: External causes,73,79,1.1,1.1,1.1,6,7.6,0.94
+574,V89,"Motor- or nonmotor-vehicle accident, type of vehicle unspecified",code,XX: External causes,49,53,1.1,1.1,1,4,7.5,1.11
+575,C45,Mesothelioma,code,II: Neoplasms,664,716,1.1,1.1,1.1,52,7.3,1
+576,C94,Other leukaemias of specified cell type,code,II: Neoplasms,13,14,1.1,1.1,1,1,7.1,1.1
+577,X69,Intentional self-poisoning by and exposure to other and unspecified chemicals and noxious substances,code,XX: External causes,13,14,1.1,1.1,1,1,7.1,1.1
+578,W23,"Caught, crushed, jammed or pinched in or between objects",code,XX: External causes,14,15,1.1,1.1,1,1,6.7,1.08
+579,Y26,"Exposure to smoke, fire and flames, undetermined intent",code,XX: External causes,15,16,1.1,1.1,1,1,6.2,1.09
+580,C74,Malignant neoplasm of adrenal gland,code,II: Neoplasms,48,51,1.1,1.1,1,3,5.9,1.03
+581,V04,Pedestrian injured in collision with heavy transport vehicle or bus,code,XX: External causes,16,17,1.1,1.1,1,1,5.9,1.11
+582,W05,Fall involving wheelchair,code,XX: External causes,16,17,1.1,1,1.2,1,5.9,0.86
+583,W13,"Fall from, out of or through building or structure",code,XX: External causes,32,34,1.1,1.1,1,2,5.9,1.06
+584,X60-X84,Intentional self-harm,block,XX: External causes,3305,3508,1.1,1.1,1.1,203,5.8,0.97
+585,V09,Pedestrian injured in other and unspecified transport accidents,code,XX: External causes,33,35,1.1,1,1.2,2,5.7,0.86
+586,Y10-Y34,Event of undetermined intent,block,XX: External causes,330,350,1.1,1.1,1.1,20,5.7,0.98
+587,V29,Motorcycle rider injured in other and unspecified transport accidents,code,XX: External causes,17,18,1.1,1.1,NA,1,5.6,NA
+588,W10,Fall on and from stairs and steps,code,XX: External causes,105,111,1.1,1,1.1,6,5.4,0.92
+589,W11,Fall on and from ladder,code,XX: External causes,35,37,1.1,1.1,1,2,5.4,1.06
+590,Y14,"Poisoning by and exposure to other and unspecified drugs, medicaments and biological substances, undetermined intent",code,XX: External causes,71,75,1.1,1.1,1,4,5.3,1.1
+591,X64,"Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances",code,XX: External causes,268,283,1.1,1.1,1.1,15,5.3,1.01
+592,Y09,Assault by unspecified means,code,XX: External causes,36,38,1.1,1.1,1,2,5.3,1.11
+593,X42,"Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified",code,XX: External causes,239,252,1.1,1.1,1.1,13,5.2,0.99
+594,V10-V19,Pedal cyclist injured in transport accident,block,XX: External causes,38,40,1.1,1,1.3,2,5,0.77
+595,Y04,Assault by bodily force,code,XX: External causes,59,62,1.1,1.1,1,3,4.8,1.01
+596,C25,Malignant neoplasm of pancreas,code,II: Neoplasms,3873,4069,1.1,1.1,1,196,4.8,1.01
+597,C69-C72,"Malignant neoplasms of eye, brain and other parts of central nervous system",block,II: Neoplasms,1744,1832,1.1,1.1,1,88,4.8,1.01
+598,W69,Drowning and submersion while in natural water,code,XX: External causes,119,125,1.1,1.1,1,6,4.8,1.06
+599,W01,"Fall on same level from slipping, tripping and stumbling",code,XX: External causes,298,313,1.1,1,1.1,15,4.8,0.99
+600,W06,Fall involving bed,code,XX: External causes,101,106,1,1,1.1,5,4.7,0.91
+601,V80-V89,Other land transport accidents,block,XX: External causes,126,132,1,1.1,1,6,4.5,1.06
+602,X78,Intentional self-harm by sharp object,code,XX: External causes,126,132,1,1.1,1,6,4.5,1.06
+603,C71,Malignant neoplasm of brain,code,II: Neoplasms,1663,1735,1,1,1,72,4.1,1
+604,C31,Malignant neoplasm of accessory sinuses,code,II: Neoplasms,47,49,1,1,1.1,2,4.1,0.97
+605,Y21,"Drowning and submersion, undetermined intent",code,XX: External causes,26,27,1,1,1.2,1,3.7,0.8
+606,X74,Intentional self-harm by other and unspecified firearm discharge,code,XX: External causes,27,28,1,1,NA,1,3.6,NA
+607,W18,Other fall on same level,code,XX: External causes,171,177,1,1,1,6,3.4,0.98
+608,V47,Car occupant injured in collision with fixed or stationary object,code,XX: External causes,238,246,1,1,1,8,3.3,1.04
+609,X99,Assault by sharp object,code,XX: External causes,97,100,1,1,1.1,3,3,0.96
+610,V40-V49,Car occupant injured in transport accident,block,XX: External causes,630,649,1,1,1,19,2.9,1.02
+611,V43,"Car occupant injured in collision with car, pick-up truck or van",code,XX: External causes,200,206,1,1,1,6,2.9,0.99
+612,V28,Motorcycle rider injured in noncollision transport accident,code,XX: External causes,34,35,1,1,1,1,2.9,1.03
+613,W70,Drowning and submersion following fall into natural water,code,XX: External causes,34,35,1,1,1,1,2.9,1.04
+614,X44,"Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances",code,XX: External causes,795,818,1,1,1,23,2.8,1
+615,V01-V99,Transport accidents,block,XX: External causes,1448,1483,1,1,1,35,2.4,1.01
+616,V60-V69,Occupant of heavy transport vehicle injured in transport accident,block,XX: External causes,47,48,1,1,1,1,2.1,1.02
+617,V48,Car occupant injured in noncollision transport accident,code,XX: External causes,95,97,1,1,1,2,2.1,1.03
+618,X82,Intentional self-harm by crashing of motor vehicle,code,XX: External causes,51,52,1,1,1,1,1.9,1.02
+619,V01-V09,Pedestrian injured in transport accident,block,XX: External causes,222,226,1,1,1,4,1.8,1.01
+620,V44,Car occupant injured in collision with heavy transport vehicle or bus,code,XX: External causes,79,80,1,1,1,1,1.2,1.02
+621,X80,Intentional self-harm by jumping from a high place,code,XX: External causes,177,179,1,1,1,2,1.1,1.01
+622,V20-V29,Motorcycle rider injured in transport accident,block,XX: External causes,292,295,1,1,1,3,1,1.01
+623,X84,Intentional self-harm by unspecified means,code,XX: External causes,103,104,1,1,1,1,1,1.01
+624,V23,"Motorcycle rider injured in collision with car, pick-up truck or van",code,XX: External causes,120,121,1,1,1,1,0.8,1.01
+625,V03,"Pedestrian injured in collision with car, pick-up truck or van",code,XX: External causes,154,155,1,1,1,1,0.6,1.01
+626,X70,"Intentional self-harm by hanging, strangulation and suffocation",code,XX: External causes,1930,1937,1,1,1,7,0.4,1
+627,R95-R99,Ill-defined and unknown causes of mortality,block,XVIII: Symptoms/signs,2138,2141,1,1,1,3,0.1,1
+628,B20,Human immunodeficiency virus [HIV] disease resulting in infectious and parasitic diseases,code,I: Infectious diseases,12,12,1,1,1,0,0,1
+629,Q00,Anencephaly and similar malformations,code,XVII: Congenital,10,10,1,1,1,0,0,1
+630,R95,Sudden infant death syndrome,code,XVIII: Symptoms/signs,15,15,1,1,1,0,0,1
+631,R99,Other ill-defined and unspecified causes of mortality,code,XVIII: Symptoms/signs,2123,2123,1,1,1,0,0,1
+632,V05,Pedestrian injured in collision with railway train or railway vehicle,code,XX: External causes,13,13,1,1,1,0,0,1
+633,V13,"Pedal cyclist injured in collision with car, pick-up truck or van",code,XX: External causes,16,16,1,1,1,0,0,1
+634,V24,Motorcycle rider injured in collision with heavy transport vehicle or bus,code,XX: External causes,16,16,1,1,1,0,0,1
+635,V27,Motorcycle rider injured in collision with fixed or stationary object,code,XX: External causes,90,90,1,1,1,0,0,1
+636,V50-V59,Occupant of pick-up truck or van injured in transport accident,block,XX: External causes,10,10,1,1,1,0,0,1
+637,V64,Occupant of heavy transport vehicle injured in collision with heavy transport vehicle or bus,code,XX: External causes,19,19,1,1,1,0,0,1
+638,V67,Occupant of heavy transport vehicle injured in collision with fixed or stationary object,code,XX: External causes,13,13,1,1,1,0,0,1
+639,V84,Occupant of special vehicle mainly used in agriculture injured in transport accident,code,XX: External causes,21,21,1,1,1,0,0,1
+640,V86,"Occupant of special all-terrain or other motor vehicle designed primarily for off-road use, injured in transport accident",code,XX: External causes,41,41,1,1,1,0,0,1
+641,V90-V94,Water transport accidents,block,XX: External causes,44,44,1,1,1,0,0,1
+642,V90,Accident to watercraft causing drowning and submersion,code,XX: External causes,19,19,1,1,NA,0,0,NA
+643,V92,Water-transport-related drowning and submersion without accident to watercraft,code,XX: External causes,12,12,1,1,1,0,0,1
+644,V95-V97,Air and space transport accidents,block,XX: External causes,31,31,1,1,1,0,0,1
+645,V95,Accident to powered aircraft causing injury to occupant,code,XX: External causes,25,25,1,1,1,0,0,1
+646,W08,Fall involving other furniture,code,XX: External causes,10,10,1,1,1,0,0,1
+647,W15,Fall from cliff,code,XX: External causes,13,13,1,1,1,0,0,1
+648,W24,"Contact with lifting and transmission devices, not elsewhere classified",code,XX: External causes,12,12,1,1,1,0,0,1
+649,W31,Contact with other and unspecified machinery,code,XX: External causes,12,12,1,1,NA,0,0,NA
+650,X00,Exposure to uncontrolled fire in building or structure,code,XX: External causes,59,59,1,1,1,0,0,1
+651,X20-X29,Contact with venomous animals and plants,block,XX: External causes,10,10,1,1,1,0,0,1
+652,X47,Accidental poisoning by and exposure to other gases and vapours,code,XX: External causes,10,10,1,1,1,0,0,1
+653,X68,Intentional self-poisoning by and exposure to pesticides,code,XX: External causes,15,15,1,1,1,0,0,1
+654,X72,Intentional self-harm by handgun discharge,code,XX: External causes,21,21,1,1,1,0,0,1
+655,X73,"Intentional self-harm by rifle, shotgun and larger firearm discharge",code,XX: External causes,114,114,1,1,1,0,0,1
+656,X76,"Intentional self-harm by smoke, fire and flames",code,XX: External causes,42,42,1,1,1,0,0,1
+657,X81,Intentional self-harm by jumping or lying before moving object,code,XX: External causes,91,91,1,1,1,0,0,1
+658,X91,"Assault by hanging, strangulation and suffocation",code,XX: External causes,16,16,1,1,1,0,0,1
+659,X95,Assault by other and unspecified firearm discharge,code,XX: External causes,10,10,1,1,NA,0,0,NA
+660,Y17,"Poisoning by and exposure to other gases and vapours, undetermined intent",code,XX: External causes,10,10,1,1,1,0,0,1
+661,Y30,"Falling, jumping or pushed from a high place, undetermined intent",code,XX: External causes,10,10,1,1,1,0,0,1
+662,Y32,"Crashing of motor vehicle, undetermined intent",code,XX: External causes,28,28,1,1,1,0,0,1
+663,Y34,"Unspecified event, undetermined intent",code,XX: External causes,113,113,1,1,1,0,0,1

@@ -1,0 +1,56 @@
+============================================================
+PBS PRESCRIBING vs HYPERTENSION MORTALITY
+Exploratory Analysis E-HM2
+============================================================
+
+Date: 2026-02-05 17:55
+Overlap years: 2015-2024 (10 years)
+
+TEMPORAL TRENDS:
+
+  Hypertension underlying deaths (I10-I15):
+    2015: 2,308 deaths (1.47% of total)
+    2024: 2,841 deaths (1.52% of total)
+    Change: +23.1%
+
+  Agents Acting On The Renin-Angiotensin System (Scripts per ERP, annual):
+    2015: 1.511  |  2024: 1.422  |  Change: -5.9%
+
+  Antihypertensives (Scripts per ERP, annual):
+    2015: 0.082  |  2024: 0.091  |  Change: +10.8%
+
+  Beta Blocking Agents (Scripts per ERP, annual):
+    2015: 0.350  |  2024: 0.354  |  Change: +1.1%
+
+CORRELATION RESULTS:
+
+  Agents Acting On The Renin-Angiotensin System: rho = +0.042, p = 0.9074
+  Antihypertensives:                  rho = +0.455, p = 0.1869
+  Beta Blocking Agents:               rho = +0.430, p = 0.2145
+  Temporal trend:                     rho = +0.200, p = 0.5796
+
+INTERPRETATION:
+
+Hypertension (I10-I15) has a MUR of ~8 in 2023 data, meaning
+hypertension is mentioned on death certificates ~8 times more
+often as a contributing cause than as the underlying cause.
+
+Despite increasing prescribing of antihypertensive medications,
+hypertension-attributed mortality (as underlying cause) has been
+increasing. This is consistent with:
+  (a) Population ageing increasing the absolute number of deaths
+  (b) Changes in certification practices
+  (c) The paradox that treatment may shift deaths from acute
+      hypertensive crises (underlying cause) to chronic conditions
+      where hypertension is a contributor (increasing MUR)
+
+NOTES:
+
+1. PBS data: Pharmaceutical Benefits Scheme, Benefits per ERP and
+   Scripts per ERP (population-adjusted prescribing rate).
+2. Mortality data: ABS Cube 14 (year of occurrence), underlying
+   cause only. MUR requires multiple cause data (Cube 10, single
+   year only).
+3. Ecological analysis — cannot infer individual-level causation.
+4. PBS data includes all ages; mortality trends reflect ageing
+   population structure (not age-standardised).

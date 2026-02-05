@@ -1,0 +1,89 @@
+cause,unit,underlying_male,underlying_female,underlying_persons,multiple_male,multiple_female,multiple_persons,ratio,mur_male,mur_female,mur_persons,icd_code,data_year
+CHAPTER V Mental and behavioural disorders (F00-F99),no.,4981,7356,12337,24525,22368,46893,3.8,4.923710098373821,3.040783034257749,3.801005106589933,F00-F99,2023
+"Organic, including symptomatic, mental disorders (F00-F09)",no.,4511,7112,11623,11660,15320,26980,2.3,2.5847927288849477,2.154105736782902,2.3212595715391897,F00-F09,2023
+Vascular dementia (F01),no.,979,1113,2092,2300,2351,4651,2.2,2.3493360572012256,2.1123090745732256,2.223231357552581,F01,2023
+Unspecified dementia (F03),no.,3506,5953,9459,8052,11714,19766,2.1,2.2966343411294923,1.9677473542751553,2.0896500687176234,F03,2023
+"Organic amnesic syndrome, not induced by alcohol and other psychoactive substances (F04)",no.,0,0,0,8,0,8,NA,NA,NA,NA,F04,2023
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",no.,19,43,62,1249,1200,2449,39.5,65.73684210526316,27.906976744186046,39.5,F05,2023
+Other mental disorders due to brain damage and dysfunction and to physical disease (F06),no.,6,3,9,35,37,72,8,5.833333333333333,12.333333333333334,8,F06,2023
+"Personality and behavioural disorders due to brain disease, damage and dysfunction (F07)",no.,1,0,1,6,3,9,9,6,NA,9,F07,2023
+Unspecified organic or symptomatic mental disorder (F09),no.,0,0,0,10,15,25,NA,NA,NA,NA,F09,2023
+Mental and behavioural disorders due to psychoactive substance use (F10-F19),no.,394,109,503,7752,2714,10466,20.8,19.6751269035533,24.89908256880734,20.807157057654077,F10-F19,2023
+Mental and behavioural disorders due to use of alcohol (F10),no.,358,92,450,3139,921,4060,9,8.768156424581006,10.01086956521739,9.022222222222222,F10,2023
+Mental and behavioural disorders due to use of opioids (F11),no.,4,1,5,384,134,518,103.6,96,134,103.6,F11,2023
+Mental and behavioural disorders due to use of cannabinoids (F12),no.,0,0,0,502,120,622,NA,NA,NA,NA,F12,2023
+Mental and behavioural disorders due to use of sedatives or hypnotics (F13),no.,2,0,2,101,40,141,70.5,50.5,NA,70.5,F13,2023
+Mental and behavioural disorders due to use of cocaine (F14),no.,0,0,0,91,13,104,NA,NA,NA,NA,F14,2023
+"Mental and behavioural disorders due to use of other stimulants, including caffeine (F15)",no.,12,4,16,846,217,1063,66.4,70.5,54.25,66.4375,F15,2023
+Mental and behavioural disorders due to use of hallucinogens (F16),no.,0,0,0,21,1,22,NA,NA,NA,NA,F16,2023
+Mental and behavioural disorders due to use of tobacco (F17),no.,2,5,7,2138,1089,3227,461,1069,217.8,461,F17,2023
+Mental and behavioural disorders due to use of volatile solvents (F18),no.,0,0,0,18,5,23,NA,NA,NA,NA,F18,2023
+Mental and behavioural disorders due to multiple drug use and use of other psychoactive substances (F19),no.,16,7,23,512,174,686,29.8,32,24.857142857142858,29.82608695652174,F19,2023
+"Schizophrenia, schizotypal and delusional disorders (F20-F29)",no.,31,38,69,900,582,1482,21.5,29.032258064516128,15.31578947368421,21.47826086956522,F20-F29,2023
+Schizophrenia (F20),no.,27,28,55,693,434,1127,20.5,25.666666666666668,15.5,20.490909090909092,F20,2023
+Schizotypal disorder (F21),no.,0,0,0,1,0,1,NA,NA,NA,NA,F21,2023
+Persistent delusional disorders (F22),no.,0,1,1,72,28,100,100,NA,28,100,F22,2023
+Acute and transient psychotic disorders (F23),no.,0,0,0,1,1,2,NA,NA,NA,NA,F23,2023
+Induced delusional disorder (F24),no.,0,0,0,0,0,0,NA,NA,NA,NA,F24,2023
+Schizoaffective disorders (F25),no.,4,7,11,80,82,162,14.7,20,11.714285714285714,14.727272727272727,F25,2023
+Other nonorganic psychotic disorders (F28),no.,0,0,0,0,0,0,NA,NA,NA,NA,F28,2023
+Unspecified nonorganic psychosis (F29),no.,0,2,2,53,37,90,45,NA,18.5,45,F29,2023
+Mood [affective] disorders (F30-F39),no.,31,61,92,2241,2065,4306,46.8,72.29032258064517,33.85245901639344,46.80434782608695,F30-F39,2023
+Manic episode (F30),no.,1,0,1,2,1,3,3,2,NA,3,F30,2023
+Bipolar affective disorder (F31),no.,6,14,20,275,268,543,27.2,45.833333333333336,19.142857142857142,27.15,F31,2023
+Depressive episode (F32),no.,24,47,71,1948,1775,3723,52.4,81.16666666666667,37.765957446808514,52.436619718309856,F32,2023
+Recurrent depressive disorder (F33),no.,0,0,0,0,3,3,NA,NA,NA,NA,F33,2023
+Persistent mood [affective] disorders (F34),no.,0,0,0,4,0,4,NA,NA,NA,NA,F34,2023
+Other mood [affective] disorders (F38),no.,0,0,0,0,3,3,NA,NA,NA,NA,F38,2023
+Unspecified mood [affective] disorder (F39),no.,0,0,0,12,15,27,NA,NA,NA,NA,F39,2023
+"Neurotic, stress-related and somatoform disorders (F40-F48)",no.,5,17,22,1150,1175,2325,105.7,230,69.11764705882354,105.68181818181819,F40-F48,2023
+Phobic anxiety disorders (F40),no.,0,0,0,29,12,41,NA,NA,NA,NA,F40,2023
+Other anxiety disorders (F41),no.,3,16,19,808,931,1739,91.5,269.3333333333333,58.1875,91.52631578947368,F41,2023
+Obsessive-compulsive disorder (F42),no.,0,0,0,27,25,52,NA,NA,NA,NA,F42,2023
+"Reaction to severe stress, and adjustment disorders (F43)",no.,2,1,3,282,194,476,158.7,141,194,158.66666666666666,F43,2023
+Dissociative [conversion] disorders (F44),no.,0,0,0,1,7,8,NA,NA,NA,NA,F44,2023
+Somatoform disorders (F45),no.,0,0,0,3,5,8,NA,NA,NA,NA,F45,2023
+Other neurotic disorders (F48),no.,0,0,0,0,1,1,NA,NA,NA,NA,F48,2023
+Behavioural syndromes associated with physiological disturbances and physical factors (F50-F59),no.,3,12,15,58,80,138,9.2,19.333333333333332,6.666666666666667,9.2,F50-F59,2023
+Eating disorders (F50),no.,2,12,14,12,60,72,5.1,6,5,5.142857142857143,F50,2023
+Nonorganic sleep disorders (F51),no.,0,0,0,25,9,34,NA,NA,NA,NA,F51,2023
+"Sexual dysfunction, not caused by organic disorder or disease (F52)",no.,0,0,0,3,0,3,NA,NA,NA,NA,F52,2023
+"Mental and behavioural disorders associated with the puerperium, not elsewhere classified (F53)",no.,0,0,0,0,6,6,NA,NA,NA,NA,F53,2023
+Psychological and behavioural factors associated with disorders or diseases classified elsewhere (F54),no.,0,0,0,0,0,0,NA,NA,NA,NA,F54,2023
+Abuse of non-dependence-producing substances (F55),no.,1,0,1,17,5,22,22,17,NA,22,F55,2023
+Unspecified behavioural syndromes associated with physiological disturbances and physical factors (F59),no.,0,0,0,1,0,1,NA,NA,NA,NA,F59,2023
+Disorders of adult personality and behaviour (F60-F69),no.,1,0,1,89,108,197,197,89,NA,197,F60-F69,2023
+Specific personality disorders (F60),no.,1,0,1,77,97,174,174,77,NA,174,F60,2023
+Mixed and other personality disorders (F61),no.,0,0,0,1,1,2,NA,NA,NA,NA,F61,2023
+"Enduring personality changes, not attributable to brain damage and disease (F62)",no.,0,0,0,0,1,1,NA,NA,NA,NA,F62,2023
+Habit and impulse disorders (F63),no.,0,0,0,6,3,9,NA,NA,NA,NA,F63,2023
+Gender identity disorders (F64),no.,0,0,0,2,3,5,NA,NA,NA,NA,F64,2023
+Disorders of sexual preference (F65),no.,0,0,0,1,0,1,NA,NA,NA,NA,F65,2023
+Psychological and behavioural disorders associated with sexual development and orientation (F66),no.,0,0,0,2,2,4,NA,NA,NA,NA,F66,2023
+Other disorders of adult personality and behaviour (F68),no.,0,0,0,0,1,1,NA,NA,NA,NA,F68,2023
+Unspecified disorder of adult personality and behaviour (F69),no.,0,0,0,0,0,0,NA,NA,NA,NA,F69,2023
+Mental retardation (F70-F79),no.,4,5,9,149,152,301,33.4,37.25,30.4,33.44444444444444,F70-F79,2023
+Mild mental retardation (F70),no.,0,0,0,0,1,1,NA,NA,NA,NA,F70,2023
+Moderate mental retardation (F71),no.,0,0,0,0,0,0,NA,NA,NA,NA,F71,2023
+Severe mental retardation (F72),no.,0,0,0,1,0,1,NA,NA,NA,NA,F72,2023
+Profound mental retardation (F73),no.,0,0,0,0,0,0,NA,NA,NA,NA,F73,2023
+Other mental retardation (F78),no.,0,0,0,1,0,1,NA,NA,NA,NA,F78,2023
+Unspecified mental retardation (F79),no.,4,5,9,147,151,298,33.1,36.75,30.2,33.111111111111114,F79,2023
+Disorders of psychological development (F80-F89),no.,1,2,3,120,43,163,54.3,120,21.5,54.333333333333336,F80-F89,2023
+Specific developmental disorders of speech and language (F80),no.,0,0,0,3,0,3,NA,NA,NA,NA,F80,2023
+Specific developmental disorders of scholastic skills (F81),no.,0,0,0,3,0,3,NA,NA,NA,NA,F81,2023
+Specific developmental disorder of motor function (F82),no.,0,0,0,1,0,1,NA,NA,NA,NA,F82,2023
+Mixed specific developmental disorders (F83),no.,0,0,0,0,0,0,NA,NA,NA,NA,F83,2023
+Pervasive developmental disorders (F84),no.,0,2,2,97,38,135,67.5,NA,19,67.5,F84,2023
+Other disorders of psychological development (F88),no.,0,0,0,4,1,5,NA,NA,NA,NA,F88,2023
+Unspecified disorder of psychological development (F89),no.,1,0,1,12,4,16,16,12,NA,16,F89,2023
+Behavioural and emotional disorders with onset usually occurring in childhood and adolescence (F90-F98),no.,0,0,0,188,52,240,NA,NA,NA,NA,F90-F98,2023
+Hyperkinetic disorders (F90),no.,0,0,0,173,49,222,NA,NA,NA,NA,F90,2023
+Conduct disorders (F91),no.,0,0,0,7,1,8,NA,NA,NA,NA,F91,2023
+Mixed disorders of conduct and emotions (F92),no.,0,0,0,0,0,0,NA,NA,NA,NA,F92,2023
+Emotional disorders with onset specific to childhood (F93),no.,0,0,0,0,0,0,NA,NA,NA,NA,F93,2023
+Disorders of social functioning with onset specific to childhood and adolescence (F94),no.,0,0,0,0,1,1,NA,NA,NA,NA,F94,2023
+Tic disorders (F95),no.,0,0,0,5,0,5,NA,NA,NA,NA,F95,2023
+Other behavioural and emotional disorders with onset usually occurring in childhood and adolescence (F98),no.,0,0,0,3,1,4,NA,NA,NA,NA,F98,2023
+Unspecified mental disorder (F99-F99),no.,0,0,0,218,77,295,NA,NA,NA,NA,F99-F99,2023
+"Mental disorder, not otherwise specified (F99)",no.,0,0,0,218,77,295,NA,NA,NA,NA,F99,2023

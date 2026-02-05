@@ -1,0 +1,58 @@
+============================================================
+HOSPITAL ACTIVITY vs MORTALITY HIDDEN BURDEN
+Exploratory Analysis E-HM1
+============================================================
+
+Date: 2026-02-05 17:55
+Clinical domains analysed: 12
+Domains excluded: 4 (missing procedure data or deaths)
+
+DOMAIN-LEVEL DATA:
+
+Domain                  Proc Seps    Diag Seps     Deaths    MUR Proc/Death
+------------------------------------------------------------------------ 
+Eye                       971,421      524,367         13   76.5      74725
+Ear                        81,606       78,393         19   15.1       4295
+Blood/immune               96,485      218,553        634    7.8        152
+Musculoskeletal         1,069,361      899,470      1,820    7.2        588
+Genitourinary           2,325,579      568,309      5,002    6.9        465
+Skin                    1,044,415      190,900        780    4.5       1339
+Respiratory               300,089      521,269     17,088    4.3         18
+Cardiovascular            615,696      634,202     42,298    4.1         15
+Digestive               2,479,030    1,211,749      7,958    3.4        312
+Obstetric                 718,903      529,723          5    3.2     143781
+Nervous system            667,611      358,623     12,544    2.2         53
+Neoplasms                 130,728      812,168     52,819    1.5          2
+
+CORRELATION RESULTS:
+
+1. Procedures per death vs MUR (Spearman):
+   rho = 0.510, p = 0.0899
+
+2. Diagnosis seps per death vs MUR (Spearman):
+   rho = 0.573, p = 0.0513
+
+3. Raw procedure volume vs MUR (Spearman):
+   rho = -0.042, p = 0.8970
+
+4. Underlying deaths vs MUR (Spearman):
+   rho = -0.594, p = 0.0415
+
+5. Log(Procs/death) vs Log(MUR) (Pearson):
+   r = 0.618, p = 0.0322
+
+INTERPRETATION:
+
+No significant correlation was found between hospital procedure
+intensity and MUR. This suggests the hidden burden of mortality
+(as measured by MUR) is not systematically related to the level
+of hospital procedural activity within a clinical domain.
+
+NOTES:
+
+1. MUR data from ABS Cube 10 (2023, multiple causes of death).
+2. Hospital separations from AIHW hospital statistics (2022-23).
+3. Analysis is ecological (domain-level), not individual-level.
+4. Small n limits statistical power. Results are exploratory.
+5. Domains without ACHI procedure codes (Mental health, Infectious
+   diseases, Injury/poisoning) are excluded from procedure analyses.

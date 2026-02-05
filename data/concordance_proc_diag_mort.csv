@@ -1,0 +1,17 @@
+clinical_domain,icd10_chapter_pattern,achi_chapter_pattern
+Nervous system,G00.G99,^01 
+Endocrine/metabolic,E00.E89,^02 
+Eye,H00.H59,^03 
+Ear,H60.H95,^04 
+Respiratory,J00.J99,^07 
+Cardiovascular,I00.I99,^08 
+Blood/immune,D50.D89,^09 
+Digestive,K00.K93,^10 
+Genitourinary,N00.N99,^11 
+Musculoskeletal,M00.M99,^15 
+Skin,L00.L99,^16 
+Neoplasms,C00.D48,^17|^18
+Obstetric,O00.O99,^14 
+Mental/behavioural,F00.F99,NA
+Infectious diseases,A00.B99,NA
+Injury/poisoning,S00.T98,NA

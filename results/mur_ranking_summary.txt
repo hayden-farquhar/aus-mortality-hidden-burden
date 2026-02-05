@@ -1,0 +1,214 @@
+============================================================
+FULL MUR RANKING — SUPPLEMENTARY TABLE SUMMARY
+============================================================
+
+Date: 2026-02-05 17:54
+Total rankable conditions: 663
+Minimum underlying deaths threshold: 10
+Conditions with MUR > 10: 71
+Median MUR (all conditions): 2.5
+Mean MUR (all conditions): 6.6
+
+============================================================
+TOP 10 CONDITIONS BY MUR (HIGHEST HIDDEN BURDEN)
+============================================================
+
+   1. Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure [Y83-Y84]
+      MUR = 281.1  |  Underlying: 15  |  Multiple: 4,217  |  Hidden: 99.6%
+      Male MUR: 475.6  |  Female MUR: 183.9  |  Sex ratio: 2.59
+
+   2. Shock, not elsewhere classified               [R57]
+      MUR = 143.4  |  Underlying: 24  |  Multiple: 3,442  |  Hidden: 99.3%
+      Male MUR: 178.0  |  Female MUR: 114.2  |  Sex ratio: 1.56
+
+   3. Symptoms and signs involving the digestive system and abdomen [R10-R19]
+      MUR = 120.2  |  Underlying: 20  |  Multiple: 2,403  |  Hidden: 99.2%
+      Male MUR: 185.3  |  Female MUR: 85.1  |  Sex ratio: 2.18
+
+   4. Neurotic, stress-related and somatoform disorders [F40-F48]
+      MUR = 105.7  |  Underlying: 22  |  Multiple: 2,325  |  Hidden: 99.1%
+      Male MUR: 230.0  |  Female MUR: 69.1  |  Sex ratio: 3.33
+
+   5. Cachexia                                      [R64]
+      MUR = 98.7  |  Underlying: 14  |  Multiple: 1,382  |  Hidden: 99%
+      Male MUR: 183.7  |  Female MUR: 75.5  |  Sex ratio: 2.43
+
+   6. Complications of medical and surgical care    [Y40-Y84]
+      MUR = 94.3  |  Underlying: 68  |  Multiple: 6,413  |  Hidden: 98.9%
+      Male MUR: 106.6  |  Female MUR: 82.1  |  Sex ratio: 1.30
+
+   7. Other anxiety disorders                       [F41]
+      MUR = 91.5  |  Underlying: 19  |  Multiple: 1,739  |  Hidden: 98.9%
+      Male MUR: 269.3  |  Female MUR: 58.2  |  Sex ratio: 4.63
+
+   8. Respiratory failure, not elsewhere classified [J96]
+      MUR = 82.4  |  Underlying: 92  |  Multiple: 7,582  |  Hidden: 98.8%
+      Male MUR: 87.3  |  Female MUR: 77.9  |  Sex ratio: 1.12
+
+   9. Symptoms and signs involving cognition, perception, emotional state and behaviour [R40-R46]
+      MUR = 77.3  |  Underlying: 55  |  Multiple: 4,250  |  Hidden: 98.7%
+      Male MUR: 139.0  |  Female MUR: 49.7  |  Sex ratio: 2.80
+
+  10. Symptoms and signs concerning food and fluid intake [R63]
+      MUR = 75.9  |  Underlying: 23  |  Multiple: 1,746  |  Hidden: 98.7%
+      Male MUR: 90.3  |  Female MUR: 69.6  |  Sex ratio: 1.30
+
+============================================================
+BOTTOM 10 CONDITIONS BY MUR (LOWEST HIDDEN BURDEN)
+============================================================
+
+  654. Intentional self-harm by handgun discharge    [X72]
+       MUR = 1.0  |  Underlying: 21  |  Multiple: 21
+
+  655. Intentional self-harm by rifle, shotgun and larger firearm discharge [X73]
+       MUR = 1.0  |  Underlying: 114  |  Multiple: 114
+
+  656. Intentional self-harm by smoke, fire and flames [X76]
+       MUR = 1.0  |  Underlying: 42  |  Multiple: 42
+
+  657. Intentional self-harm by jumping or lying before moving object [X81]
+       MUR = 1.0  |  Underlying: 91  |  Multiple: 91
+
+  658. Assault by hanging, strangulation and suffocation [X91]
+       MUR = 1.0  |  Underlying: 16  |  Multiple: 16
+
+  659. Assault by other and unspecified firearm discharge [X95]
+       MUR = 1.0  |  Underlying: 10  |  Multiple: 10
+
+  660. Poisoning by and exposure to other gases and vapours, undetermined intent [Y17]
+       MUR = 1.0  |  Underlying: 10  |  Multiple: 10
+
+  661. Falling, jumping or pushed from a high place, undetermined intent [Y30]
+       MUR = 1.0  |  Underlying: 10  |  Multiple: 10
+
+  662. Crashing of motor vehicle, undetermined intent [Y32]
+       MUR = 1.0  |  Underlying: 28  |  Multiple: 28
+
+  663. Unspecified event, undetermined intent        [Y34]
+       MUR = 1.0  |  Underlying: 113  |  Multiple: 113
+
+============================================================
+CHAPTER-LEVEL MUR SUMMARY
+============================================================
+
+  Diseases of the eye and adnexa                          MUR =  76.5
+    Underlying: 13  |  Multiple: 995  |  Hidden: 98.7%
+
+  Diseases of the ear and mastoid process                 MUR =  15.1
+    Underlying: 19  |  Multiple: 287  |  Hidden: 93.4%
+
+  Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified MUR =  13.3
+    Underlying: 3,781  |  Multiple: 50,243  |  Hidden: 92.5%
+
+  Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism MUR =   7.8
+    Underlying: 634  |  Multiple: 4,924  |  Hidden: 87.1%
+
+  Diseases of the musculoskeletal system and connective tissue MUR =   7.2
+    Underlying: 1,820  |  Multiple: 13,080  |  Hidden: 86.1%
+
+  Diseases of the genitourinary system                    MUR =   6.9
+    Underlying: 5,002  |  Multiple: 34,551  |  Hidden: 85.5%
+
+  Certain infectious and parasitic diseases               MUR =   6.6
+    Underlying: 3,108  |  Multiple: 20,367  |  Hidden: 84.7%
+
+  Endocrine, nutritional and metabolic diseases           MUR =   5.1
+    Underlying: 8,514  |  Multiple: 43,299  |  Hidden: 80.3%
+
+  Diseases of the skin and subcutaneous tissue            MUR =   4.5
+    Underlying: 780  |  Multiple: 3,516  |  Hidden: 77.8%
+
+  Diseases of the respiratory system                      MUR =   4.3
+    Underlying: 17,088  |  Multiple: 72,765  |  Hidden: 76.5%
+
+  Diseases of the circulatory system                      MUR =   4.1
+    Underlying: 42,298  |  Multiple: 173,121  |  Hidden: 75.6%
+
+  Mental and behavioural disorders                        MUR =   3.8
+    Underlying: 12,337  |  Multiple: 46,893  |  Hidden: 73.7%
+
+  Diseases of the digestive system                        MUR =   3.4
+    Underlying: 7,958  |  Multiple: 27,440  |  Hidden: 71%
+
+  Pregnancy, childbirth and the puerperium                MUR =   3.2
+    Underlying: 5  |  Multiple: 16  |  Hidden: 68.8%
+
+  Certain conditions originating in the perinatal period  MUR =   3.1
+    Underlying: 566  |  Multiple: 1,728  |  Hidden: 67.2%
+
+  Diseases of the nervous system                          MUR =   2.2
+    Underlying: 12,544  |  Multiple: 27,115  |  Hidden: 53.7%
+
+  Congenital malformations, deformations and chromosomal abnormalities MUR =   2.1
+    Underlying: 650  |  Multiple: 1,333  |  Hidden: 51.2%
+
+  External causes of morbidity and mortality              MUR =   1.9
+    Underlying: 13,307  |  Multiple: 24,664  |  Hidden: 46%
+
+  Neoplasms                                               MUR =   1.5
+    Underlying: 52,819  |  Multiple: 76,987  |  Hidden: 31.4%
+
+============================================================
+SEX-DIVERGENT CONDITIONS (M/F MUR ratio > 2 or < 0.5)
+============================================================
+
+  Intestinal malabsorption                      [K90]
+    MUR M=37.0  F=6.5  Ratio=5.73  (male >> female)
+
+  Other anxiety disorders                       [F41]
+    MUR M=269.3  F=58.2  Ratio=4.63  (male >> female)
+
+  Gastritis and duodenitis                      [K29]
+    MUR M=12.0  F=2.7  Ratio=4.50  (male >> female)
+
+  Thiamine deficiency                           [E51]
+    MUR M=8.0  F=1.8  Ratio=4.36  (male >> female)
+
+  Other dorsopathies                            [M50-M54]
+    MUR M=84.0  F=23.3  Ratio=3.61  (male >> female)
+
+  Neurotic, stress-related and somatoform disorders [F40-F48]
+    MUR M=230.0  F=69.1  Ratio=3.33  (male >> female)
+
+  Other nontoxic goitre                         [E04]
+    MUR M=16.0  F=4.8  Ratio=3.32  (male >> female)
+
+  Behavioural syndromes associated with physiological disturbances and physical factors [F50-F59]
+    MUR M=19.3  F=6.7  Ratio=2.90  (male >> female)
+
+  Symptoms and signs involving cognition, perception, emotional state and behaviour [R40-R46]
+    MUR M=139.0  F=49.7  Ratio=2.80  (male >> female)
+
+  Thyrotoxicosis [hyperthyroidism]              [E05]
+    MUR M=14.5  F=5.5  Ratio=2.62  (male >> female)
+
+  Volume depletion                              [E86]
+    MUR M=17.6  F=6.7  Ratio=2.61  (male >> female)
+
+  Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure [Y83-Y84]
+    MUR M=475.6  F=183.9  Ratio=2.59  (male >> female)
+
+  Cachexia                                      [R64]
+    MUR M=183.7  F=75.5  Ratio=2.43  (male >> female)
+
+  Gout                                          [M10]
+    MUR M=34.6  F=14.3  Ratio=2.42  (male >> female)
+
+  Bipolar affective disorder                    [F31]
+    MUR M=45.8  F=19.1  Ratio=2.39  (male >> female)
+
+============================================================
+NOTES
+============================================================
+
+1. MUR = Multiple cause mentions / Underlying cause deaths.
+   A MUR of 5.0 means the condition appears 5x more often as any
+   cause of death than as the underlying cause.
+
+2. 'Hidden deaths' = multiple mentions - underlying deaths.
+   These represent deaths where the condition contributed but was
+   not selected as the underlying cause.
+
+3. Data source: ABS Cube 10, Causes of Death 2023.
+4. Conditions with < 10 underlying deaths excluded for stability.
+5. Sex ratio > 1 indicates higher relative hidden burden in males.

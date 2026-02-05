@@ -1,0 +1,252 @@
+cause,icd_code,n_states,mean_rate,sd_rate,cv,min_rate,max_rate,total_deaths,rate_type,avoidability,avoidable_group
+Pedestrian injured in transport accident (V01-V09),V01-V09,6,1.5,1.772004514666935,118.133634311129,0.5,5.1,218,crude_rate,preventable,Transport accidents
+"Pedestrian injured in collision with car, pick-up truck or van (V03)",V03,6,1.0333333333333332,1.2110601416389966,117.19936854570936,0.4,3.5,150,crude_rate,preventable,Transport accidents
+Certain disorders involving the immune mechanism (D80-D89),D80-D89,6,0.7666666666666666,0.8066391179868893,105.21379799828992,0.3,2.4,150,crude_rate,non-avoidable,NA
+Car occupant injured in transport accident (V40-V49),V40-V49,8,3.425,3.372048974394394,98.45398465385092,1.3,11.6,630,crude_rate,preventable,Transport accidents
+Other arthrosis (M19),M19,6,0.4965014428694467,0.46753866208686184,94.16662706653996,0.1790086572166803,1.4,95,crude_rate,non-avoidable,NA
+Other disorders of kidney and ureter (N25-N29),N25-N29,6,0.35,0.32710854467592254,93.45958419312073,0.1,1,73,crude_rate,non-avoidable,NA
+Arterial embolism and thrombosis (I74),I74,6,0.34650144286944673,0.3230060680219083,93.21925627409554,0.1790086572166803,1,53,crude_rate,non-avoidable,NA
+Arthrosis (M15-M19),M15-M19,6,0.5780854976375034,0.5342288214021905,92.4134619507764,0.2,1.6,109,crude_rate,non-avoidable,NA
+Other viral diseases  (B25-B34),B25-B34,6,0.8166666666666667,0.7440878084384037,91.11279287000862,0.3,2.3,175,crude_rate,non-avoidable,NA
+"Fall on same level from slipping, tripping and stumbling (W01)",W01,6,1.391768686683892,1.264174511002327,90.83222830759483,0.2,3.5,295,crude_rate,preventable,Accidental falls
+Viral infection of unspecified site (B34),B34,6,0.7666666666666666,0.6772493386240157,88.3368702553064,0.3,2.1,166,crude_rate,non-avoidable,NA
+Chronic rheumatic heart diseases (I05-I09),I05-I09,8,1.6875,1.4807695875552587,87.74930889216348,0.7,5.1,348,crude_rate,treatable,Rheumatic/valvular heart disease
+Noninfective enteritis and colitis (K50-K52),K50-K52,6,0.6333333333333333,0.5428320796219275,85.71032836135697,0.3,1.7,136,crude_rate,non-avoidable,NA
+Non-insulin-dependent diabetes mellitus (E11),E11,8,12.55,10.636728820459794,84.75481131840473,7.3,38.7,3250,ASR,preventable,Diabetes
+Dorsopathies (M40-M54),M40-M54,6,0.6,0.4979959839195493,82.99933065325821,0.3,1.6,136,crude_rate,non-avoidable,NA
+Transport accidents (V01-V99),V01-V99,8,6.9,5.538437118383282,80.26720461425046,3,20.3,1447,crude_rate,preventable,Transport accidents
+Viral infections characterized by skin and mucous membrane lesions (B00-B09),B00-B09,6,0.43703593049833744,0.3369927164323632,77.10869814481883,0.2,1.1,81,crude_rate,non-avoidable,NA
+Rheumatic mitral valve diseases (I05),I05,7,0.6142857142857143,0.459813626840888,74.85338111363292,0.2,1.4,122,crude_rate,treatable,Rheumatic/valvular heart disease
+Atrioventricular and left bundle-branch block (I44),I44,6,0.4037025971650041,0.3019828340071614,74.80329235626218,0.2,1,97,crude_rate,non-avoidable,NA
+"Exposure to smoke, fire and flames (X00-X09)",X00-X09,6,0.40843535335055875,0.3039374302527158,74.41506416116904,0.2,1,73,crude_rate,preventable,"Fire, burns"
+Cholelithiasis (K80),K80,6,0.6,0.43358966777357594,72.26494462892933,0.2,1.4,132,crude_rate,treatable,Cholelithiasis/cholecystitis
+Diverticular disease of intestine (K57),K57,6,1.2666666666666666,0.9092121131323905,71.77990366834662,0.7,3.1,336,crude_rate,non-avoidable,NA
+"Car occupant injured in collision with car, pick-up truck or van (V43)",V43,7,1.042857142857143,0.7480132415430957,71.72729713426943,0.5,2.7,198,crude_rate,preventable,Transport accidents
+Essential (primary) hypertension (I10),I10,8,2.525,1.7547893646491348,69.49660850095583,1.4,6.7,844,crude_rate,preventable,Hypertensive disease
+"Malignant neoplasm of uterus, part unspecified (C55)",C55,6,0.8,0.5513619500836088,68.9202437604511,0.5,1.9,186,crude_rate,non-avoidable,NA
+Duodenal ulcer (K26),K26,6,0.7000000000000001,0.4732863826479693,67.61234037828132,0.3,1.6,158,crude_rate,treatable,Peptic ulcer disease
+Viral infections of the central nervous system  (A80-A89),A80-A89,6,0.3833333333333333,0.2562550812504343,66.84915163054808,0.2,0.9,91,crude_rate,non-avoidable,NA
+Huntington disease (G10),G10,6,0.3947521643041701,0.25578256243133884,64.79573402268913,0.2,0.9,86,crude_rate,non-avoidable,NA
+Diabetes mellitus (E10-E14),E10-E14,8,20.2875,12.7822910421299,63.0057475890568,13.3,51.7,5963,ASR,preventable,Diabetes
+Multiple sclerosis (G35),G35,7,0.8285714285714285,0.5186980037050645,62.60148320578365,0.5,1.9,195,crude_rate,non-avoidable,NA
+Accidental exposure to other and unspecified factors (X58-X59),X58-X59,7,2.7,1.6772994167212165,62.122200619304316,1,4.9,1157,crude_rate,non-avoidable,NA
+Exposure to unspecified factor (X59),X59,7,2.7,1.6772994167212165,62.122200619304316,1,4.9,1153,crude_rate,non-avoidable,NA
+Car occupant injured in collision with fixed or stationary object (V47),V47,7,1.1571428571428573,0.7044078904941911,60.874755968633785,0.6,2.7,236,crude_rate,preventable,Transport accidents
+Hypertensive diseases (I10-I15),I10-I15,8,8.6375,5.173541892580528,59.89628819195981,5.2,20.9,2862,ASR,preventable,Hypertensive disease
+Diaphragmatic hernia (K44),K44,6,0.48333333333333334,0.28577380332470415,59.125614480973276,0.3,0.9,111,crude_rate,treatable,Hernia complications
+Malignant neoplasm of other and unspecified parts of biliary tract (C24),C24,6,0.65,0.3834057902536162,58.98550619286404,0.4,1.4,155,crude_rate,non-avoidable,NA
+Infectious arthropathies (M00-M03),M00-M03,7,0.7857142857142857,0.4634241089562613,58.98125023079689,0.4,1.7,192,crude_rate,non-avoidable,NA
+Pyogenic arthritis (M00),M00,7,0.7857142857142857,0.4634241089562613,58.98125023079689,0.4,1.7,192,crude_rate,non-avoidable,NA
+Other disorders of the skin and subcutaneous tissue (L80-L99),L80-L99,6,0.8166666666666667,0.4792355023020171,58.68189824106332,0.4,1.7,217,crude_rate,non-avoidable,NA
+Other rheumatoid arthritis (M06),M06,7,0.9571428571428572,0.5563486402641868,58.12597734103444,0.5,1.9,250,crude_rate,non-avoidable,NA
+Neoplasm of uncertain or unknown behaviour of oral cavity and digestive organs (D37),D37,6,0.45,0.2588435821108957,57.52079602464348,0.2,0.9,121,crude_rate,non-avoidable,NA
+Hypertensive renal disease (I12),I12,8,1.5375,0.8749489781042745,56.9072506084081,0.8,3.5,411,crude_rate,preventable,Hypertensive disease
+Other diseases of oesophagus (K22),K22,6,0.6666666666666666,0.3669695718539435,55.04543577809153,0.4,1.4,193,crude_rate,non-avoidable,NA
+Inflammatory polyarthropathies (M05-M14),M05-M14,7,1.1714285714285715,0.6395683067879607,54.597294481899084,0.7,2.1,312,crude_rate,non-avoidable,NA
+Other ill-defined and unspecified causes of mortality (R99),R99,8,7.1125,3.876094315526538,54.496932379986475,2,12.6,2122,crude_rate,non-avoidable,NA
+Demyelinating diseases of the central nervous system (G35-G37),G35-G37,7,0.9285714285714286,0.5056820005836531,54.45806160131649,0.5,1.9,205,crude_rate,non-avoidable,NA
+Senility (R54),R54,7,1.8285714285714285,0.992831448793946,54.295469855918924,0.7,3.6,711,crude_rate,non-avoidable,NA
+Malignant neoplasm of other and unspecified parts of tongue (C02),C02,6,0.7666666666666666,0.4131182235954578,53.88498568636406,0.5,1.6,206,crude_rate,preventable,"Lip, oral cavity and pharynx cancer"
+Ill-defined and unknown causes of mortality (R95-R99),R95-R99,8,7.1625,3.8362695793849375,53.56048278373387,2.2,12.6,2137,crude_rate,non-avoidable,NA
+Benign neoplasm of meninges (D32),D32,6,0.5166666666666667,0.2714160398109638,52.532136737605896,0.3,0.9,112,crude_rate,non-avoidable,NA
+Fetus and newborn affected by maternal complications of pregnancy (P01),P01,6,0.5833333333333334,0.30605010483034745,52.46573225663099,0.2,1.1,114,crude_rate,treatable,Complications of perinatal period
+Sequelae and supplementary factors of external cause (Y85-Y98),Y85-Y98,6,0.55,0.2880972058177587,52.381310148683404,0.3,1.1,137,crude_rate,non-avoidable,NA
+Sequelae of external causes of morbidity and mortality (Y85-Y89),Y85-Y89,6,0.55,0.2880972058177587,52.381310148683404,0.3,1.1,137,crude_rate,non-avoidable,NA
+"CHAPTER IV Endocrine, nutritional and metabolic diseases (E00-E90)",E00-E90,8,27.875,14.584703337009342,52.321805693307056,20.4,63.7,8512,ASR,treatable,Thyroid disorders
+"Chromosomal abnormalities, not elsewhere classified (Q90-Q99)",Q90-Q99,6,0.8333333333333333,0.43204937989385733,51.84592558726288,0.6,1.7,188,crude_rate,non-avoidable,NA
+Drowning and submersion while in natural water (W69),W69,6,0.5,0.25298221281347033,50.596442562694065,0.3,1,117,crude_rate,preventable,Accidental drowning
+Malnutrition (E40-E46),E40-E46,6,0.5,0.25298221281347033,50.596442562694065,0.3,1,152,crude_rate,non-avoidable,NA
+Other disorders of arteries and arterioles (I77),I77,6,0.4666666666666667,0.23380903889000246,50.10193690500052,0.3,0.9,128,crude_rate,non-avoidable,NA
+Cerebral palsy and other paralytic syndromes (G80-G83),G80-G83,6,0.8666666666666667,0.42739521132865615,49.314832076383404,0.5,1.7,203,crude_rate,non-avoidable,NA
+Pulmonary embolism (I26),I26,7,1.3714285714285714,0.6750661343263233,49.22357229462774,0.8,2.8,406,crude_rate,non-avoidable,NA
+Diseases of myoneural junction and muscle (G70-G73),G70-G73,6,0.9833333333333333,0.4833908011812664,49.15838656080676,0.6,1.9,249,crude_rate,non-avoidable,NA
+Primary disorders of muscles (G71),G71,6,0.5666666666666667,0.2732520204255893,48.22094478098635,0.3,1,126,crude_rate,non-avoidable,NA
+Hypertensive heart and renal disease (I13),I13,7,1.5142857142857142,0.7244045173533257,47.83803416484226,1,3.1,490,crude_rate,preventable,Hypertensive disease
+Other accidental threats to breathing (W75-W84),W75-W84,8,0.9875,0.46425824094539697,47.01349275396425,0.6,2,255,crude_rate,non-avoidable,NA
+Other pulmonary heart diseases (I27),I27,6,1.6,0.74565407529229,46.60337970576812,1.2,3.1,501,crude_rate,non-avoidable,NA
+Other osteopathies (M86-M90),M86-M90,7,0.8857142857142858,0.40999419275794396,46.28966692428399,0.5,1.6,273,crude_rate,non-avoidable,NA
+"Fetus and newborn affected by complications of placenta, cord and membranes (P02)",P02,6,0.48333333333333334,0.22286019533929038,46.109005932266975,0.3,0.9,92,crude_rate,treatable,Complications of perinatal period
+Vascular disorders of intestine (K55),K55,6,1.5,0.6870225614927067,45.80150409951378,1,2.8,440,crude_rate,non-avoidable,NA
+Mental and behavioural disorders due to psychoactive substance use (F10-F19),F10-F19,7,1.5285714285714287,0.6993193970194299,45.749867094729055,0.5,2.4,498,crude_rate,preventable,Alcohol use disorders
+Bronchiectasis (J47),J47,8,1.3,0.5903993805649093,45.41533696653148,0.7,2.4,420,crude_rate,non-avoidable,NA
+Disorders of bone density and structure (M80-M85),M80-M85,6,0.6333333333333333,0.28751811537130434,45.39759716389016,0.2,1,192,crude_rate,non-avoidable,NA
+Infections of the skin and subcutaneous tissue (L00-L08),L00-L08,7,1.542857142857143,0.6900655593423543,44.726471438856294,1,3,503,crude_rate,non-avoidable,NA
+Mental and behavioural disorders due to use of alcohol (F10),F10,6,1.4666666666666666,0.6531972647421808,44.536177141512326,0.4,2.1,441,crude_rate,preventable,Alcohol use disorders
+Other general symptoms and signs (R68),R68,6,0.95,0.4230839160261236,44.53514905538143,0.3,1.4,356,crude_rate,non-avoidable,NA
+Cellulitis (L03),L03,7,1.2285714285714286,0.5468524655221177,44.51124719366074,0.8,2.4,401,crude_rate,non-avoidable,NA
+Malignant neoplasm of gallbladder (C23),C23,6,0.6333333333333333,0.2804757862395017,44.285650458868695,0.3,1,175,crude_rate,non-avoidable,NA
+CHAPTER XVI Certain conditions originating in the perinatal period (P00-P96),P00-P96,8,2.8375,1.255772386109157,44.256295545697164,1.6,5.1,566,crude_rate,treatable,Complications of perinatal period
+Other acute ischaemic heart diseases (I24),I24,8,1.45,0.6324555320336759,43.617622898874195,0.6,2.4,469,crude_rate,preventable,Ischaemic heart disease
+"CHAPTER XVIII Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified (R00-R99)",R00-R99,8,10.3375,4.506166409963764,43.59048522334958,5.1,16.6,3779,crude_rate,non-avoidable,NA
+Event of undetermined intent (Y10-Y34),Y10-Y34,8,1.325,0.5775564289066728,43.58916444578663,0.7,2.4,330,crude_rate,non-avoidable,NA
+Unspecified kidney failure (N19),N19,6,1.0666666666666667,0.45898438608156017,43.02978619514627,0.5,1.8,482,crude_rate,treatable,Renal failure
+Falls (W00-W19),W00-W19,8,11.037500000000001,4.667191722163187,42.28486271495526,4.7,16.8,4272,crude_rate,preventable,Accidental falls
+Other peripheral vascular diseases (I73),I73,7,1.8,0.7505553499465134,41.69751944147296,1.1,3.3,641,crude_rate,non-avoidable,NA
+Osteomyelitis (M86),M86,7,0.9285714285714286,0.3817254061682111,41.10888989503812,0.6,1.6,259,crude_rate,non-avoidable,NA
+Asthma (J45),J45,7,1.5,0.6164414002968975,41.0960933531265,1,2.8,468,crude_rate,treatable,Asthma
+Cerebral palsy (G80),G80,6,0.6,0.2449489742783178,40.8248290463863,0.4,1,129,crude_rate,non-avoidable,NA
+Heart failure (I50),I50,8,7.3625,2.9061203888149088,39.471923786959714,3.1,12.8,3700,crude_rate,treatable,Heart failure
+Osteopathies and chondropathies (M80-M94),M80-M94,8,1.525,0.6017830648521585,39.46118458046941,0.8,2.6,473,crude_rate,non-avoidable,NA
+"Intentional self-poisoning by and exposure to other and unspecified drugs, medicaments and biological substances (X64)",X64,6,1.0666666666666667,0.4179314138308661,39.181070046643704,0.5,1.6,264,crude_rate,preventable,Suicide
+Other degenerative diseases of basal ganglia (G23),G23,7,1.4857142857142858,0.5814595756329396,39.13670220606324,1,2.7,422,crude_rate,non-avoidable,NA
+"Malignant neoplasms of lip, oral cavity and pharynx  (C00-C14)",C00-C14,8,3.5,1.3648652471424214,38.9961499183549,2.5,6.7,1069,crude_rate,preventable,"Lip, oral cavity and pharynx cancer"
+"Pneumonia, organism unspecified (J18)",J18,8,5.2375,2.033250388628302,38.82100980674563,2,8.7,2558,crude_rate,preventable,Influenza and pneumonia
+Hypertensive heart disease (I11),I11,8,2.875,1.1145146285010605,38.765726208732545,1.6,4.3,1114,crude_rate,preventable,Hypertensive disease
+"Accidental poisoning by and exposure to antiepileptic, sedative-hypnotic, antiparkinsonism and psychotropic drugs, not elsewhere classified (X41)",X41,6,1.5666666666666667,0.6022181221672648,38.43945460642116,1,2.6,328,crude_rate,preventable,Accidental poisoning
+Other gastroenteritis and colitis of infectious and unspecified origin (A09),A09,7,0.9428571428571428,0.359894164336975,38.17059318725492,0.7,1.6,282,crude_rate,non-avoidable,NA
+Malaise and fatigue (R53),R53,6,0.8333333333333334,0.31411250638372656,37.69350076604718,0.4,1.2,328,crude_rate,non-avoidable,NA
+Other inflammatory liver diseases (K75),K75,6,0.5166666666666667,0.19407902170679517,37.56368162067003,0.4,0.9,136,crude_rate,non-avoidable,NA
+Other cerebrovascular diseases (I67),I67,6,1.3,0.48166378315169184,37.051060242437835,0.8,2.1,451,crude_rate,preventable,Cerebrovascular disease
+Other nontraumatic intracranial haemorrhage (I62),I62,8,2.7125,0.9977653603356423,36.783976417903865,1.2,4.1,1095,crude_rate,preventable,Cerebrovascular disease
+"Intentional self-harm by hanging, strangulation and suffocation (X70)",X70,8,8,2.917924898671265,36.47406123339081,4,13.7,1930,ASR,preventable,Suicide
+Unspecified fall (W19),W19,8,8.2375,2.999970237947608,36.41845508889357,3.1,11.1,3403,crude_rate,preventable,Accidental falls
+Other acute lower respiratory infections (J20-J22),J20-J22,6,0.85,0.3082207001484488,36.26125884099398,0.6,1.4,302,crude_rate,non-avoidable,NA
+Other diseases of the respiratory system (J95-J99),J95-J99,7,0.9285714285714286,0.3352326839390103,36.10198134727803,0.4,1.4,335,crude_rate,non-avoidable,NA
+"Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery (P00-P04)",P00-P04,8,1.4125,0.502671434864337,35.587358220484035,0.9,2.3,302,crude_rate,treatable,Complications of perinatal period
+Malignant neoplasm of small intestine (C17),C17,6,0.6,0.20976176963403032,34.96029493900505,0.3,0.9,173,crude_rate,non-avoidable,NA
+Assault (X85-Y09),X85-Y09,7,1.1714285714285715,0.4070801956792859,34.750748411646356,0.8,2,264,crude_rate,preventable,Assault
+Aplastic and other anaemias (D60-D64),D60-D64,6,0.65,0.22583179581272433,34.74335320195759,0.5,1.1,216,crude_rate,non-avoidable,NA
+Arthropathies (M00-M25),M00-M25,8,2.075,0.7206148168652338,34.728424909167884,1.5,3.6,663,crude_rate,non-avoidable,NA
+Benign neoplasms (D10-D36),D10-D36,6,0.5666666666666667,0.196638416050035,34.700896950006175,0.4,0.9,171,crude_rate,non-avoidable,NA
+Motorcycle rider injured in transport accident (V20-V29),V20-V29,8,1.3,0.444007721940573,34.15444014927485,0.6,2,292,crude_rate,preventable,Transport accidents
+Insulin-dependent diabetes mellitus (E10),E10,7,1.4,0.4725815626252608,33.75582590180434,0.7,2.3,414,crude_rate,preventable,Diabetes
+Other diseases of digestive system (K92),K92,7,2.2,0.7393691004272944,33.607686383058834,1.5,3.4,735,crude_rate,non-avoidable,NA
+Myelodysplastic syndromes (D46),D46,7,1.4428571428571428,0.48255273583012953,33.44424901792977,1.1,2.4,537,crude_rate,non-avoidable,NA
+Chronic kidney disease (N18),N18,8,5.5,1.8384776310850237,33.426866019727704,3.5,8.9,2233,ASR,treatable,Renal failure
+Acute renal failure (N17),N17,7,1.2714285714285714,0.42314018840996304,33.28068897606451,0.6,1.9,438,crude_rate,treatable,Renal failure
+CHAPTER I Certain infectious and parasitic diseases (A00-B99),A00-B99,8,8.6125,2.8597889532521203,33.205096699589205,6.5,15.3,3108,ASR,non-avoidable,NA
+Amyloidosis (E85),E85,7,1.3571428571428572,0.4503966505838413,33.18712162196725,1,2.1,428,crude_rate,non-avoidable,NA
+Hernia (K40-K46),K40-K46,7,1.1285714285714286,0.37289089429432176,33.04096531721839,0.7,1.7,353,crude_rate,treatable,Hernia complications
+"Diseases of oesophagus, stomach and duodenum (K20-K31)",K20-K31,7,2.1285714285714286,0.7016986193380691,32.96570694876835,1.5,3.6,669,crude_rate,non-avoidable,NA
+Vascular dementia (F01),F01,8,5.4624999999999995,1.795977648604156,32.87830935659783,3.1,8.6,2091,crude_rate,non-avoidable,NA
+Congenital malformations of the circulatory system (Q20-Q28),Q20-Q28,6,0.6333333333333333,0.2065591117977289,32.6145965996414,0.4,1,162,crude_rate,treatable,Congenital malformations (selected)
+Malignant neoplasm of larynx (C32),C32,6,0.6333333333333333,0.2065591117977289,32.6145965996414,0.4,1,195,crude_rate,non-avoidable,NA
+Other respiratory disorders (J98),J98,7,0.7571428571428571,0.24397501823713333,32.22311561622516,0.4,1.1,243,crude_rate,non-avoidable,NA
+Pneumonitis due to solids and liquids (J69),J69,7,2.9285714285714284,0.9196272536817761,31.401906223280164,1.5,3.8,1324,crude_rate,non-avoidable,NA
+CHAPTER XIV Diseases of the genitourinary system (N00-N99),N00-N99,8,13.1125,4.075164326222231,31.078469599406905,9.5,22.3,4999,ASR,non-avoidable,NA
+Other cardiac arrhythmias (I49),I49,6,0.6333333333333333,0.19663841605003501,31.048170955268688,0.4,1,198,crude_rate,non-avoidable,NA
+Nonrheumatic mitral valve disorders (I34),I34,6,0.8333333333333334,0.25819888974716115,30.983866769659336,0.6,1.2,260,crude_rate,non-avoidable,NA
+Malignant neoplasm of colon (C18),C18,8,3.95,1.220070255588353,30.887854571857034,2,6.2,1427,crude_rate,treatable,Colorectal cancer
+Unspecified diabetes mellitus (E14),E14,8,6.3375,1.9441762853639146,30.677337836116997,4.7,10.8,2289,ASR,preventable,Diabetes
+Malignant neoplasm of cervix uteri (C53),C53,6,0.9833333333333333,0.29944392908634276,30.45192499183147,0.7,1.4,245,crude_rate,treatable,Cervical cancer
+Other disorders of the nervous system (G90-G99),G90-G99,7,1.0857142857142856,0.32877840272018793,30.282221303175206,0.7,1.7,334,crude_rate,non-avoidable,NA
+"CHAPTER XVII Congenital malformations, deformations and chromosomal abnormalities (Q00-Q99)",Q00-Q99,8,2.65,0.8017837257372731,30.25598965046314,1.9,3.9,650,crude_rate,non-avoidable,NA
+Influenza and pneumonia (J09-J18),J09-J18,8,8.1375,2.451202328887368,30.12230204469884,4.7,11.6,3664,crude_rate,preventable,Influenza and pneumonia
+Other diseases of the digestive system (K90-K93),K90-K93,7,2.071428571428571,0.6156684327197709,29.721924338195837,1.5,3.4,747,crude_rate,non-avoidable,NA
+Other and unspecified types of non-Hodgkin lymphoma (C85),C85,7,2.1,0.621825270205921,29.610727152662907,1.1,3,786,crude_rate,non-avoidable,NA
+Other chronic obstructive pulmonary disease (J44),J44,8,21.7625,6.35001406072684,29.17869757944556,14.2,31.8,7594,ASR,preventable,COPD
+Accidental drowning and submersion (W65-W74),W65-W74,6,0.8666666666666667,0.2503331114069145,28.884589777720905,0.5,1.2,224,crude_rate,preventable,Accidental drowning
+"Stroke, not specified as haemorrhage or infarction (I64)",I64,8,7.7,2.2038926600773587,28.621982598407254,2.7,10,3306,crude_rate,preventable,Cerebrovascular disease
+Malignant neoplasm of liver and intrahepatic bile ducts (C22),C22,8,7.075,2.0140577378587166,28.46724717821507,5,11.7,2451,ASR,preventable,Liver cancer
+Other disorders of brain (G93),G93,6,0.6833333333333333,0.19407902170679514,28.40180805465295,0.4,1,201,crude_rate,non-avoidable,NA
+Alzheimer disease (G30),G30,8,14.987499999999999,4.1957248650092795,27.994828123498117,6.7,20.7,5998,crude_rate,non-avoidable,NA
+Episodic and paroxysmal disorders (G40-G47),G40-G47,7,1.5285714285714285,0.42314018840996304,27.682068400651787,1.1,2.4,435,crude_rate,treatable,Epilepsy
+Systemic connective tissue disorders (M30-M36),M30-M36,6,1.1,0.30331501776206204,27.57409252382382,0.7,1.6,352,crude_rate,non-avoidable,NA
+Sequelae of cerebrovascular disease (I69),I69,7,2.0428571428571427,0.5623081683476385,27.52557467435993,1.4,3,790,crude_rate,preventable,Cerebrovascular disease
+Other external causes of mortality (X60-Y36),X60-Y36,8,15.15,4.168590032270246,27.51544575755938,9.3,23.4,3916,ASR,preventable,Suicide
+Other diseases of intestine (K63),K63,6,0.7,0.18973665961010275,27.105237087157537,0.4,1,219,crude_rate,non-avoidable,NA
+Intentional self-harm (X60-X84),X60-X84,8,12.7375,3.4525094393167746,27.10507901328184,7.6,19.3,3305,ASR,preventable,Suicide
+CHAPTER III Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism (D50-D89),D50-D89,7,2,0.5416025603090641,27.0801280154532,1.6,3,631,crude_rate,non-avoidable,NA
+Intestinal infectious diseases  (A00-A09),A00-A09,7,1.2428571428571429,0.33594217189442416,27.02982992253987,1,1.9,413,crude_rate,non-avoidable,NA
+General symptoms and signs (R50-R69),R50-R69,7,3.414285714285714,0.9191092996819827,26.91951923754761,2.3,4.6,1476,crude_rate,non-avoidable,NA
+Malignant neoplasm of corpus uteri (C54),C54,8,1.625,0.4367084676466506,26.874367239793884,1.1,2.4,505,crude_rate,non-avoidable,NA
+Renal failure (N17-N19),N17-N19,8,7.4624999999999995,1.9551671466727778,26.199894762784293,5.1,10.9,3159,ASR,treatable,Renal failure
+"Malignant neoplasm, without specification of site (C80)",C80,8,8.2875,2.164279820831203,26.11499029660577,5.5,11.8,2908,ASR,non-avoidable,NA
+Cardiomyopathy (I42),I42,8,3.1875,0.8322731351116479,26.110529728992876,2.1,4.3,1083,crude_rate,non-avoidable,NA
+"Malignant neoplasms of ill-defined, secondary and unspecified sites (C76-C80)",C76-C80,8,8.7,2.262110266353711,26.001267429353003,5.7,12.4,3062,ASR,non-avoidable,NA
+Other bacterial diseases  (A30-A49),A30-A49,8,4.55,1.164964745021435,25.603620769701873,2.6,5.9,2002,crude_rate,non-avoidable,NA
+Other sepsis (A41),A41,8,3.6,0.9211793682944862,25.58831578595795,2.2,4.9,1618,crude_rate,preventable,Selected invasive infections
+Other diseases of liver (K76),K76,6,0.7333333333333334,0.18618986725025255,25.389527352307162,0.5,0.9,225,crude_rate,non-avoidable,NA
+Chronic lower respiratory diseases (J40-J47),J40-J47,8,26.375,6.67077849387054,25.292051161594465,18.7,36.7,9227,ASR,preventable,COPD
+Unspecified acute lower respiratory infection (J22),J22,6,0.8833333333333333,0.22286019533929038,25.229456076146086,0.6,1.2,291,crude_rate,non-avoidable,NA
+Other diseases of intestines (K55-K64),K55-K64,8,5.6,1.3959124000349836,24.927007143481852,3.9,8.2,2202,crude_rate,non-avoidable,NA
+Intracerebral haemorrhage (I61),I61,8,4.1499999999999995,1.0295630140987,24.80874732767952,3.3,6.3,1348,crude_rate,preventable,Cerebrovascular disease
+Lung diseases due to external agents (J60-J70),J60-J70,7,3.4,0.8386497083606083,24.666167892959066,2.2,4.2,1517,crude_rate,non-avoidable,NA
+Malignant neoplasm of brain (C71),C71,8,4.8,1.1710800875382399,24.397501823713334,2,5.7,1662,crude_rate,non-avoidable,NA
+Lymphoid leukaemia (C91),C91,7,1.4000000000000001,0.3415650255319866,24.397501823713323,1.1,2.1,495,crude_rate,non-avoidable,NA
+Influenza due to other identified influenza virus (J10),J10,8,2.0875,0.502671434864337,24.080068736016145,1.1,2.8,714,crude_rate,preventable,Influenza and pneumonia
+"Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances (X44)",X44,8,2.9,0.6969320524371697,24.03213973921275,2.2,4.2,795,crude_rate,preventable,Accidental poisoning
+CHAPTER XX External causes of morbidity and mortality (V01-Y98),V01-Y98,8,45.275,10.845637701069363,23.955025292257012,30.4,66.3,13305,ASR,preventable,Transport accidents
+Malignant neoplasm of other and ill-defined digestive organs (C26),C26,8,2.7625,0.6610327417868844,23.92878703300939,1.9,4,1089,crude_rate,non-avoidable,NA
+Obesity (E66),E66,8,1.6625,0.39618718519695423,23.83080813214762,1,2.4,460,crude_rate,non-avoidable,NA
+Obesity and other hyperalimentation (E65-E68),E65-E68,8,1.6625,0.39618718519695423,23.83080813214762,1,2.4,461,crude_rate,non-avoidable,NA
+Malignant neoplasm of other and unspecified urinary organs (C68),C68,8,1.7875,0.42573465914816,23.81732358870825,1,2.3,589,crude_rate,non-avoidable,NA
+Mesothelioma (C45),C45,7,2,0.4760952285695234,23.80476142847617,1.4,2.7,660,crude_rate,non-avoidable,NA
+Other malignant neoplasms of skin (C44),C44,8,2.125,0.5007137762377681,23.5630012347185,1.6,3.1,818,crude_rate,non-avoidable,NA
+Cerebral infarction (I63),I63,8,4.2625,0.9956153875869937,23.357545749841492,3.1,6.1,1528,crude_rate,preventable,Cerebrovascular disease
+Malignant neoplasm of rectum (C20),C20,8,2.125,0.4920801328471381,23.156712133982968,1.8,3.3,702,crude_rate,treatable,Colorectal cancer
+"Malignant neoplasm of kidney, except renal pelvis (C64)",C64,8,3.025,0.6943650748294138,22.95421734973269,2.3,4.4,1027,crude_rate,treatable,Kidney cancer
+"Other degenerative diseases of nervous system, not elsewhere classified (G31)",G31,8,2.725,0.6065122775815365,22.257331287395836,2.1,3.8,874,crude_rate,non-avoidable,NA
+Alcoholic liver disease (K70),K70,8,3.95,0.8783100656536798,22.23569786465012,2.9,5.1,1061,crude_rate,non-avoidable,NA
+"Malignant neoplasms of eye, brain and other parts of central nervous system (C69-C72)",C69-C72,8,5.025,1.1067971810589328,22.025814548436472,2.4,5.9,1743,crude_rate,non-avoidable,NA
+Accidental poisoning by and exposure to noxious substances (X40-X49),X40-X49,8,5.5875,1.2264204592459893,21.94935944959265,4,7.3,1534,crude_rate,preventable,Accidental poisoning
+Pulmonary heart disease and diseases of pulmonary circulation (I26-I28),I26-I28,7,2.5428571428571427,0.5533448076836686,21.760750863964496,2,3.6,920,crude_rate,non-avoidable,NA
+Complications and ill-defined descriptions of heart disease (I51),I51,6,1.5833333333333335,0.3430257521916783,21.664784348948103,1.1,2.1,550,crude_rate,treatable,Heart failure
+Unspecified dementia (F03),F03,8,23.6125,5.08089910491103,21.517836336309283,16.1,31.4,9458,ASR,non-avoidable,NA
+Malignant neoplasm of oesophagus (C15),C15,8,3.875,0.832809359080113,21.491854427873882,2.3,5.1,1438,crude_rate,preventable,Oesophageal cancer
+Parkinson disease (G20),G20,8,6.525,1.3915561689808182,21.326531325376525,3.5,8,2599,crude_rate,non-avoidable,NA
+Systemic atrophies primarily affecting the central nervous system (G10-G14),G10-G14,7,3.0428571428571427,0.6399404734221843,21.030907577254883,2.5,4.1,949,crude_rate,non-avoidable,NA
+Malignant neoplasms of mesothelial and soft tissue  (C45-C49),C45-C49,8,2.9375,0.613974173491268,20.901248459277213,2,4,1113,crude_rate,non-avoidable,NA
+Aortic aneurysm and dissection (I71),I71,7,3.314285714285714,0.691444313083301,20.862543929237532,2.2,4.2,1048,ASR,preventable,Aortic aneurysm
+Malignant neoplasm of stomach (C16),C16,7,3.242857142857143,0.6604471789556499,20.366212566914314,2.1,4.2,1197,crude_rate,preventable,Stomach cancer
+CHAPTER XII Diseases of the skin and subcutaneous tissue (L00-L99),L00-L99,7,2.1714285714285713,0.43861253103502684,20.19926129766571,1.7,2.8,777,crude_rate,non-avoidable,NA
+Disorders of lipoprotein metabolism and other lipidaemias (E78),E78,8,2.0375,0.4033343171967535,19.79554931027011,1.5,2.5,722,crude_rate,non-avoidable,NA
+Epilepsy (G40),G40,6,0.8833333333333333,0.17224014243685087,19.49888404945482,0.6,1.1,241,crude_rate,treatable,Epilepsy
+Emphysema (J43),J43,7,2.1285714285714286,0.4111540089159038,19.315960150411588,1.5,2.7,717,crude_rate,preventable,COPD
+Other respiratory diseases principally affecting the interstitium (J80-J84),J80-J84,8,4.4,0.8451542547285165,19.208051243829917,2.7,5.3,1781,crude_rate,non-avoidable,NA
+Chronic ischaemic heart disease (I25),I25,8,29.4125,5.59679436310261,19.0286251189209,21.2,37.6,10243,ASR,preventable,Ischaemic heart disease
+Paralytic ileus and intestinal obstruction without hernia (K56),K56,8,2.6875,0.5111262075065218,19.018649581638023,2.1,3.6,1051,crude_rate,non-avoidable,NA
+"Diseases of arteries, arterioles and capillaries (I70-I79)",I70-I79,8,5.575,1.051189802081432,18.85542245885977,4.3,7.7,2013,crude_rate,non-avoidable,NA
+Malignant neoplasms of male genital organs  (C60-C63),C60-C63,8,10.075,1.8911447780190103,18.770667771900847,6.7,13.3,3898,crude_rate,non-avoidable,NA
+Malignant neoplasm of bladder (C67),C67,8,2.925,0.5391792704790177,18.433479332615992,1.9,3.5,1189,crude_rate,treatable,Bladder cancer
+Malignant neoplasm of prostate (C61),C61,8,9.85,1.7792454259360304,18.063405339452085,6.7,12.9,3834,crude_rate,treatable,Prostate cancer
+Malignant neoplasm of ovary (C56),C56,7,2.8857142857142857,0.5209880722517277,18.05404210773314,1.9,3.6,1042,crude_rate,non-avoidable,NA
+Acute myocardial infarction (I21),I21,8,14.5375,2.6158514046918975,17.993818776900415,9.7,17.6,5540,ASR,preventable,Ischaemic heart disease
+Other Neoplasms (D00-D48),D00-D48,7,3.571428571428571,0.6369570517030844,17.834797447686363,2.3,4.1,1409,crude_rate,non-avoidable,NA
+Nonrheumatic aortic valve disorders (I35),I35,8,3.25,0.5756983337031396,17.713794883173524,2.5,4.4,1236,crude_rate,non-avoidable,NA
+Malignant neoplasms of respiratory and intrathoracic organs  (C30-C39),C30-C39,8,26,4.566336449652891,17.562832498664964,16.8,30.9,9434,ASR,non-avoidable,NA
+CHAPTER XIII Diseases of the musculoskeletal system and connective tissue (M00-M99),M00-M99,8,5.2375,0.9164177151121798,17.497235610733743,4,6.5,1820,crude_rate,non-avoidable,NA
+Ischaemic heart diseases (I20-I25),I20-I25,8,45.4,7.943191154333735,17.49601575844435,31.8,55.4,16271,ASR,preventable,Ischaemic heart disease
+Other external causes of accidental injury (W00-X59),W00-X59,8,22.5,3.9148070560008814,17.399142471115027,17.2,27.1,7731,ASR,preventable,Accidental falls
+Other interstitial pulmonary diseases (J84),J84,8,4.225,0.7343607521414215,17.381319577311753,2.7,4.9,1705,crude_rate,non-avoidable,NA
+Neoplasms of uncertain or unknown behaviour (D37-D48),D37-D48,7,3.057142857142857,0.5287001130355559,17.293928931069587,2.1,3.6,1236,crude_rate,non-avoidable,NA
+Fibrosis and cirrhosis of liver (K74),K74,8,2.7125,0.46732521560777907,17.22857937724531,1.9,3.5,906,crude_rate,non-avoidable,NA
+"Other neoplasms of uncertain or unknown behaviour of lymphoid, haematopoietic and related tissue (D47)",D47,6,0.9,0.15491933384829665,17.213259316477405,0.8,1.2,310,crude_rate,non-avoidable,NA
+Malignant neoplasm of bronchus and lung (C34),C34,8,24.9375,4.290500303827383,17.20501374968374,16.2,29.1,9110,ASR,preventable,Lung cancer
+Other diseases of urinary system (N30-N39),N30-N39,8,2.75,0.4690415759823429,17.056057308448832,2.3,3.8,1188,crude_rate,non-avoidable,NA
+Spinal muscular atrophy and related syndromes (G12),G12,7,2.5,0.42426406871192857,16.970562748477143,2.1,3.2,804,crude_rate,non-avoidable,NA
+COVID-19 (U07.1-U07.2),U07.1-U07.2,8,10.4125,1.7463737940576833,16.771897181826493,7.1,12.7,4025,crude_rate,non-avoidable,NA
+Other disorders of urinary system (N39),N39,8,2.625,0.43670846764665067,16.63651305320574,2.2,3.6,1121,crude_rate,non-avoidable,NA
+Malignant neoplasms of female genital organs  (C51-C58),C51-C58,8,6.325,1.049829918197637,16.598101473480426,4.1,7.6,2238,crude_rate,non-avoidable,NA
+Malignant neoplasm of rectosigmoid junction (C19),C19,8,5.625,0.9238892945431442,16.424698569655895,4.6,7.1,2211,crude_rate,treatable,Colorectal cancer
+Melanoma and other malignant neoplasms of skin  (C43-C44),C43-C44,8,5.9,0.9456668093391637,16.028251005748537,4.9,7.7,2300,crude_rate,preventable,Skin cancer (melanoma)
+Other degenerative diseases of the nervous system (G30-G32),G30-G32,8,18.3875,2.92400776821325,15.902149657176071,14.6,23.1,6872,ASR,non-avoidable,NA
+Myeloid leukaemia (C92),C92,7,3.857142857142857,0.6023762469230861,15.617161957265196,3.1,5,1324,ASR,non-avoidable,NA
+CHAPTER V Mental and behavioural disorders (F00-F99),F00-F99,8,32.0125,4.962556224942372,15.501932760460354,24.1,38.1,12334,ASR,non-avoidable,NA
+Malignant neoplasms of urinary tract  (C64-C68),C64-C68,8,7.6375,1.1636610945018067,15.236151810170954,6.4,9.5,2829,crude_rate,treatable,Kidney cancer
+"Organic, including symptomatic, mental disorders (F00-F09)",F00-F09,8,30.0625,4.567880877856352,15.194614146715516,22.5,35.3,11621,ASR,non-avoidable,NA
+Atrial fibrillation and flutter (I48),I48,8,5.725,0.8464210367356021,14.784646929879514,3.9,6.5,2437,crude_rate,non-avoidable,NA
+CHAPTER X Diseases of the respiratory system (J00-J99),J00-J99,8,44.375,6.240592920548495,14.063307989968438,34.1,53,17082,ASR,non-avoidable,NA
+Malignant melanoma of skin (C43),C43,8,3.875,0.5338539126015656,13.77687516391137,3.2,4.7,1482,crude_rate,preventable,Skin cancer (melanoma)
+CHAPTER IX Diseases of the circulatory system (I00-I99),I00-I99,8,113.9125,15.363076096370056,13.486734200697953,90.4,139.1,42285,ASR,non-avoidable,NA
+Other forms of heart disease (I30-I52),I30-I52,8,25.1625,3.215559271506502,12.779172465003485,19.6,28.2,10392,ASR,non-avoidable,NA
+Multiple myeloma and malignant plasma cell neoplasms (C90),C90,8,3.0375,0.38521793460696646,12.682071921217004,2.7,3.8,1074,crude_rate,non-avoidable,NA
+"Accidental poisoning by and exposure to narcotics and psychodysleptics [hallucinogens], not elsewhere classified (X42)",X42,6,0.9666666666666667,0.12110601416389968,12.528208361782726,0.8,1.1,239,crude_rate,preventable,Accidental poisoning
+Subarachnoid haemorrhage (I60),I60,8,1.925,0.23754698783308412,12.340103264056317,1.6,2.3,619,crude_rate,preventable,Cerebrovascular disease
+Malignant neoplasm of other connective and soft tissue (C49),C49,6,1.0166666666666666,0.1169045194450012,11.498805191311593,0.9,1.2,345,crude_rate,non-avoidable,NA
+Extrapyramidal and movement disorders (G20-G26),G20-G26,8,7.9375,0.8700369450283625,10.961095370436063,6.3,9.1,3056,crude_rate,non-avoidable,NA
+"Disorders of gallbladder, biliary tract and pancreas (K80-K87)",K80-K87,8,2.9625,0.32043497223082784,10.816370370660856,2.6,3.6,1098,crude_rate,treatable,Cholelithiasis/cholecystitis
+CHAPTER XI Diseases of the digestive system (K00-K93),K00-K93,8,22.9875,2.4752705479834494,10.767897979264598,20.2,28.2,7957,ASR,non-avoidable,NA
+Malignant neoplasm of breast  (C50-C50),C50-C50,8,9.1375,0.9605615916892429,10.512301961031387,7.4,10.3,3202,crude_rate,treatable,Breast cancer
+Malignant neoplasm of breast (C50),C50,8,9.1375,0.9605615916892429,10.512301961031387,7.4,10.3,3202,crude_rate,treatable,Breast cancer
+Malignant neoplasms  (C00-C97),C00-C97,8,143.7875,14.835039361496245,10.317335902979218,117.9,162.3,51392,ASR,preventable,"Lip, oral cavity and pharynx cancer"
+CHAPTER II Neoplasms (C00-D48),C00-D48,8,147.125,15.154325172325272,10.300305979490416,119.9,166.4,52805,ASR,preventable,"Lip, oral cavity and pharynx cancer"
+CHAPTER VI Diseases of the nervous system (G00-G99),G00-G99,8,35.05,3.5536701350253983,10.138859158417684,30,40.6,12544,ASR,preventable,Selected invasive infections
+Acute pancreatitis (K85),K85,6,0.7833333333333333,0.07527726527090813,9.609863651605293,0.7,0.9,276,crude_rate,non-avoidable,NA
+Malignant neoplasms of digestive organs  (C15-C26),C15-C26,8,41.5625,3.9723823366553517,9.557611637065508,34.3,46.2,15031,ASR,preventable,Oesophageal cancer
+Metabolic disorders (E70-E90),E70-E90,8,4.2625,0.37008686239082544,8.682389733509101,3.8,4.9,1690,crude_rate,non-avoidable,NA
+Diseases of liver (K70-K77),K70-K77,8,8.225,0.7025463889106744,8.541597433564432,7.3,9.1,2592,ASR,non-avoidable,NA
+Cerebrovascular diseases (I60-I69),I60-I69,8,24.0875,2.0378122021983702,8.460040278976109,21.7,27.4,9143,ASR,preventable,Cerebrovascular disease
+"Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue (C81-C96)",C81-C96,8,14.2125,1.1089731415013753,7.802801347415129,13.4,16.8,5163,ASR,treatable,Hodgkin disease
+Non-follicular lymphoma (C83),C83,8,2.0125,0.15526475085202968,7.71501867587725,1.8,2.3,725,crude_rate,non-avoidable,NA
+Malignant neoplasm of pancreas (C25),C25,8,10.6,0.6187545093630775,5.837306692104505,9.5,11.4,3872,ASR,non-avoidable,NA

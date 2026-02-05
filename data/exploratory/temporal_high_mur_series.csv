@@ -1,0 +1,166 @@
+cause,icd_code,year,sex,deaths,mur_persons
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2014,persons,264,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2015,persons,297,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2016,persons,288,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2017,persons,174,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2018,persons,37,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2019,persons,55,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2020,persons,35,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2021,persons,56,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2022,persons,50,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2023,persons,53,39.5
+"Delirium, not induced by alcohol and other psychoactive substances (F05)",F05,2024,persons,67,39.5
+Mood [affective] disorders (F30-F39),F30-F39,2014,persons,75,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2015,persons,79,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2016,persons,81,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2017,persons,83,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2018,persons,86,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2019,persons,67,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2020,persons,75,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2021,persons,101,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2022,persons,97,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2023,persons,78,46.80434782608695
+Mood [affective] disorders (F30-F39),F30-F39,2024,persons,101,46.80434782608695
+Depressive episode (F32),F32,2014,persons,57,52.436619718309856
+Depressive episode (F32),F32,2015,persons,66,52.436619718309856
+Depressive episode (F32),F32,2016,persons,69,52.436619718309856
+Depressive episode (F32),F32,2017,persons,69,52.436619718309856
+Depressive episode (F32),F32,2018,persons,71,52.436619718309856
+Depressive episode (F32),F32,2019,persons,55,52.436619718309856
+Depressive episode (F32),F32,2020,persons,58,52.436619718309856
+Depressive episode (F32),F32,2021,persons,85,52.436619718309856
+Depressive episode (F32),F32,2022,persons,76,52.436619718309856
+Depressive episode (F32),F32,2023,persons,63,52.436619718309856
+Depressive episode (F32),F32,2024,persons,79,52.436619718309856
+Sleep disorders (G47),G47,2014,persons,32,23.66304347826087
+Sleep disorders (G47),G47,2015,persons,39,23.66304347826087
+Sleep disorders (G47),G47,2016,persons,33,23.66304347826087
+Sleep disorders (G47),G47,2017,persons,46,23.66304347826087
+Sleep disorders (G47),G47,2018,persons,52,23.66304347826087
+Sleep disorders (G47),G47,2019,persons,52,23.66304347826087
+Sleep disorders (G47),G47,2020,persons,44,23.66304347826087
+Sleep disorders (G47),G47,2021,persons,60,23.66304347826087
+Sleep disorders (G47),G47,2022,persons,76,23.66304347826087
+Sleep disorders (G47),G47,2023,persons,85,23.66304347826087
+Sleep disorders (G47),G47,2024,persons,83,23.66304347826087
+Essential (primary) hypertension (I10),I10,2014,persons,579,27.748815165876778
+Essential (primary) hypertension (I10),I10,2015,persons,564,27.748815165876778
+Essential (primary) hypertension (I10),I10,2016,persons,567,27.748815165876778
+Essential (primary) hypertension (I10),I10,2017,persons,608,27.748815165876778
+Essential (primary) hypertension (I10),I10,2018,persons,589,27.748815165876778
+Essential (primary) hypertension (I10),I10,2019,persons,524,27.748815165876778
+Essential (primary) hypertension (I10),I10,2020,persons,558,27.748815165876778
+Essential (primary) hypertension (I10),I10,2021,persons,620,27.748815165876778
+Essential (primary) hypertension (I10),I10,2022,persons,718,27.748815165876778
+Essential (primary) hypertension (I10),I10,2023,persons,799,27.748815165876778
+Essential (primary) hypertension (I10),I10,2024,persons,833,27.748815165876778
+Pulmonary oedema (J81),J81,2014,persons,48,29.933333333333337
+Pulmonary oedema (J81),J81,2015,persons,46,29.933333333333337
+Pulmonary oedema (J81),J81,2016,persons,50,29.933333333333337
+Pulmonary oedema (J81),J81,2017,persons,44,29.933333333333337
+Pulmonary oedema (J81),J81,2018,persons,44,29.933333333333337
+Pulmonary oedema (J81),J81,2019,persons,56,29.933333333333337
+Pulmonary oedema (J81),J81,2020,persons,31,29.933333333333337
+Pulmonary oedema (J81),J81,2021,persons,59,29.933333333333337
+Pulmonary oedema (J81),J81,2022,persons,62,29.933333333333337
+Pulmonary oedema (J81),J81,2023,persons,46,29.933333333333337
+Pulmonary oedema (J81),J81,2024,persons,58,29.933333333333337
+Other diseases of the respiratory system (J95-J99),J95-J99,2014,persons,410,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2015,persons,455,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2016,persons,426,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2017,persons,516,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2018,persons,480,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2019,persons,376,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2020,persons,277,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2021,persons,284,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2022,persons,338,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2023,persons,299,29.16913946587537
+Other diseases of the respiratory system (J95-J99),J95-J99,2024,persons,336,29.16913946587537
+"Respiratory failure, not elsewhere classified (J96)",J96,2014,persons,60,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2015,persons,73,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2016,persons,69,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2017,persons,74,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2018,persons,63,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2019,persons,68,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2020,persons,64,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2021,persons,93,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2022,persons,97,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2023,persons,82,82.41304347826087
+"Respiratory failure, not elsewhere classified (J96)",J96,2024,persons,95,82.41304347826087
+Other arthrosis (M19),M19,2014,persons,121,23.989795918367346
+Other arthrosis (M19),M19,2015,persons,127,23.989795918367346
+Other arthrosis (M19),M19,2016,persons,125,23.989795918367346
+Other arthrosis (M19),M19,2017,persons,122,23.989795918367346
+Other arthrosis (M19),M19,2018,persons,72,23.989795918367346
+Other arthrosis (M19),M19,2019,persons,77,23.989795918367346
+Other arthrosis (M19),M19,2020,persons,73,23.989795918367346
+Other arthrosis (M19),M19,2021,persons,98,23.989795918367346
+Other arthrosis (M19),M19,2022,persons,91,23.989795918367346
+Other arthrosis (M19),M19,2023,persons,99,23.989795918367346
+Other arthrosis (M19),M19,2024,persons,97,23.989795918367346
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2014,persons,61,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2015,persons,57,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2016,persons,58,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2017,persons,63,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2018,persons,51,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2019,persons,49,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2020,persons,52,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2021,persons,43,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2022,persons,49,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2023,persons,43,51.68
+Symptoms and signs involving the circulatory and respiratory systems (R00-R09),R00-R09,2024,persons,82,51.68
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2014,persons,50,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2015,persons,50,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2016,persons,49,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2017,persons,54,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2018,persons,43,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2019,persons,37,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2020,persons,41,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2021,persons,28,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2022,persons,39,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2023,persons,37,40.3968253968254
+Other symptoms and signs involving the circulatory and respiratory systems (R09),R09,2024,persons,70,40.3968253968254
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2014,persons,7,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2015,persons,7,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2016,persons,5,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2017,persons,5,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2018,persons,13,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2019,persons,19,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2020,persons,10,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2021,persons,25,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2022,persons,29,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2023,persons,34,77.27272727272727
+"Symptoms and signs involving cognition, perception, emotional state and behaviour (R40-R46)",R40-R46,2024,persons,52,77.27272727272727
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2014,persons,6,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2015,persons,7,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2016,persons,2,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2017,persons,4,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2018,persons,11,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2019,persons,14,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2020,persons,10,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2021,persons,25,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2022,persons,28,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2023,persons,34,44.236363636363635
+Other symptoms and signs involving cognitive functions and awareness (R41),R41,2024,persons,52,44.236363636363635
+Malaise and fatigue (R53),R53,2014,persons,36,31.44984802431611
+Malaise and fatigue (R53),R53,2015,persons,41,31.44984802431611
+Malaise and fatigue (R53),R53,2016,persons,44,31.44984802431611
+Malaise and fatigue (R53),R53,2017,persons,51,31.44984802431611
+Malaise and fatigue (R53),R53,2018,persons,70,31.44984802431611
+Malaise and fatigue (R53),R53,2019,persons,98,31.44984802431611
+Malaise and fatigue (R53),R53,2020,persons,116,31.44984802431611
+Malaise and fatigue (R53),R53,2021,persons,188,31.44984802431611
+Malaise and fatigue (R53),R53,2022,persons,247,31.44984802431611
+Malaise and fatigue (R53),R53,2023,persons,273,31.44984802431611
+Malaise and fatigue (R53),R53,2024,persons,334,31.44984802431611
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2014,persons,192,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2015,persons,162,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2016,persons,63,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2017,persons,28,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2018,persons,49,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2019,persons,58,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2020,persons,34,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2021,persons,61,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2022,persons,70,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2023,persons,81,94.30882352941175
+Complications of medical and surgical care (Y40-Y84),Y40-Y84,2024,persons,66,94.30882352941175

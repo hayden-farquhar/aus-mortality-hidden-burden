@@ -1,0 +1,430 @@
+cause,icd_code,year,sex,deaths,population,crude_rate_per_100k
+Hypertensive diseases (I10-I15),I10-I15,2014,male,806,23475686,3.433339498577379
+Hypertensive diseases (I10-I15),I10-I15,2014,female,1428,23475686,6.082889334948508
+Hypertensive diseases (I10-I15),I10-I15,2014,persons,2234,23475686,9.516228833525888
+Hypertensive diseases (I10-I15),I10-I15,2015,male,833,23815995,3.497649373876674
+Hypertensive diseases (I10-I15),I10-I15,2015,female,1475,23815995,6.193316718449093
+Hypertensive diseases (I10-I15),I10-I15,2015,persons,2308,23815995,9.690966092325766
+Hypertensive diseases (I10-I15),I10-I15,2016,male,886,24190907,3.6625331989412384
+Hypertensive diseases (I10-I15),I10-I15,2016,female,1359,24190907,5.617813337879394
+Hypertensive diseases (I10-I15),I10-I15,2016,persons,2245,24190907,9.280346536820634
+Hypertensive diseases (I10-I15),I10-I15,2017,male,885,24592588,3.5986452503494144
+Hypertensive diseases (I10-I15),I10-I15,2017,female,1516,24592588,6.164458982519449
+Hypertensive diseases (I10-I15),I10-I15,2017,persons,2401,24592588,9.763104232868862
+Hypertensive diseases (I10-I15),I10-I15,2018,male,835,24963258,3.3449159560823354
+Hypertensive diseases (I10-I15),I10-I15,2018,female,1376,24963258,5.512101024633884
+Hypertensive diseases (I10-I15),I10-I15,2018,persons,2211,24963258,8.85701698071622
+Hypertensive diseases (I10-I15),I10-I15,2019,male,814,25334826,3.212968583245845
+Hypertensive diseases (I10-I15),I10-I15,2019,female,1322,25334826,5.218113595885758
+Hypertensive diseases (I10-I15),I10-I15,2019,persons,2136,25334826,8.431082179131604
+Hypertensive diseases (I10-I15),I10-I15,2020,male,808,25649248,3.150189822329294
+Hypertensive diseases (I10-I15),I10-I15,2020,female,1386,25649248,5.4036671952331705
+Hypertensive diseases (I10-I15),I10-I15,2020,persons,2194,25649248,8.553857017562464
+Hypertensive diseases (I10-I15),I10-I15,2021,male,970,25685412,3.776462686290569
+Hypertensive diseases (I10-I15),I10-I15,2021,female,1475,25685412,5.742559239462462
+Hypertensive diseases (I10-I15),I10-I15,2021,persons,2445,25685412,9.51902192575303
+Hypertensive diseases (I10-I15),I10-I15,2022,male,1016,26018721,3.9048806434413126
+Hypertensive diseases (I10-I15),I10-I15,2022,female,1640,26018721,6.303153794531253
+Hypertensive diseases (I10-I15),I10-I15,2022,persons,2656,26018721,10.208034437972566
+Hypertensive diseases (I10-I15),I10-I15,2023,male,1059,26659922,3.972254682515575
+Hypertensive diseases (I10-I15),I10-I15,2023,female,1641,26659922,6.1553068309802255
+Hypertensive diseases (I10-I15),I10-I15,2023,persons,2700,26659922,10.1275615134958
+Hypertensive diseases (I10-I15),I10-I15,2024,male,1166,27194286,4.287665430892357
+Hypertensive diseases (I10-I15),I10-I15,2024,female,1675,27194286,6.159382158443138
+Hypertensive diseases (I10-I15),I10-I15,2024,persons,2841,27194286,10.447047589335495
+Essential (primary) hypertension (I10),I10,2014,male,196,23475686,0.8349063793066579
+Essential (primary) hypertension (I10),I10,2014,female,383,23475686,1.6314752207880103
+Essential (primary) hypertension (I10),I10,2014,persons,579,23475686,2.466381600094668
+Essential (primary) hypertension (I10),I10,2015,male,170,23815995,0.713805994668709
+Essential (primary) hypertension (I10),I10,2015,female,394,23815995,1.6543503641145374
+Essential (primary) hypertension (I10),I10,2015,persons,564,23815995,2.368156358783246
+Essential (primary) hypertension (I10),I10,2016,male,205,24190907,0.8474258530281648
+Essential (primary) hypertension (I10),I10,2016,female,362,24190907,1.4964300429082713
+Essential (primary) hypertension (I10),I10,2016,persons,567,24190907,2.343855895936436
+Essential (primary) hypertension (I10),I10,2017,male,203,24592588,0.8254519613795831
+Essential (primary) hypertension (I10),I10,2017,female,405,24592588,1.6468376569395626
+Essential (primary) hypertension (I10),I10,2017,persons,608,24592588,2.4722896183191456
+Essential (primary) hypertension (I10),I10,2018,male,196,24963258,0.7851539250205242
+Essential (primary) hypertension (I10),I10,2018,female,393,24963258,1.574313737413602
+Essential (primary) hypertension (I10),I10,2018,persons,589,24963258,2.359467662434126
+Essential (primary) hypertension (I10),I10,2019,male,167,25334826,0.6591716872261132
+Essential (primary) hypertension (I10),I10,2019,female,357,25334826,1.4091274990402538
+Essential (primary) hypertension (I10),I10,2019,persons,524,25334826,2.068299186266367
+Essential (primary) hypertension (I10),I10,2020,male,175,25649248,0.6822812115193396
+Essential (primary) hypertension (I10),I10,2020,female,383,25649248,1.4932211657823262
+Essential (primary) hypertension (I10),I10,2020,persons,558,25649248,2.1755023773016657
+Essential (primary) hypertension (I10),I10,2021,male,213,25685412,0.8292644867833928
+Essential (primary) hypertension (I10),I10,2021,female,407,25685412,1.5845570240415066
+Essential (primary) hypertension (I10),I10,2021,persons,620,25685412,2.4138215108248993
+Essential (primary) hypertension (I10),I10,2022,male,236,26018721,0.9070392045788876
+Essential (primary) hypertension (I10),I10,2022,female,482,26018721,1.8525122737585757
+Essential (primary) hypertension (I10),I10,2022,persons,718,26018721,2.759551478337463
+Essential (primary) hypertension (I10),I10,2023,male,256,26659922,0.9602428694277501
+Essential (primary) hypertension (I10),I10,2023,female,543,26659922,2.0367651488252663
+Essential (primary) hypertension (I10),I10,2023,persons,799,26659922,2.9970080182530165
+Essential (primary) hypertension (I10),I10,2024,male,261,27194286,0.9597604437932292
+Essential (primary) hypertension (I10),I10,2024,female,572,27194286,2.1033830415698356
+Essential (primary) hypertension (I10),I10,2024,persons,833,27194286,3.063143485363065
+Hypertensive heart disease (I11),I11,2014,male,335,23475686,1.4270083523863797
+Hypertensive heart disease (I11),I11,2014,female,597,23475686,2.5430566757452797
+Hypertensive heart disease (I11),I11,2014,persons,932,23475686,3.970065028131659
+Hypertensive heart disease (I11),I11,2015,male,399,23815995,1.6753446580753815
+Hypertensive heart disease (I11),I11,2015,female,659,23815995,2.7670479440392897
+Hypertensive heart disease (I11),I11,2015,persons,1058,23815995,4.442392602114671
+Hypertensive heart disease (I11),I11,2016,male,366,24190907,1.5129651815039429
+Hypertensive heart disease (I11),I11,2016,female,575,24190907,2.376926173127779
+Hypertensive heart disease (I11),I11,2016,persons,941,24190907,3.889891354631722
+Hypertensive heart disease (I11),I11,2017,male,405,24592588,1.6468376569395626
+Hypertensive heart disease (I11),I11,2017,female,631,24592588,2.5658137321700343
+Hypertensive heart disease (I11),I11,2017,persons,1036,24592588,4.212651389109596
+Hypertensive heart disease (I11),I11,2018,male,371,24963258,1.4861842152174207
+Hypertensive heart disease (I11),I11,2018,female,593,24963258,2.375491211924341
+Hypertensive heart disease (I11),I11,2018,persons,964,24963258,3.861675427141762
+Hypertensive heart disease (I11),I11,2019,male,390,25334826,1.5393829821448153
+Hypertensive heart disease (I11),I11,2019,female,546,25334826,2.1551361750027413
+Hypertensive heart disease (I11),I11,2019,persons,936,25334826,3.694519157147557
+Hypertensive heart disease (I11),I11,2020,male,356,25649248,1.3879549217193423
+Hypertensive heart disease (I11),I11,2020,female,556,25649248,2.167704877741445
+Hypertensive heart disease (I11),I11,2020,persons,912,25649248,3.5556597994607877
+Hypertensive heart disease (I11),I11,2021,male,409,25685412,1.5923435450441676
+Hypertensive heart disease (I11),I11,2021,female,593,25685412,2.3087034772889763
+Hypertensive heart disease (I11),I11,2021,persons,1002,25685412,3.901047022333144
+Hypertensive heart disease (I11),I11,2022,male,453,26018721,1.7410540664162546
+Hypertensive heart disease (I11),I11,2022,female,665,26018721,2.5558519959532218
+Hypertensive heart disease (I11),I11,2022,persons,1118,26018721,4.296906062369476
+Hypertensive heart disease (I11),I11,2023,male,435,26659922,1.6316626882854346
+Hypertensive heart disease (I11),I11,2023,female,625,26659922,2.3443429429388427
+Hypertensive heart disease (I11),I11,2023,persons,1060,26659922,3.9760056312242775
+Hypertensive heart disease (I11),I11,2024,male,484,27194286,1.7797856505590917
+Hypertensive heart disease (I11),I11,2024,female,608,27194286,2.2357637924378673
+Hypertensive heart disease (I11),I11,2024,persons,1092,27194286,4.015549442996959
+Hypertensive renal disease (I12),I12,2014,male,152,23475686,0.6474784166051634
+Hypertensive renal disease (I12),I12,2014,female,295,23475686,1.2566192953850208
+Hypertensive renal disease (I12),I12,2014,persons,447,23475686,1.9040977119901843
+Hypertensive renal disease (I12),I12,2015,male,160,23815995,0.6718174067470202
+Hypertensive renal disease (I12),I12,2015,female,246,23815995,1.0329192628735435
+Hypertensive renal disease (I12),I12,2015,persons,406,23815995,1.704736669620564
+Hypertensive renal disease (I12),I12,2016,male,203,24190907,0.839158283730329
+Hypertensive renal disease (I12),I12,2016,female,256,24190907,1.0582488701229764
+Hypertensive renal disease (I12),I12,2016,persons,459,24190907,1.8974071538533055
+Hypertensive renal disease (I12),I12,2017,male,161,24592588,0.6546687969562212
+Hypertensive renal disease (I12),I12,2017,female,274,24592588,1.114156834571457
+Hypertensive renal disease (I12),I12,2017,persons,435,24592588,1.768825631527678
+Hypertensive renal disease (I12),I12,2018,male,156,24963258,0.6249184301183763
+Hypertensive renal disease (I12),I12,2018,female,204,24963258,0.8172010240009536
+Hypertensive renal disease (I12),I12,2018,persons,360,24963258,1.44211945411933
+Hypertensive renal disease (I12),I12,2019,male,124,25334826,0.4894448456050181
+Hypertensive renal disease (I12),I12,2019,female,241,25334826,0.9512597402484628
+Hypertensive renal disease (I12),I12,2019,persons,365,25334826,1.4407045858534808
+Hypertensive renal disease (I12),I12,2020,male,137,25649248,0.5341287198751402
+Hypertensive renal disease (I12),I12,2020,female,227,25649248,0.8850162000850863
+Hypertensive renal disease (I12),I12,2020,persons,364,25649248,1.4191449199602266
+Hypertensive renal disease (I12),I12,2021,male,169,25685412,0.6579610247248516
+Hypertensive renal disease (I12),I12,2021,female,250,25685412,0.9733151253326208
+Hypertensive renal disease (I12),I12,2021,persons,419,25685412,1.6312761500574724
+Hypertensive renal disease (I12),I12,2022,male,157,26018721,0.603411674232565
+Hypertensive renal disease (I12),I12,2022,female,253,26018721,0.9723767744002482
+Hypertensive renal disease (I12),I12,2022,persons,410,26018721,1.5757884486328133
+Hypertensive renal disease (I12),I12,2023,male,165,26659922,0.6189065369358545
+Hypertensive renal disease (I12),I12,2023,female,241,26659922,0.9039786387972177
+Hypertensive renal disease (I12),I12,2023,persons,406,26659922,1.5228851757330724
+Hypertensive renal disease (I12),I12,2024,male,162,27194286,0.5957133789061423
+Hypertensive renal disease (I12),I12,2024,female,254,27194286,0.9340197422355564
+Hypertensive renal disease (I12),I12,2024,persons,416,27194286,1.5297331211416987
+Hypertensive heart and renal disease (I13),I13,2014,male,123,23475686,0.5239463502791782
+Hypertensive heart and renal disease (I13),I13,2014,female,153,23475686,0.6517381430301973
+Hypertensive heart and renal disease (I13),I13,2014,persons,276,23475686,1.1756844933093755
+Hypertensive heart and renal disease (I13),I13,2015,male,104,23815995,0.4366813143855631
+Hypertensive heart and renal disease (I13),I13,2015,female,176,23815995,0.7389991474217222
+Hypertensive heart and renal disease (I13),I13,2015,persons,280,23815995,1.1756804618072854
+Hypertensive heart and renal disease (I13),I13,2016,male,111,24190907,0.4588500960298843
+Hypertensive heart and renal disease (I13),I13,2016,female,166,24190907,0.6862082517203675
+Hypertensive heart and renal disease (I13),I13,2016,persons,277,24190907,1.1450583477502518
+Hypertensive heart and renal disease (I13),I13,2017,male,116,24592588,0.47168683507404746
+Hypertensive heart and renal disease (I13),I13,2017,female,206,24592588,0.8376507588383947
+Hypertensive heart and renal disease (I13),I13,2017,persons,322,24592588,1.3093375939124423
+Hypertensive heart and renal disease (I13),I13,2018,male,112,24963258,0.44865938572601377
+Hypertensive heart and renal disease (I13),I13,2018,female,186,24963258,0.7450950512949872
+Hypertensive heart and renal disease (I13),I13,2018,persons,298,24963258,1.1937544370210011
+Hypertensive heart and renal disease (I13),I13,2019,male,133,25334826,0.5249690682698985
+Hypertensive heart and renal disease (I13),I13,2019,female,178,25334826,0.7025901815943003
+Hypertensive heart and renal disease (I13),I13,2019,persons,311,25334826,1.227559249864199
+Hypertensive heart and renal disease (I13),I13,2020,male,140,25649248,0.5458249692154717
+Hypertensive heart and renal disease (I13),I13,2020,female,220,25649248,0.8577249516243127
+Hypertensive heart and renal disease (I13),I13,2020,persons,360,25649248,1.4035499208397844
+Hypertensive heart and renal disease (I13),I13,2021,male,179,25685412,0.6968936297381564
+Hypertensive heart and renal disease (I13),I13,2021,female,225,25685412,0.8759836127993585
+Hypertensive heart and renal disease (I13),I13,2021,persons,404,25685412,1.572877242537515
+Hypertensive heart and renal disease (I13),I13,2022,male,170,26018721,0.6533756982136054
+Hypertensive heart and renal disease (I13),I13,2022,female,240,26018721,0.9224127504192079
+Hypertensive heart and renal disease (I13),I13,2022,persons,410,26018721,1.5757884486328133
+Hypertensive heart and renal disease (I13),I13,2023,male,203,26659922,0.7614425878665362
+Hypertensive heart and renal disease (I13),I13,2023,female,231,26659922,0.8664691517101963
+Hypertensive heart and renal disease (I13),I13,2023,persons,434,26659922,1.6279117395767324
+Hypertensive heart and renal disease (I13),I13,2024,male,259,27194286,0.9524059576338941
+Hypertensive heart and renal disease (I13),I13,2024,female,241,27194286,0.8862155821998783
+Hypertensive heart and renal disease (I13),I13,2024,persons,500,27194286,1.8386215398337726
+Secondary hypertension (I15),I15,2014,male,0,23475686,0
+Secondary hypertension (I15),I15,2014,female,0,23475686,0
+Secondary hypertension (I15),I15,2014,persons,0,23475686,0
+Secondary hypertension (I15),I15,2015,male,0,23815995,0
+Secondary hypertension (I15),I15,2015,female,0,23815995,0
+Secondary hypertension (I15),I15,2015,persons,0,23815995,0
+Secondary hypertension (I15),I15,2016,male,1,24190907,0.004133784648917877
+Secondary hypertension (I15),I15,2016,female,0,24190907,0
+Secondary hypertension (I15),I15,2016,persons,1,24190907,0.004133784648917877
+Secondary hypertension (I15),I15,2017,male,0,24592588,0
+Secondary hypertension (I15),I15,2017,female,0,24592588,0
+Secondary hypertension (I15),I15,2017,persons,0,24592588,0
+Secondary hypertension (I15),I15,2018,male,0,24963258,0
+Secondary hypertension (I15),I15,2018,female,0,24963258,0
+Secondary hypertension (I15),I15,2018,persons,0,24963258,0
+Secondary hypertension (I15),I15,2019,male,0,25334826,0
+Secondary hypertension (I15),I15,2019,female,0,25334826,0
+Secondary hypertension (I15),I15,2019,persons,0,25334826,0
+Secondary hypertension (I15),I15,2020,male,0,25649248,0
+Secondary hypertension (I15),I15,2020,female,0,25649248,0
+Secondary hypertension (I15),I15,2020,persons,0,25649248,0
+Secondary hypertension (I15),I15,2021,male,0,25685412,0
+Secondary hypertension (I15),I15,2021,female,0,25685412,0
+Secondary hypertension (I15),I15,2021,persons,0,25685412,0
+Secondary hypertension (I15),I15,2022,male,0,26018721,0
+Secondary hypertension (I15),I15,2022,female,0,26018721,0
+Secondary hypertension (I15),I15,2022,persons,0,26018721,0
+Secondary hypertension (I15),I15,2023,male,0,26659922,0
+Secondary hypertension (I15),I15,2023,female,1,26659922,0.0037509487087021487
+Secondary hypertension (I15),I15,2023,persons,1,26659922,0.0037509487087021487
+Secondary hypertension (I15),I15,2024,male,0,27194286,0
+Secondary hypertension (I15),I15,2024,female,0,27194286,0
+Secondary hypertension (I15),I15,2024,persons,0,27194286,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2014,male,0,23475686,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2014,female,0,23475686,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2014,persons,0,23475686,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2015,male,0,23815995,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2015,female,0,23815995,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2015,persons,0,23815995,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2016,male,0,24190907,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2016,female,3,24190907,0.012401353946753629
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2016,persons,3,24190907,0.012401353946753629
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2017,male,0,24592588,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2017,female,0,24592588,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2017,persons,0,24592588,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2018,male,0,24963258,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2018,female,1,24963258,0.004005887372553695
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2018,persons,1,24963258,0.004005887372553695
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2019,male,0,25334826,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2019,female,2,25334826,0.007894271703306746
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2019,persons,2,25334826,0.007894271703306746
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2020,male,0,25649248,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2020,female,1,25649248,0.0038987497801105126
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2020,persons,1,25649248,0.0038987497801105126
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2021,male,0,25685412,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2021,female,1,25685412,0.0038932605013304827
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2021,persons,1,25685412,0.0038932605013304827
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2022,male,0,26018721,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2022,female,1,26018721,0.0038433864600800325
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2022,persons,1,26018721,0.0038433864600800325
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2023,male,0,26659922,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2023,female,3,26659922,0.011252846126106445
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2023,persons,3,26659922,0.011252846126106445
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2024,male,0,27194286,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2024,female,0,27194286,0
+"Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium (O10-O16)",O10-O16,2024,persons,0,27194286,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2014,male,0,23475686,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2014,female,0,23475686,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2014,persons,0,23475686,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2015,male,0,23815995,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2015,female,0,23815995,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2015,persons,0,23815995,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2016,male,0,24190907,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2016,female,0,24190907,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2016,persons,0,24190907,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2017,male,0,24592588,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2017,female,0,24592588,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2017,persons,0,24592588,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2018,male,0,24963258,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2018,female,0,24963258,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2018,persons,0,24963258,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2019,male,0,25334826,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2019,female,0,25334826,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2019,persons,0,25334826,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2020,male,0,25649248,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2020,female,0,25649248,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2020,persons,0,25649248,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2021,male,0,25685412,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2021,female,0,25685412,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2021,persons,0,25685412,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2022,male,0,26018721,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2022,female,0,26018721,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2022,persons,0,26018721,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2023,male,0,26659922,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2023,female,1,26659922,0.0037509487087021487
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2023,persons,1,26659922,0.0037509487087021487
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2024,male,0,27194286,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2024,female,0,27194286,0
+"Pre-existing hypertension complicating pregnancy, childbirth and the puerperium (O10)",O10,2024,persons,0,27194286,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2014,male,0,23475686,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2014,female,0,23475686,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2014,persons,0,23475686,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2015,male,0,23815995,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2015,female,0,23815995,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2015,persons,0,23815995,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2016,male,0,24190907,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2016,female,0,24190907,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2016,persons,0,24190907,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2017,male,0,24592588,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2017,female,0,24592588,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2017,persons,0,24592588,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2018,male,0,24963258,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2018,female,0,24963258,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2018,persons,0,24963258,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2019,male,0,25334826,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2019,female,0,25334826,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2019,persons,0,25334826,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2020,male,0,25649248,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2020,female,0,25649248,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2020,persons,0,25649248,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2021,male,0,25685412,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2021,female,0,25685412,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2021,persons,0,25685412,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2022,male,0,26018721,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2022,female,0,26018721,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2022,persons,0,26018721,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2023,male,0,26659922,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2023,female,0,26659922,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2023,persons,0,26659922,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2024,male,0,27194286,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2024,female,0,27194286,0
+Pre-existing hypertensive disorder with superimposed proteinuria (O11),O11,2024,persons,0,27194286,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2014,male,0,23475686,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2014,female,0,23475686,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2014,persons,0,23475686,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2015,male,0,23815995,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2015,female,0,23815995,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2015,persons,0,23815995,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2016,male,0,24190907,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2016,female,0,24190907,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2016,persons,0,24190907,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2017,male,0,24592588,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2017,female,0,24592588,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2017,persons,0,24592588,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2018,male,0,24963258,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2018,female,0,24963258,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2018,persons,0,24963258,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2019,male,0,25334826,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2019,female,0,25334826,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2019,persons,0,25334826,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2020,male,0,25649248,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2020,female,0,25649248,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2020,persons,0,25649248,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2021,male,0,25685412,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2021,female,0,25685412,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2021,persons,0,25685412,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2022,male,0,26018721,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2022,female,0,26018721,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2022,persons,0,26018721,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2023,male,0,26659922,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2023,female,0,26659922,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2023,persons,0,26659922,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2024,male,0,27194286,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2024,female,0,27194286,0
+Gestational [pregnancy-induced] oedema and proteinuria without hypertension (O12),O12,2024,persons,0,27194286,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2014,male,0,23475686,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2014,female,0,23475686,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2014,persons,0,23475686,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2015,male,0,23815995,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2015,female,0,23815995,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2015,persons,0,23815995,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2016,male,0,24190907,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2016,female,0,24190907,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2016,persons,0,24190907,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2017,male,0,24592588,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2017,female,0,24592588,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2017,persons,0,24592588,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2018,male,0,24963258,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2018,female,0,24963258,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2018,persons,0,24963258,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2019,male,0,25334826,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2019,female,2,25334826,0.007894271703306746
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2019,persons,2,25334826,0.007894271703306746
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2020,male,0,25649248,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2020,female,0,25649248,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2020,persons,0,25649248,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2021,male,0,25685412,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2021,female,0,25685412,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2021,persons,0,25685412,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2022,male,0,26018721,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2022,female,0,26018721,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2022,persons,0,26018721,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2023,male,0,26659922,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2023,female,0,26659922,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2023,persons,0,26659922,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2024,male,0,27194286,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2024,female,0,27194286,0
+Gestational [pregnancy-induced] hypertension without significant proteinuria (O13),O13,2024,persons,0,27194286,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2014,male,0,23475686,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2014,female,0,23475686,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2014,persons,0,23475686,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2015,male,0,23815995,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2015,female,0,23815995,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2015,persons,0,23815995,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2016,male,0,24190907,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2016,female,2,24190907,0.008267569297835753
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2016,persons,2,24190907,0.008267569297835753
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2017,male,0,24592588,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2017,female,0,24592588,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2017,persons,0,24592588,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2018,male,0,24963258,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2018,female,1,24963258,0.004005887372553695
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2018,persons,1,24963258,0.004005887372553695
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2019,male,0,25334826,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2019,female,0,25334826,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2019,persons,0,25334826,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2020,male,0,25649248,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2020,female,0,25649248,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2020,persons,0,25649248,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2021,male,0,25685412,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2021,female,1,25685412,0.0038932605013304827
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2021,persons,1,25685412,0.0038932605013304827
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2022,male,0,26018721,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2022,female,0,26018721,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2022,persons,0,26018721,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2023,male,0,26659922,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2023,female,2,26659922,0.007501897417404297
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2023,persons,2,26659922,0.007501897417404297
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2024,male,0,27194286,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2024,female,0,27194286,0
+Gestational [pregnancy-induced] hypertension with significant proteinuria (O14),O14,2024,persons,0,27194286,0
+Unspecified maternal hypertension (O16),O16,2014,male,0,23475686,0
+Unspecified maternal hypertension (O16),O16,2014,female,0,23475686,0
+Unspecified maternal hypertension (O16),O16,2014,persons,0,23475686,0
+Unspecified maternal hypertension (O16),O16,2015,male,0,23815995,0
+Unspecified maternal hypertension (O16),O16,2015,female,0,23815995,0
+Unspecified maternal hypertension (O16),O16,2015,persons,0,23815995,0
+Unspecified maternal hypertension (O16),O16,2016,male,0,24190907,0
+Unspecified maternal hypertension (O16),O16,2016,female,0,24190907,0
+Unspecified maternal hypertension (O16),O16,2016,persons,0,24190907,0
+Unspecified maternal hypertension (O16),O16,2017,male,0,24592588,0
+Unspecified maternal hypertension (O16),O16,2017,female,0,24592588,0
+Unspecified maternal hypertension (O16),O16,2017,persons,0,24592588,0
+Unspecified maternal hypertension (O16),O16,2018,male,0,24963258,0
+Unspecified maternal hypertension (O16),O16,2018,female,0,24963258,0
+Unspecified maternal hypertension (O16),O16,2018,persons,0,24963258,0
+Unspecified maternal hypertension (O16),O16,2019,male,0,25334826,0
+Unspecified maternal hypertension (O16),O16,2019,female,0,25334826,0
+Unspecified maternal hypertension (O16),O16,2019,persons,0,25334826,0
+Unspecified maternal hypertension (O16),O16,2020,male,0,25649248,0
+Unspecified maternal hypertension (O16),O16,2020,female,0,25649248,0
+Unspecified maternal hypertension (O16),O16,2020,persons,0,25649248,0
+Unspecified maternal hypertension (O16),O16,2021,male,0,25685412,0
+Unspecified maternal hypertension (O16),O16,2021,female,0,25685412,0
+Unspecified maternal hypertension (O16),O16,2021,persons,0,25685412,0
+Unspecified maternal hypertension (O16),O16,2022,male,0,26018721,0
+Unspecified maternal hypertension (O16),O16,2022,female,0,26018721,0
+Unspecified maternal hypertension (O16),O16,2022,persons,0,26018721,0
+Unspecified maternal hypertension (O16),O16,2023,male,0,26659922,0
+Unspecified maternal hypertension (O16),O16,2023,female,0,26659922,0
+Unspecified maternal hypertension (O16),O16,2023,persons,0,26659922,0
+Unspecified maternal hypertension (O16),O16,2024,male,0,27194286,0
+Unspecified maternal hypertension (O16),O16,2024,female,0,27194286,0
+Unspecified maternal hypertension (O16),O16,2024,persons,0,27194286,0

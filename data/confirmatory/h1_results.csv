@@ -1,0 +1,6 @@
+hypothesis,test,test_type,statistic_name,statistic_value,p_value_uncorrected,ci_lower,ci_upper,ci_method,effect_size_r,n,significant_uncorrected,deviation_note
+H1a,Wilcoxon signed-rank (exact),primary,V,1.8257418583505538,0.125,NA,NA,NA,0.7670602721762729,4,FALSE,Adapted: n=4 sub-conditions (not n=17 years as pre-registered)
+H1a,Exact binomial sign test,supplementary,n_positive,4,0.125,NA,NA,NA,NA,4,FALSE,Supplementary test for small n
+H1a,Bootstrap CI,supplementary,mean_diff,5.487927639404179,NA,0.23772816952868098,15.709385478851578,BCa,NA,4,NA,NA
+H1a,Permutation test,contingency,observed_mean_diff,5.487927639404179,0.1236,NA,NA,NA,NA,4,FALSE,NA
+H1b,Spearman correlation,secondary,rho,0.7090909090909091,0.014552051953727723,NA,NA,NA,0.7090909090909091,11,TRUE,Uses crude death rates (not MUR) due to data availability

@@ -1,0 +1,45 @@
+============================================================
+CONFIRMATORY HYPOTHESIS 4: Geographic Variation x
+Preventability -- Full Results
+============================================================
+
+Date: 2026-02-05 16:58 
+Pre-registration: OSF [insert DOI]
+
+DATA SUMMARY:
+  Total conditions: 251 
+  Potentially avoidable: 100 (preventable: 67 , treatable: 33 )
+  Non-avoidable: 151 
+
+DEVIATION FROM PRE-REGISTRATION:
+  CVs use ASRs where ABS published them (n_states = 8),
+  crude rates where ASRs were suppressed for small jurisdictions.
+  Rate type recorded per condition in rate_type column.
+
+H4a PRIMARY: Mann-Whitney U
+  Z: -0.162 
+  U: 7459 
+  p-value: 0.87162 
+  Rank-biserial r: 0.012 
+  Median CV avoidable: 30.8 %
+  Median CV non-avoidable: 31.1 %
+
+H4a SUPPLEMENTARY: Permutation test
+  Observed median difference: -0.3 
+  p-value: 0.9056 
+
+H4b SECONDARY: Preventable vs Treatable
+  U: 1135 
+  p-value: 0.83165 
+  Rank-biserial r: -0.027 
+  Median CV preventable: 30.1 %
+  Median CV treatable: 32.6 %
+
+SENSITIVITY: Excluding NT and ACT
+  H4a p-value: 0.872319 
+  Rank-biserial r: 0.012 
+  H4b p-value: 0.83165 
+
+NOTE: p-values are UNCORRECTED. Apply Holm-Bonferroni correction
+across all confirmatory tests using Script 16 before interpreting
+significance.
