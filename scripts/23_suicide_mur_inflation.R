@@ -201,9 +201,9 @@ for (pct in c(0.30, 0.40, 0.50, 0.60, 0.70)) {
   ))
 }
 
-cat("\nNote: Observed MUR ratio is %.2f; counterfactual ranges from %.2f to %.2f\n",
+cat(sprintf("\nNote: Observed MUR ratio is %.2f; counterfactual ranges from %.2f to %.2f\n",
     mental$mur_male / mental$mur_female,
-    max(sensitivity_results$ratio), min(sensitivity_results$ratio))
+    max(sensitivity_results$ratio), min(sensitivity_results$ratio)))
 
 # ============================================================================
 # SPECIFIC MENTAL HEALTH SUBCATEGORIES
@@ -226,7 +226,7 @@ cat(paste(rep("-", 85), collapse = ""), "\n")
 
 for (i in seq_len(nrow(mh_subcats))) {
   r <- mh_subcats[i, ]
-  name <- str_extract(r$condition_name, "^[^(]+") %>% str_trim() %>% str_trunc(50)
+  name <- str_extract(r$cause, "^[^(]+") %>% str_trim() %>% str_trunc(50)
   cat(sprintf("%-50s %8.1f %8.1f %8.2f %+7.0f%%\n",
               name, r$mur_male, r$mur_female, r$sex_ratio, r$excess_pct))
 }
