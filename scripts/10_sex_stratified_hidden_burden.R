@@ -7,7 +7,7 @@
 # is known to be under-recognised in women; this tests whether that pattern 
 # holds in Australian death certification.
 #
-# Data source: ABS Causes of Death 2024, Table 10.2
+# Data source: ABS Causes of Death 2023, Table 10.2
 # ============================================================================
 
 library(tidyverse)
@@ -167,7 +167,7 @@ p10a <- chapter_sex %>%
     subtitle = "Ratio > 1 means the condition is undercounted as underlying cause\nLarger ratios = more hidden burden",
     x = NULL,
     y = "Multiple cause mentions ÷ Underlying cause deaths",
-    caption = "Data: ABS Causes of Death 2024, Table 10.2\nICD-10 chapters with ≥50 underlying cause deaths and ratio ≥1.5"
+    caption = "Data: ABS Causes of Death 2023, Table 10.2\nICD-10 chapters with ≥50 underlying cause deaths and ratio ≥1.5"
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -221,7 +221,7 @@ p10b <- top_sex_diff %>%
     subtitle = "Points above diagonal = more undercounted in males; below = more in females",
     x = "Female hidden burden ratio (multiple ÷ underlying)",
     y = "Male hidden burden ratio (multiple ÷ underlying)",
-    caption = "Data: ABS Causes of Death 2024, Table 10.2\nConditions with ≥100 underlying cause deaths and ratio ≥1.5"
+    caption = "Data: ABS Causes of Death 2023, Table 10.2\nConditions with ≥100 underlying cause deaths and ratio ≥1.5"
   ) +
   theme_minimal(base_size = 12) +
   theme(
@@ -274,7 +274,7 @@ p10c <- ggplot(cv_plot_data, aes(x = reorder(cause_short, ratio), y = ratio, fil
     subtitle = "Essential hypertension shows striking sex difference: 41.8× in males vs 21.2× in females",
     x = NULL,
     y = "Multiple cause mentions ÷ Underlying cause deaths",
-    caption = "Data: ABS Causes of Death 2024, Table 10.2\nCardiovascular conditions (I00-I99) with ≥100 underlying deaths"
+    caption = "Data: ABS Causes of Death 2023, Table 10.2\nCardiovascular conditions (I00-I99) with ≥100 underlying deaths"
   ) +
   theme_minimal(base_size = 11) +
   theme(

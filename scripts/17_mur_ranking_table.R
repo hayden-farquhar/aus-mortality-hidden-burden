@@ -316,10 +316,10 @@ p <- ggplot(top30, aes(x = mur_persons,
             hjust = -0.3, size = 3.8, colour = "grey30") +
   scale_x_continuous(expand = expansion(mult = c(0, 0.15))) +
   labs(
-    title = "Top 30 Conditions by Multiple-to-Underlying Cause Ratio (MUR)",
+    title = "Top 30 Conditions by Multiple-to-Underlying Cause Ratio",
     subtitle = paste0("Conditions with the greatest 'hidden' mortality burden | ",
                       "Minimum ", MIN_DEATHS, " underlying deaths"),
-    x = "MUR (Multiple / Underlying cause ratio)",
+    x = "Ratio (multiple / underlying cause)",
     y = NULL,
     caption = "Source: ABS Causes of Death 2023, Cube 10 (multiple causes)"
   ) +

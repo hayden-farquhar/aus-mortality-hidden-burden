@@ -9,7 +9,7 @@
 # Note: Multiple cause of death data is only available at the national level 
 # in the 2024 ABS release. This analysis uses underlying cause by state.
 #
-# Data source: ABS Causes of Death 2024, Tables 1-9
+# Data source: ABS Causes of Death 2023, Tables 1-9
 # ============================================================================
 
 library(tidyverse)
@@ -173,7 +173,7 @@ p11a <- state_variation %>%
     subtitle = "Higher CV = more variation between states (after age-standardisation)",
     x = NULL,
     y = "Coefficient of Variation (%)",
-    caption = "Data: ABS Causes of Death 2024\nAge-standardised rates across 8 states/territories"
+    caption = "Data: ABS Causes of Death 2023\nAge-standardised rates across 8 states/territories"
   ) +
   theme_minimal(base_size = 11) +
   theme(plot.title = element_text(face = "bold"))
@@ -208,7 +208,7 @@ p11b <- heatmap_data %>%
     title = "State Mortality Profiles: Age-Standardised Death Rates by Cause",
     subtitle = "Red = above national average; Blue = below; Numbers show ASR per 100,000",
     x = NULL, y = NULL,
-    caption = "Data: ABS Causes of Death 2024\nZ-scores calculated across states for each cause"
+    caption = "Data: ABS Causes of Death 2023\nZ-scores calculated across states for each cause"
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -279,7 +279,7 @@ p11c <- subchapter_variation %>%
     subtitle = "These conditions show the most inconsistent mortality patterns across Australia",
     x = NULL,
     y = "Coefficient of Variation (%)",
-    caption = "Data: ABS Causes of Death 2024\nConditions with ≥100 deaths and ≥6 states reporting"
+    caption = "Data: ABS Causes of Death 2023\nConditions with ≥100 deaths and ≥6 states reporting"
   ) +
   theme_minimal(base_size = 11) +
   theme(plot.title = element_text(face = "bold"))

@@ -1,7 +1,7 @@
 # =============================================================================
 # 21_fig1_mur_concept.R
-# Purpose: Generate Figure 1 — conceptual illustration of the MUR metric
-# Shows stacked bars for selected conditions spanning the full MUR range,
+# Purpose: Generate Figure 1 — conceptual illustration of the multiple-to-underlying ratio
+# Shows stacked bars for selected conditions spanning the full ratio range,
 # with "reported (underlying cause)" vs "hidden (contributing only)" portions
 # =============================================================================
 
@@ -9,7 +9,7 @@ library(tidyverse)
 
 dir.create("outputs/figures", showWarnings = FALSE)
 
-# --- Data: selected conditions spanning the full MUR range ---
+# --- Data: selected conditions spanning the full ratio range ---
 # Values from our analysis (ABS Cube 10, 2023)
 
 fig_data <- tibble(
@@ -20,29 +20,29 @@ fig_data <- tibble(
     "Essential\nhypertension",
     "Respiratory failure\nNEC"
   ),
-  mur = c(1.5, 1.9, 4.1, 27.7, 82.4),
+  ratio = c(1.5, 1.9, 4.1, 27.7, 82.4),
   # Chapter-level counts from our data
   underlying = c(52819, 13307, 42298, NA, 92),
   multiple   = c(76987, 24664, 173121, NA, 7582)
 )
 
-# For hypertension (I10), compute from MUR and known underlying
-# Underlying = 833 (2024 Cube 14) but Cube 10 (2023) figure is the basis for MUR 27.7
-# Reverse-engineer: if MUR = 27.7 and we know it from Cube 10, use the ratio
+# For hypertension (I10), compute from ratio and known underlying
+# Underlying = 833 (Cube 14) but Cube 10 (2023) figure is the basis for ratio 27.7
+# Reverse-engineer: if ratio = 27.7 and we know it from Cube 10, use the ratio
 fig_data <- fig_data %>%
   mutate(
-    # Compute percentages from MUR (cleaner than raw counts for a conceptual figure)
-    pct_underlying = 1 / mur * 100,
-    pct_hidden     = (1 - 1 / mur) * 100,
+    # Compute percentages from ratio (cleaner than raw counts for a conceptual figure)
+    pct_underlying = 1 / ratio * 100,
+    pct_hidden     = (1 - 1 / ratio) * 100,
     # Labels
-    mur_label = paste0("MUR = ", format(mur, nsmall = 1)),
+    ratio_label = paste0("Ratio = ", format(ratio, nsmall = 1)),
     hidden_label = paste0(round(pct_hidden), "% hidden"),
     condition = factor(condition, levels = condition)
   )
 
 # Reshape for stacked bar
 fig_long <- fig_data %>%
-  select(condition, mur, mur_label, hidden_label, pct_underlying, pct_hidden) %>%
+  select(condition, ratio, ratio_label, hidden_label, pct_underlying, pct_hidden) %>%
   pivot_longer(
     cols = c(pct_underlying, pct_hidden),
     names_to = "type",
@@ -65,10 +65,10 @@ col_hidden   <- "#D6604D"   # muted red — hidden
 # --- Plot ---
 p <- ggplot(fig_long, aes(x = condition, y = pct, fill = type)) +
   geom_col(width = 0.7, colour = "white", linewidth = 0.3) +
-  # MUR label above each bar
+  # Ratio label above each bar
   geom_text(
     data = fig_data,
-    aes(x = condition, y = 103, label = mur_label),
+    aes(x = condition, y = 103, label = ratio_label),
     inherit.aes = FALSE,
     size = 3.5, fontface = "bold", colour = "grey20"
   ) +
@@ -102,7 +102,7 @@ p <- ggplot(fig_long, aes(x = condition, y = pct, fill = type)) +
     expand = expansion(mult = c(0, 0.02))
   ) +
   labs(
-    title = "The Multiple-to-Underlying Cause Ratio (MUR)",
+    title = "The Multiple-to-Underlying Cause Ratio",
     subtitle = "Proportion of death certificate mentions visible to standard mortality statistics",
     x = NULL,
     y = "Percentage of death certificate mentions",
@@ -128,6 +128,6 @@ ggsave("outputs/figures/fig01_mur_concept.png", p,
 cat("Figure 1 saved: outputs/figures/fig01_mur_concept.png\n")
 cat("\nConditions shown:\n")
 fig_data %>%
-  select(condition, mur, pct_underlying, pct_hidden) %>%
+  select(condition, ratio, pct_underlying, pct_hidden) %>%
   mutate(across(where(is.numeric), ~ round(., 1))) %>%
   print(n = 5)

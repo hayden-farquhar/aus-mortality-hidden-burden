@@ -51,7 +51,7 @@ p1 <- ggplot(fig1_data, aes(x = reorder(cause_name, ratio_persons), y = ratio_pe
     subtitle = "Ratio of total death certificate mentions to underlying cause listings, Australia 2024\n(Higher ratio = condition appears far more often as contributing cause than primary cause)",
     x = NULL,
     y = "Multiple-to-Underlying Cause Ratio",
-    caption = "Source: ABS Causes of Death 2024, Data Cube 10. Conditions with ≥50 underlying cause deaths shown."
+    caption = "Source: ABS Causes of Death 2023, Data Cube 10. Conditions with ≥50 underlying cause deaths shown."
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -114,7 +114,7 @@ p2 <- ggplot(fig2_data, aes(x = reorder(cause_name, extra_deaths))) +
     subtitle = "Blue = listed as underlying cause | Red = total mentions on death certificates, Australia 2024\n(Chapter-level aggregates excluded to avoid double-counting)",
     x = NULL,
     y = "Number of Death Certificate Mentions",
-    caption = "Source: ABS Causes of Death 2024, Data Cube 10."
+    caption = "Source: ABS Causes of Death 2023, Data Cube 10."
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -233,7 +233,7 @@ if (nrow(total_data) > 0) {
                         ", mean ≥ ", round(avg_causes, 1), " causes per death)"),
       x = "Number of Causes Listed on Death Certificate",
       y = "Number of Deaths",
-      caption = "Source: ABS Causes of Death 2024, Data Cube 10, Table 10.1.\n'6+' includes deaths with 6 or more causes listed."
+      caption = "Source: ABS Causes of Death 2023, Data Cube 10, Table 10.1.\n'6+' includes deaths with 6 or more causes listed."
     ) +
     theme_minimal(base_size = 12) +
     theme(

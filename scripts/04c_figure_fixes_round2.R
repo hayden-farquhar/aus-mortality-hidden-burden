@@ -86,7 +86,7 @@ p5 <- ggplot(fig5_data, aes(x = num_causes, y = deaths, fill = multi)) +
                       ") — ", round(multi_pct, 1), "% have multiple causes"),
     x = "Number of Causes Listed on Death Certificate",
     y = "Number of Deaths",
-    caption = "Source: ABS Causes of Death 2024, Data Cube 10, Table 10.1.\n'5+' includes deaths listing 5 or more co-occurring causes."
+    caption = "Source: ABS Causes of Death 2023, Data Cube 10, Table 10.1.\n'5+' includes deaths listing 5 or more co-occurring causes."
   ) +
   theme_minimal(base_size = 12) +
   theme(
@@ -164,7 +164,7 @@ p6 <- ggplot(fig6_data, aes(x = diag_seps, y = underlying_deaths)) +
     x = "Hospital Separations (Principal Diagnosis, 2023-24)",
     y = "Deaths (Underlying Cause, 2024)",
     size = "Procedure\nSeparations",
-    caption = "Sources: AIHW Principal Diagnosis & Procedures Data Cubes; ABS Causes of Death 2024.\nDomains above the diagonal line have higher 'lethality' per hospital admission."
+    caption = "Sources: AIHW Principal Diagnosis & Procedures Data Cubes; ABS Causes of Death 2023.\nDomains above the diagonal line have higher 'lethality' per hospital admission."
   ) +
   theme_minimal(base_size = 11) +
   theme(

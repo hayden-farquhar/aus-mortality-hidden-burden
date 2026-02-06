@@ -427,8 +427,8 @@ p14a <- ggplot(h3_plot_a) +
                       "\nMean diff = ", round(boot_result$t0, 1),
                       " [", round(ci_lower, 1), ", ", round(ci_upper, 1), "]"),
     x = NULL,
-    y = "Multiple-to-Underlying Cause Ratio (MUR)",
-    caption = "Data: ABS Causes of Death 2024, Cube 10 Table 10.2"
+    y = "Multiple-to-Underlying Cause Ratio",
+    caption = "Data: ABS Causes of Death 2023, Cube 10 Table 10.2"
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -456,8 +456,8 @@ if (!is.null(h3c_temporal)) {
                         " (year vs M/F rate ratio)"),
       x = "Year of occurrence",
       y = "Crude death rate per 100,000",
-      caption = paste0("Data: ABS Causes of Death 2024, Cube 14 (year of occurrence)\n",
-                       "Note: Underlying cause only (not MUR). 2023-2024 subject to revision.")
+      caption = paste0("Data: ABS Causes of Death 2023, Cube 14 (year of occurrence)\n",
+                       "Note: Underlying cause only (not the ratio). 2023-2024 subject to revision.")
     ) +
     theme_minimal(base_size = 11) +
     theme(
@@ -467,7 +467,7 @@ if (!is.null(h3c_temporal)) {
 
   p14_combined <- p14a / p14b +
     plot_annotation(
-      title = "Confirmatory Hypothesis 5: Mental Health Sex-Differentiated Hidden Burden",
+      title = "Confirmatory Hypothesis 3: Mental Health Sex-Differentiated Hidden Burden",
       theme = theme(plot.title = element_text(face = "bold", size = 14))
     )
   fig_height <- 12
@@ -605,7 +605,7 @@ write_csv(h3_results, "outputs/confirmatory/h3_results.csv")
 # Human-readable results
 sink("outputs/confirmatory/h3_results.txt")
 cat("============================================================\n")
-cat("CONFIRMATORY HYPOTHESIS 5: Mental Health Sex-Differentiated\n")
+cat("CONFIRMATORY HYPOTHESIS 3: Mental Health Sex-Differentiated\n")
 cat("Hidden Burden -- Full Results\n")
 cat("============================================================\n\n")
 cat("Date:", format(Sys.time(), "%Y-%m-%d %H:%M"), "\n")

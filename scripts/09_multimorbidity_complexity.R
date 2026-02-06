@@ -6,7 +6,7 @@
 # high multimorbidity burden. This is one of the first systematic analyses of
 # Australian multiple cause of death complexity patterns.
 #
-# Data source: ABS Causes of Death 2024, Table 10.1
+# Data source: ABS Causes of Death 2023, Table 10.1
 # ============================================================================
 
 library(tidyverse)
@@ -175,7 +175,7 @@ p9a <- ggplot(overall_dist, aes(x = complexity, y = pct)) +
                         sum(overall_dist$pct[4:6]), overall_dist$pct[1]),
     x = NULL,
     y = "% of all deaths",
-    caption = "Data: ABS Causes of Death 2024, Table 10.1"
+    caption = "Data: ABS Causes of Death 2023, Table 10.1"
   ) +
   theme_minimal(base_size = 12) +
   theme(
@@ -210,7 +210,7 @@ p9b <- chapter_complexity %>%
     subtitle = "Lower % alone = higher multimorbidity burden at death",
     x = NULL,
     y = "% of mentions where condition was sole cause",
-    caption = "Data: ABS Causes of Death 2024, Table 10.1\nICD-10 chapters with ≥100 mentions"
+    caption = "Data: ABS Causes of Death 2023, Table 10.1\nICD-10 chapters with ≥100 mentions"
   ) +
   theme_minimal(base_size = 11) +
   theme(plot.title = element_text(face = "bold"))
@@ -247,7 +247,7 @@ p9c <- high_multimorbidity %>%
     subtitle = "These 20 conditions never appear as sole cause — bars show average co-occurring causes",
     x = NULL,
     y = "Average number of co-occurring causes on death certificate",
-    caption = "Data: ABS Causes of Death 2024, Table 10.1\nConditions with ≥200 total mentions that are never listed as sole cause"
+    caption = "Data: ABS Causes of Death 2023, Table 10.1\nConditions with ≥200 total mentions that are never listed as sole cause"
   ) +
   theme_minimal(base_size = 11) +
   theme(plot.title = element_text(face = "bold"))

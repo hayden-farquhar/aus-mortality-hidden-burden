@@ -65,7 +65,7 @@ p8 <- ggplot() +
     subtitle = "Triangles = no mapped procedure chapter (Mental health, Infectious diseases)",
     x = "Diagnosis separations (hospital admissions)",
     y = "Underlying cause deaths",
-    caption = "Data: AIHW Hospital Data Cubes; ABS Causes of Death 2024"
+    caption = "Data: AIHW Hospital Data Cubes; ABS Causes of Death 2023"
   ) +
   theme_minimal(base_size = 12) +
   theme(

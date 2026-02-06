@@ -10,7 +10,7 @@ All CSV files use UTF-8 encoding with comma delimiters and standard R/tidyverse 
 ## Top-Level Data (`data/`)
 
 ### deaths_underlying_vs_multiple.csv
-Core MUR (Multiple-to-Underlying cause Ratio) table for all ICD-10 conditions, 2023.
+Core multiple-to-underlying ratio table for all ICD-10 conditions, 2023.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -27,9 +27,9 @@ Core MUR (Multiple-to-Underlying cause Ratio) table for all ICD-10 conditions, 2
 | cause_name | character | Cleaned condition name |
 | is_chapter | logical | TRUE if row is an ICD-10 chapter-level aggregate |
 | is_total | logical | TRUE if row is "Total deaths" |
-| ratio_persons | numeric | MUR for persons (multiple/underlying) |
-| ratio_male | numeric | MUR for males |
-| ratio_female | numeric | MUR for females |
+| ratio_persons | numeric | Ratio for persons (multiple/underlying) |
+| ratio_male | numeric | Ratio for males |
+| ratio_female | numeric | Ratio for females |
 
 ### deaths_underlying_by_state.csv
 State-level underlying cause of death data with counts, crude rates, and age-standardised rates.
@@ -158,7 +158,7 @@ Death certificate complexity metrics by condition.
 | avg_co_causes | numeric | Average number of co-reported causes |
 
 ### sex_stratified_hidden_burden.csv
-Sex-stratified MUR analysis showing which sex has greater hidden burden.
+Sex-stratified ratio analysis showing which sex has greater hidden burden.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -170,10 +170,10 @@ Sex-stratified MUR analysis showing which sex has greater hidden burden.
 | underlying_female | numeric | Female underlying deaths |
 | multiple_male | numeric | Male multiple cause mentions |
 | multiple_female | numeric | Female multiple cause mentions |
-| ratio_male | numeric | Male MUR |
-| ratio_female | numeric | Female MUR |
-| ratio_diff | numeric | Absolute difference (male MUR - female MUR) |
-| more_hidden_in | character | "Males" or "Females" — sex with higher MUR |
+| ratio_male | numeric | Male ratio |
+| ratio_female | numeric | Female ratio |
+| ratio_diff | numeric | Absolute difference (male - female ratio) |
+| more_hidden_in | character | "Males" or "Females" — sex with higher ratio |
 
 ### state_variation_chapters.csv
 Geographic coefficient of variation (CV) for ASR by ICD-10 chapter across states.
@@ -214,7 +214,7 @@ Geographic CV for specific ICD-10 conditions (sub-chapter level).
 ## Confirmatory Data (`data/confirmatory/`)
 
 ### confirmatory_h1_data.csv
-H1 input data: Hypertension and related cardiovascular MUR by sex (2023 cross-section).
+H1 input data: Hypertension and related cardiovascular ratio by sex (2023 cross-section).
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -227,13 +227,13 @@ H1 input data: Hypertension and related cardiovascular MUR by sex (2023 cross-se
 | multiple_female | numeric | Female multiple cause mentions |
 | multiple_persons | numeric | Total multiple cause mentions |
 | ratio | numeric | ABS-computed ratio |
-| mur_male | numeric | Computed male MUR |
-| mur_female | numeric | Computed female MUR |
-| mur_persons | numeric | Computed persons MUR |
+| mur_male | numeric | Computed male ratio |
+| mur_female | numeric | Computed female ratio |
+| mur_persons | numeric | Computed persons ratio |
 | data_year | integer | Data year (2023) |
 
 ### confirmatory_h1a_cv_mur.csv
-Full cardiovascular chapter MUR comparison data for H1 context.
+Full cardiovascular chapter ratio comparison data for H1 context.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -242,9 +242,9 @@ Full cardiovascular chapter MUR comparison data for H1 context.
 | underlying_male–multiple_persons | numeric | Death counts (same as h1_data) |
 | ratio | numeric | ABS ratio |
 | icd_code | character | ICD-10 code |
-| mur_male | numeric | Male MUR |
-| mur_female | numeric | Female MUR |
-| mur_persons | numeric | Persons MUR |
+| mur_male | numeric | Male ratio |
+| mur_female | numeric | Female ratio |
+| mur_persons | numeric | Persons ratio |
 
 ### confirmatory_h1c_temporal.csv
 H1 temporal data: Hypertension underlying deaths 2014-2024 with population-adjusted rates.
@@ -278,7 +278,7 @@ H2 input data: Geographic CVs with avoidability classification.
 | avoidable_group | character | Specific avoidable death category |
 
 ### confirmatory_h3_data.csv
-H3 input data: Mental health MUR by sex (2023 cross-section).
+H3 input data: Mental health ratio by sex (2023 cross-section).
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -286,9 +286,9 @@ H3 input data: Mental health MUR by sex (2023 cross-section).
 | unit | character | Unit |
 | underlying_male–multiple_persons | numeric | Death counts |
 | ratio | numeric | ABS ratio |
-| mur_male | numeric | Male MUR |
-| mur_female | numeric | Female MUR |
-| mur_persons | numeric | Persons MUR |
+| mur_male | numeric | Male ratio |
+| mur_female | numeric | Female ratio |
+| mur_persons | numeric | Persons ratio |
 | icd_code | character | ICD-10 code |
 | data_year | integer | Data year (2023) |
 
@@ -357,7 +357,7 @@ Combined Holm-Bonferroni correction results across all hypothesis tests.
 ## Exploratory Data (`data/exploratory/`)
 
 ### cube10_full_mur_table.csv
-Complete MUR table for all 663+ ICD-10 conditions from ABS Cube 10 (2023).
+Complete ratio table for all 663+ ICD-10 conditions from ABS Cube 10 (2023).
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -371,9 +371,9 @@ Complete MUR table for all 663+ ICD-10 conditions from ABS Cube 10 (2023).
 | multiple_persons | numeric | Total multiple cause mentions |
 | ratio | numeric | ABS-computed ratio |
 | icd_code | character | ICD-10 code |
-| mur_male | numeric | Male MUR |
-| mur_female | numeric | Female MUR |
-| mur_persons | numeric | Persons MUR |
+| mur_male | numeric | Male ratio |
+| mur_female | numeric | Female ratio |
+| mur_persons | numeric | Persons ratio |
 
 ### cube14_temporal_all_causes.csv
 Temporal underlying cause death counts by year (2014-2024) from ABS Cube 14.
@@ -397,7 +397,7 @@ PBS prescribing data for cardiovascular medications — wide monthly format.
 | JAN-2015 through DEC-2025 | numeric | Monthly prescription values (132 columns) |
 
 ### hospital_mortality_linkage.csv
-Hospital procedure/diagnosis volume linked to MUR by clinical domain.
+Hospital procedure/diagnosis volume linked to ratio by clinical domain.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -407,9 +407,9 @@ Hospital procedure/diagnosis volume linked to MUR by clinical domain.
 | diag_seps | numeric | Diagnosis separations |
 | proc_seps | numeric | Procedure separations |
 | underlying_deaths | numeric | Underlying cause deaths |
-| mur | numeric | MUR (persons) |
-| mur_male | numeric | Male MUR |
-| mur_female | numeric | Female MUR |
+| mur | numeric | Ratio (persons) |
+| mur_male | numeric | Male ratio |
+| mur_female | numeric | Female ratio |
 | procs_per_death | numeric | Procedure separations per underlying death |
 | diags_per_death | numeric | Diagnosis separations per underlying death |
 
@@ -431,13 +431,13 @@ PBS prescribing trends vs hypertension mortality over time.
 | pbs_beta_blocking_agents | numeric | Beta blocker prescriptions per ERP |
 
 ### temporal_high_mur.csv
-Summary of temporal trends for high-MUR conditions.
+Summary of temporal trends for high-ratio conditions.
 
 | Column | Type | Description |
 |--------|------|-------------|
 | icd_code | character | ICD-10 code |
 | cause | character | Condition name |
-| mur_persons | numeric | Cross-sectional MUR |
+| mur_persons | numeric | Cross-sectional ratio |
 | n_years | integer | Number of years with data |
 | first_year | integer | First year in series |
 | last_year | integer | Last year in series |
@@ -450,7 +450,7 @@ Summary of temporal trends for high-MUR conditions.
 | condition_name | character | Cleaned condition name |
 
 ### temporal_high_mur_series.csv
-Year-by-year death counts for high-MUR conditions.
+Year-by-year death counts for high-ratio conditions.
 
 | Column | Type | Description |
 |--------|------|-------------|
@@ -459,33 +459,33 @@ Year-by-year death counts for high-MUR conditions.
 | year | integer | Calendar year |
 | sex | character | "persons" |
 | deaths | numeric | Underlying cause deaths |
-| mur_persons | numeric | Cross-sectional MUR (constant across years) |
+| mur_persons | numeric | Cross-sectional ratio (constant across years) |
 
 ### mur_ranking_full.csv
-Complete ranking of all conditions by MUR.
+Complete ranking of all conditions by ratio.
 
 | Column | Type | Description |
 |--------|------|-------------|
-| rank | integer | Rank by MUR (1 = highest) |
+| rank | integer | Rank by ratio (1 = highest) |
 | icd_code | character | ICD-10 code |
 | condition_name | character | Condition name |
 | level | character | "chapter", "block", or "3char" |
 | chapter_name | character | Parent ICD-10 chapter |
 | underlying_persons | numeric | Underlying cause deaths |
 | multiple_persons | numeric | Multiple cause mentions |
-| mur_persons | numeric | Persons MUR |
-| mur_male | numeric | Male MUR |
-| mur_female | numeric | Female MUR |
+| mur_persons | numeric | Persons ratio |
+| mur_male | numeric | Male ratio |
+| mur_female | numeric | Female ratio |
 | hidden_deaths | numeric | Multiple minus underlying |
 | pct_hidden | numeric | Percentage of mentions that are hidden |
-| sex_ratio | numeric | Male MUR / Female MUR |
+| sex_ratio | numeric | Male ratio / Female ratio |
 
 ---
 
 ## Notes
 
 - "np" or NA values indicate data suppressed by the ABS due to small counts (< 5 deaths).
-- MUR = Multiple cause mentions / Underlying cause deaths. A MUR of 1.0 means the condition is only ever the underlying cause.
+- Ratio = Multiple cause mentions / Underlying cause deaths. A ratio of 1.0 means the condition is only ever the underlying cause.
 - ASR = Age-standardised rate per 100,000 population (2001 Australian Standard Population).
 - CV = Coefficient of variation (SD/mean * 100), measuring relative geographic dispersion.
 - Data year is 2023 for cross-sectional analyses (ABS Cube 10, released 2024).

@@ -406,7 +406,7 @@ if (n_prev >= 3 & n_treat >= 3) {
         caption = paste0(
           "Each point = one condition. CV = SD/mean x 100 of state-level rates.\n",
           "Classification: AIHW National Healthcare Agreement PI 16 framework.\n",
-          "Data: ABS Causes of Death 2024."
+          "Data: ABS Causes of Death 2023."
         ),
         theme = theme(
           plot.title = element_text(face = "bold", size = 14),
@@ -425,7 +425,7 @@ if (n_prev >= 3 & n_treat >= 3) {
     labs(caption = paste0(
       "Each point = one condition. CV = SD/mean x 100 of state-level rates.\n",
       "Classification: AIHW National Healthcare Agreement PI 16 framework.\n",
-      "Data: ABS Causes of Death 2024."
+      "Data: ABS Causes of Death 2023."
     ))
   fig_width <- 8
   fig_height <- 7

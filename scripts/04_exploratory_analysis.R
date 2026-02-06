@@ -99,10 +99,10 @@ p1 <- ggplot(fig1_data, aes(x = reorder(cause_name, ratio_persons), y = ratio_pe
   coord_flip() +
   labs(
     title = "Hidden Burden: Conditions Most Under-counted as Underlying Cause of Death",
-    subtitle = "Ratio of total death certificate mentions to underlying cause listings, Australia 2024\n(Higher ratio = condition appears far more often as contributing cause than primary cause)",
+    subtitle = "Ratio of total death certificate mentions to underlying cause listings, Australia 2023\n(Higher ratio = condition appears far more often as contributing cause than primary cause)",
     x = NULL,
     y = "Multiple-to-Underlying Cause Ratio",
-    caption = "Source: ABS Causes of Death 2024, Data Cube 10. Conditions with ≥50 underlying cause deaths shown."
+    caption = "Source: ABS Causes of Death 2023, Data Cube 10. Conditions with ≥50 underlying cause deaths shown."
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -149,10 +149,10 @@ p2 <- ggplot(fig2_data, aes(x = reorder(cause_name, extra_deaths))) +
   coord_flip() +
   labs(
     title = "The Hidden Death Toll: Conditions with Largest Gap Between\nUnderlying and Multiple Cause Counts",
-    subtitle = "Blue = listed as underlying cause | Red = total mentions on death certificates, Australia 2024",
+    subtitle = "Blue = listed as underlying cause | Red = total mentions on death certificates, Australia 2023",
     x = NULL,
     y = "Number of Death Certificate Mentions",
-    caption = "Source: ABS Causes of Death 2024, Data Cube 10."
+    caption = "Source: ABS Causes of Death 2023, Data Cube 10."
   ) +
   theme_minimal(base_size = 11) +
   theme(
@@ -314,11 +314,11 @@ if (nrow(fig5_clean) > 0 && "n_persons" %in% colnames(fig5_clean)) {
     geom_text(aes(label = label), vjust = -0.2, size = 3) +
     labs(
       title = "How Many Conditions Are Listed on Australian Death Certificates?",
-      subtitle = paste0("Distribution of number of causes per death, Australia 2024 (N = ", 
+      subtitle = paste0("Distribution of number of causes per death, Australia 2023 (N = ", 
                         format(sum(fig5_agg$deaths), big.mark = ","), ")"),
       x = "Number of Causes Listed on Death Certificate",
       y = "Number of Deaths",
-      caption = "Source: ABS Causes of Death 2024, Data Cube 10, Table 10.1."
+      caption = "Source: ABS Causes of Death 2023, Data Cube 10, Table 10.1."
     ) +
     theme_minimal(base_size = 11) +
     theme(
@@ -416,9 +416,9 @@ if (nrow(fig6_data) > 3) {
       title = "Hospital Burden vs Mortality Burden by Clinical Domain",
       subtitle = "Australia, most recent available year. Point size = procedure volume.",
       x = "Hospital Separations (Principal Diagnosis, 2023-24)",
-      y = "Deaths (Underlying Cause, 2024)",
+      y = "Deaths (Underlying Cause, 2023)",
       size = "Procedure\nSeparations",
-      caption = "Sources: AIHW Principal Diagnosis & Procedures Data Cubes; ABS Causes of Death 2024."
+      caption = "Sources: AIHW Principal Diagnosis & Procedures Data Cubes; ABS Causes of Death 2023."
     ) +
     theme_minimal(base_size = 11) +
     theme(
@@ -444,7 +444,7 @@ if (nrow(fig6_data) > 3) {
 cat("\n\n=== KEY FINDINGS SUMMARY ===\n\n")
 
 cat("1. MULTIPLE CAUSE ANALYSIS:\n")
-cat("   Total deaths, Australia 2024:", format(187268, big.mark = ","), "\n")
+cat("   Total deaths, Australia 2023:", format(187268, big.mark = ","), "\n")
 
 # Top hidden burden conditions (clinically specific, excluding R/Y/U codes)
 top_hidden <- mort_multi %>%
