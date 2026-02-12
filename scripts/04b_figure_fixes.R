@@ -48,7 +48,7 @@ p1 <- ggplot(fig1_data, aes(x = reorder(cause_name, ratio_persons), y = ratio_pe
   coord_flip() +
   labs(
     title = "Hidden Burden: Conditions Most Under-counted\nas Underlying Cause of Death",
-    subtitle = "Ratio of total death certificate mentions to underlying cause listings, Australia 2024\n(Higher ratio = condition appears far more often as contributing cause than primary cause)",
+    subtitle = "Ratio of total death certificate mentions to underlying cause listings, Australia 2023\n(Higher ratio = condition appears far more often as contributing cause than primary cause)",
     x = NULL,
     y = "Multiple-to-Underlying Cause Ratio",
     caption = "Source: ABS Causes of Death 2023, Data Cube 10. Conditions with ≥50 underlying cause deaths shown."
@@ -111,7 +111,7 @@ p2 <- ggplot(fig2_data, aes(x = reorder(cause_name, extra_deaths))) +
   coord_flip() +
   labs(
     title = "The Hidden Death Toll: Specific Conditions with Largest Gap\nBetween Underlying and Multiple Cause Counts",
-    subtitle = "Blue = listed as underlying cause | Red = total mentions on death certificates, Australia 2024\n(Chapter-level aggregates excluded to avoid double-counting)",
+    subtitle = "Blue = listed as underlying cause | Red = total mentions on death certificates, Australia 2023\n(Chapter-level aggregates excluded to avoid double-counting)",
     x = NULL,
     y = "Number of Death Certificate Mentions",
     caption = "Source: ABS Causes of Death 2023, Data Cube 10."
@@ -228,7 +228,7 @@ if (nrow(total_data) > 0) {
     geom_text(aes(label = label), vjust = -0.2, size = 3.2) +
     labs(
       title = "How Many Conditions Are Listed on Australian Death Certificates?",
-      subtitle = paste0("Distribution of co-occurring causes per death, Australia 2024 (N = ",
+      subtitle = paste0("Distribution of co-occurring causes per death, Australia 2023 (N = ",
                         format(total_deaths, big.mark = ","), 
                         ", mean ≥ ", round(avg_causes, 1), " causes per death)"),
       x = "Number of Causes Listed on Death Certificate",

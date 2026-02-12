@@ -2,7 +2,7 @@
 FULL MUR RANKING — SUPPLEMENTARY TABLE SUMMARY
 ============================================================
 
-Date: 2026-02-05 17:54
+Date: 2026-02-08 13:12
 Total rankable conditions: 663
 Minimum underlying deaths threshold: 10
 Conditions with MUR > 10: 71

@@ -402,7 +402,7 @@ if (n_prev >= 3 & n_treat >= 3) {
     library(patchwork)
     p13_combined <- p13a + p13b +
       plot_annotation(
-        title = "Confirmatory Hypothesis 4: Geographic Variation x Preventability",
+        title = "Confirmatory Hypothesis 2: Geographic Variation x Preventability",
         caption = paste0(
           "Each point = one condition. CV = SD/mean x 100 of state-level rates.\n",
           "Classification: AIHW National Healthcare Agreement PI 16 framework.\n",

@@ -300,16 +300,20 @@ cat("\nSummary text saved to outputs/exploratory/mur_ranking_summary.txt\n")
 # Figure: Top 30 conditions by MUR (Cleveland dot plot)
 # ============================================================================
 
-top30 <- mur_ranking %>% head(30)
+top30 <- mur_ranking %>%
+  head(30) %>%
+  mutate(
+    short_name = ifelse(nchar(condition_name) > 55,
+                        paste0(substr(condition_name, 1, 52), "..."),
+                        condition_name),
+    label = paste0(short_name, " [", icd_code, "]")
+  )
 
 p <- ggplot(top30, aes(x = mur_persons,
-                       y = reorder(paste0(condition_name, " [", icd_code, "]"),
-                                   mur_persons))) +
+                       y = reorder(label, mur_persons))) +
   geom_segment(aes(x = 0, xend = mur_persons,
-                   y = reorder(paste0(condition_name, " [", icd_code, "]"),
-                               mur_persons),
-                   yend = reorder(paste0(condition_name, " [", icd_code, "]"),
-                                  mur_persons)),
+                   y = reorder(label, mur_persons),
+                   yend = reorder(label, mur_persons)),
                colour = "grey70", linewidth = 0.6) +
   geom_point(size = 4, colour = "#2c7bb6") +
   geom_text(aes(label = sprintf("%.1f", mur_persons)),
@@ -336,7 +340,7 @@ p <- ggplot(top30, aes(x = mur_persons,
   )
 
 ggsave("outputs/figures/fig15_mur_ranking_top30.png", p,
-       width = 12, height = 13, dpi = 300, bg = "white")
+       width = 14, height = 11, dpi = 300, bg = "white")
 
 cat("Figure saved: outputs/figures/fig15_mur_ranking_top30.png\n")
 
@@ -352,7 +356,10 @@ top20_sex <- mur_ranking %>%
                names_to = "sex", values_to = "mur") %>%
   mutate(
     sex = ifelse(sex == "mur_male", "Male", "Female"),
-    label = paste0(condition_name, " [", icd_code, "]")
+    short_name = ifelse(nchar(condition_name) > 55,
+                        paste0(substr(condition_name, 1, 52), "..."),
+                        condition_name),
+    label = paste0(short_name, " [", icd_code, "]")
   )
 
 if (nrow(top20_sex) > 0) {

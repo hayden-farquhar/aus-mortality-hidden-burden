@@ -309,7 +309,7 @@ cat("\n\n=== SUMMARY ===\n\n")
 
 # Total deaths nationally
 total <- deaths_by_state %>% filter(is_total, state_abbr == "AUS") %>% pull(n_persons)
-cat("Total deaths Australia 2024:", format(total, big.mark = ","), "\n")
+cat("Total deaths Australia 2023:", format(total, big.mark = ","), "\n")
 
 # How many deaths reported alone vs with other causes
 totals_10_1 <- deaths_by_ncauses %>% filter(is_total)

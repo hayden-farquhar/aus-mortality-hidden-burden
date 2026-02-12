@@ -81,7 +81,7 @@ p5 <- ggplot(fig5_data, aes(x = num_causes, y = deaths, fill = multi)) +
   scale_fill_manual(values = c("Single cause" = "#92C5DE", "Multiple causes" = "#2166AC")) +
   labs(
     title = "How Many Conditions Are Listed on Australian Death Certificates?",
-    subtitle = paste0("Distribution of co-occurring causes per death, Australia 2024 (N = ",
+    subtitle = paste0("Distribution of co-occurring causes per death, Australia 2023 (N = ",
                       format(total_deaths, big.mark = ","),
                       ") — ", round(multi_pct, 1), "% have multiple causes"),
     x = "Number of Causes Listed on Death Certificate",

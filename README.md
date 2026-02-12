@@ -12,6 +12,7 @@ This repository contains all analysis code, derived data, and results for a seco
 
 A ratio of 1.0 means a condition is only ever the underlying cause (e.g., intentional self-harm). A ratio of 27.7 (hypertension) means the condition appears nearly 28 times more often as *any* cause than as the *underlying* cause, revealing a massive hidden burden invisible to standard mortality statistics.
 
+**Preprint:** [medRxiv](https://doi.org/10.64898/2026.02.07.26345820)
 **Pre-registration:** [OSF](https://doi.org/10.17605/OSF.IO/K46RN)
 **Ethics:** Not required (publicly available aggregated data, no individual-level records).
 **Code:** https://github.com/hayden-farquhar/aus-mortality-hidden-burden
@@ -147,4 +148,4 @@ This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/
 
 ## Citation
 
-Farquhar, H. (2026). The Hidden Burden of Disease: A Multiple Cause of Death Analysis of Australian Mortality and Hospital Data. [Insert journal/DOI after publication]. Code and data available at https://github.com/hayden-farquhar/aus-mortality-hidden-burden
+Farquhar, H. (2026). The Hidden Burden of Disease: A Multiple Cause of Death Analysis of Australian Mortality and Hospital Data. medRxiv preprint. https://doi.org/10.64898/2026.02.07.26345820. Code and data available at https://github.com/hayden-farquhar/aus-mortality-hidden-burden
