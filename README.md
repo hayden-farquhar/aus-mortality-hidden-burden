@@ -1,4 +1,4 @@
-# The Hidden Burden of Disease: A Multiple Cause of Death Analysis of Australian Mortality and Hospital Data
+# The Hidden Burden of Mortality: A Multiple Cause of Death Analysis Across Australian ICD-10 Conditions
 
 **Author:** Hayden Farquhar, MBBS MPHTM
 **Affiliation:** Independent Researcher
@@ -8,7 +8,9 @@
 
 ## Overview
 
-This repository contains all analysis code, derived data, and results for a secondary data analysis of publicly available Australian mortality and hospital statistics. The primary contribution is quantifying the **multiple-to-underlying cause ratio** — how many times more often a condition appears anywhere on the death certificate compared to being selected as the underlying cause of death. This is equivalent to the established SRMU (Standardized Ratio of Multiple to Underlying cause) from Desesquelles et al. (2010), but computed without age standardisation due to data limitations.
+This repository contains the analysis code, derived data, and results for a secondary analysis of publicly available Australian mortality data. The primary contribution is quantifying the **multiple-to-underlying cause ratio**: how many times as often a condition appears anywhere on the death certificate compared with being selected as the underlying cause of death. This is a simplified (crude, non-age-standardised) form of the established SRMU (Standardized Ratio of Multiple to Underlying cause) from Desesquelles et al. (2010).
+
+**Scope note:** the accompanying manuscript covers the multiple-to-underlying ratio across ICD-10 mortality conditions only. The repository also retains exploratory hospital-procedure and PBS linkage analyses (scripts 18, 19, 12c and related outputs) that are *not* part of the manuscript and are provided for transparency.
 
 A ratio of 1.0 means a condition is only ever the underlying cause (e.g., intentional self-harm). A ratio of 27.7 (hypertension) means the condition appears nearly 28 times more often as *any* cause than as the *underlying* cause, revealing a massive hidden burden invisible to standard mortality statistics.
 
