@@ -3,10 +3,10 @@ CONFIRMATORY ANALYSIS SUMMARY
 Pre-Registered Hypotheses: Holm-Bonferroni Corrected Results
 ============================================================
 
-Date: 2026-02-05 17:16 
-Pre-registration: OSF [insert DOI]
+Date: 2026-06-25 23:51 
+Pre-registration: OSF https://doi.org/10.17605/OSF.IO/K46RN
 Family-wise alpha = 0.05
-Correction method: Holm-Bonferroni (sequential)
+Correction method: Holm-Bonferroni (sequential); Benjamini-Hochberg FDR reported as sensitivity
 
 ================================================================
 CORRECTION SCOPE 1: Primary Tests Only (n=3)
@@ -14,11 +14,11 @@ CORRECTION SCOPE 1: Primary Tests Only (n=3)
 Per D6: 'supported if primary test achieves p < 0.05 after
 Holm-Bonferroni correction.'
 
-  H3a  p_uncorrected = 0.0234375  p_holm = 0.0703125  
-  H1a  p_uncorrected = 0.125  p_holm = 0.25  
-  H2a  p_uncorrected = 0.87162  p_holm = 0.87162  
+  H3a  p_uncorrected = 0.0234375  p_holm = 0.0703125  p_BH = 0.0703125  
+  H1a  p_uncorrected = 0.125  p_holm = 0.25  p_BH = 0.1875  
+  H2a  p_uncorrected = 0.87162  p_holm = 0.87162  p_BH = 0.87162  
 
-  Supported: 0 / 3
+  Supported (Holm): 0 / 3  |  Significant (BH-FDR): 0 / 3
 
 ================================================================
 CORRECTION SCOPE 2: All Tests (n=8)

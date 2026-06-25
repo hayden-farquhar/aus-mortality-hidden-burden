@@ -124,6 +124,7 @@ primary_tests <- p_values %>%
   filter(test_type == "primary") %>%
   mutate(
     p_holm_primary = p.adjust(p_uncorrected, method = "holm"),
+    p_bh_primary = p.adjust(p_uncorrected, method = "BH"),   # Benjamini-Hochberg FDR sensitivity (Reviewer 2)
     significant_corrected = p_holm_primary < 0.05,
     significant_uncorrected = p_uncorrected < 0.05
   ) %>%
@@ -144,6 +145,18 @@ for (i in seq_len(nrow(primary_tests))) {
 n_sig_primary <- sum(primary_tests$significant_corrected)
 cat(sprintf("\n  Primary hypotheses supported: %d of %d\n\n",
             n_sig_primary, nrow(primary_tests)))
+
+# Benjamini-Hochberg FDR sensitivity analysis (Reviewer 2 request)
+cat("  Benjamini-Hochberg FDR (primary tests):\n")
+for (i in seq_len(nrow(primary_tests))) {
+  row <- primary_tests[i, ]
+  cat(sprintf("    %s: p_uncorrected = %-8s  p_BH = %-8s\n",
+              row$test_id,
+              format(row$p_uncorrected, digits = 4),
+              format(row$p_bh_primary, digits = 4)))
+}
+cat(sprintf("    Significant after BH-FDR: %d of %d\n\n",
+            sum(primary_tests$p_bh_primary < 0.05), nrow(primary_tests)))
 
 # ============================================================================
 # Correction 2: ALL TESTS (primary + secondary)
@@ -287,11 +300,11 @@ cat("separately without multiplicity correction.\n\n")
 # Combined results table
 save_table <- all_tests %>%
   left_join(
-    primary_tests %>% select(test_id, p_holm_primary),
+    primary_tests %>% select(test_id, p_holm_primary, p_bh_primary),
     by = "test_id"
   ) %>%
   select(test_id, hypothesis, test_type, description,
-         p_uncorrected, p_holm_primary, p_holm_all,
+         p_uncorrected, p_holm_primary, p_bh_primary, p_holm_all,
          significant_uncorrected, significant_corrected)
 
 write_csv(save_table, "outputs/confirmatory/holm_bonferroni_results.csv")
@@ -303,9 +316,9 @@ cat("CONFIRMATORY ANALYSIS SUMMARY\n")
 cat("Pre-Registered Hypotheses: Holm-Bonferroni Corrected Results\n")
 cat("============================================================\n\n")
 cat("Date:", format(Sys.time(), "%Y-%m-%d %H:%M"), "\n")
-cat("Pre-registration: OSF [insert DOI]\n")
+cat("Pre-registration: OSF https://doi.org/10.17605/OSF.IO/K46RN\n")
 cat("Family-wise alpha = 0.05\n")
-cat("Correction method: Holm-Bonferroni (sequential)\n\n")
+cat("Correction method: Holm-Bonferroni (sequential); Benjamini-Hochberg FDR reported as sensitivity\n\n")
 
 cat("================================================================\n")
 cat("CORRECTION SCOPE 1: Primary Tests Only (n=3)\n")
@@ -314,13 +327,16 @@ cat("Per D6: 'supported if primary test achieves p < 0.05 after\n")
 cat("Holm-Bonferroni correction.'\n\n")
 for (i in seq_len(nrow(primary_tests))) {
   row <- primary_tests[i, ]
-  cat(sprintf("  %s  p_uncorrected = %s  p_holm = %s  %s\n",
+  cat(sprintf("  %s  p_uncorrected = %s  p_holm = %s  p_BH = %s  %s\n",
               row$test_id,
               format(row$p_uncorrected, digits = 6),
               format(row$p_holm_primary, digits = 6),
+              format(row$p_bh_primary, digits = 6),
               ifelse(row$significant_corrected, "<-- SIGNIFICANT", "")))
 }
-cat(sprintf("\n  Supported: %d / %d\n\n", n_sig_primary, nrow(primary_tests)))
+cat(sprintf("\n  Supported (Holm): %d / %d", n_sig_primary, nrow(primary_tests)))
+cat(sprintf("  |  Significant (BH-FDR): %d / %d\n\n",
+            sum(primary_tests$p_bh_primary < 0.05), nrow(primary_tests)))
 
 cat("================================================================\n")
 cat("CORRECTION SCOPE 2: All Tests (n=", nrow(all_tests), ")\n", sep = "")

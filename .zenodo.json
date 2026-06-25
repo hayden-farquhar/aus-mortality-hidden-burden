@@ -1,0 +1,37 @@
+{
+  "title": "The Hidden Burden of Mortality Across ICD-10 Conditions in Australia: Multiple Cause of Death Analysis Code and Derived Data",
+  "description": "Analysis code and derived datasets for a cross-sectional multiple cause of death analysis quantifying the hidden burden of mortality across all ICD-10 three-character conditions in Australia, using the crude multiple-to-underlying ratio. Accompanies the manuscript submitted to Discover Public Health and the medRxiv preprint. Pre-registered on the Open Science Framework.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Farquhar, Hayden",
+      "orcid": "0009-0002-6226-440X",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "keywords": [
+    "multiple cause of death",
+    "underlying cause",
+    "mortality",
+    "hidden burden",
+    "ICD-10",
+    "Australia",
+    "SRMU",
+    "reproducible research"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.64898/2026.02.07.26345820",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    },
+    {
+      "relation": "isDocumentedBy",
+      "identifier": "10.17605/OSF.IO/K46RN",
+      "scheme": "doi"
+    }
+  ]
+}
