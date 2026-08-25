@@ -88,6 +88,7 @@ All scripts assume the working directory is `Analysis/` (set automatically by op
 | `04_exploratory_analysis.R` | Ratio calculations, hospital-mortality concordance, initial figures |
 | `04b_figure_fixes.R` | Revised figures with improved formatting |
 | `04c_figure_fixes_round2.R` | Final figure revisions |
+| `04d_chapter_ratio_figure.R` | Chapter-level multiple-to-underlying ratio figure (Supplementary Figure S1) |
 | `08_fig6_fix.R` | Fix hospital vs mortality scatter plot |
 | `09_multimorbidity_complexity.R` | Death certificate complexity analysis |
 | `10_sex_stratified_hidden_burden.R` | Sex-stratified ratio analysis |
@@ -134,7 +135,7 @@ Complete ratio rankings, temporal trends, PBS prescribing linkage, and hospital-
 Text-format summaries of confirmatory and exploratory analyses.
 
 ### `figures/` — All Figures
-30 publication-quality PNG figures covering exploratory, confirmatory, and supplementary analyses.
+31 publication-quality PNG figures covering exploratory, confirmatory, and supplementary analyses.
 
 ## Key Findings
 

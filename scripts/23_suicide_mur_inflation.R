@@ -240,6 +240,105 @@ cat("show only slight female excess (ratio 0.79), consistent with the pre-\n")
 cat("registered finding that substance disorders did NOT drive the sex diff.\n")
 
 # ============================================================================
+# G. MULTI-MENTION SENSITIVITY: >1 PSYCHIATRIC CODE PER SUICIDE CERTIFICATE
+# ============================================================================
+# Sections C-E remove exactly ONE F-code mention per suicide certificate that
+# mentions a psychiatric condition. Because intentional self-harm deaths
+# (X60-X84) carry ~6.6 conditions each on average (ABS Causes of Death 2023,
+# Table 10.1), such a certificate may list MORE than one F-code. The single-
+# mention counterfactual is therefore a LOWER bound on suicide's contribution,
+# and the "100% mention" row is NOT a true maximum. Here we vary both the
+# mention rate and the number of F-codes removed per mentioning certificate.
+
+cat("\n\nG. MULTI-MENTION SENSITIVITY (F-codes removed per certificate)\n")
+cat("------------------------------------------------------------\n\n")
+
+# The removable pool is bounded by the contributing (non-underlying) F-code
+# mentions available for each sex; the ratio cannot fall below 1.0.
+contrib_pool_male   <- mental$multiple_male   - mental$underlying_male
+contrib_pool_female <- mental$multiple_female - mental$underlying_female
+
+grid <- expand.grid(pct = c(0.30, 0.50, 0.70, 1.00),
+                    f_per_cert = c(1, 2, 3),
+                    KEEP.OUT.ATTRS = FALSE)
+
+grid_res <- grid %>%
+  mutate(
+    removed_male   = pmin(suicide$underlying_male   * pct * f_per_cert, contrib_pool_male),
+    removed_female = pmin(suicide$underlying_female * pct * f_per_cert, contrib_pool_female),
+    mur_m = (mental$multiple_male   - removed_male)   / mental$underlying_male,
+    mur_f = (mental$multiple_female - removed_female) / mental$underlying_female,
+    ratio = mur_m / mur_f,
+    diff  = mur_m - mur_f,
+    pct_explained = 100 * (observed_diff - diff) / observed_diff
+  )
+
+cat(sprintf("%-11s %-11s %8s %8s %8s %8s\n",
+            "Mention %", "F/cert", "MUR_M", "MUR_F", "Ratio", "% expl"))
+cat(paste(rep("-", 62), collapse = ""), "\n")
+for (i in seq_len(nrow(grid_res))) {
+  r <- grid_res[i, ]
+  cat(sprintf("%-11s %-11d %8.2f %8.2f %8.2f %7.0f%%\n",
+              sprintf("%.0f%%", r$pct * 100), r$f_per_cert,
+              r$mur_m, r$mur_f, r$ratio, r$pct_explained))
+}
+
+max_expl <- max(grid_res$pct_explained)
+cat(sprintf("\nAcross the plausible grid, suicide coding explains between %.0f%% and %.0f%%\n",
+            min(grid_res$pct_explained), max_expl))
+cat("of the male-female mental-health ratio gap. Even the most aggressive\n")
+cat(sprintf("scenario (100%% mention, 3 F-codes/certificate) leaves %.0f%% of the gap\n",
+            100 - max_expl))
+cat("unexplained by the suicide coding mechanism.\n")
+
+# ============================================================================
+# H. ALTERNATIVE FRAMING: SELF-HARM AS A MENTAL-HEALTH OUTCOME (DENOMINATOR)
+# ============================================================================
+# Rather than treating the F00-F99 numerator as inflated by suicide, one can
+# treat the denominator as understated: intentional self-harm is an underlying
+# cause causally linked to mental illness, yet it is excluded from the mental-
+# health chapter (it sits in External Causes). Folding self-harm deaths into a
+# combined "mental-health-related" underlying count shows how visible (non-
+# hidden) mental-health mortality is distributed by sex.
+
+cat("\n\nH. ALTERNATIVE FRAMING: SELF-HARM AS A MENTAL-HEALTH OUTCOME\n")
+cat("------------------------------------------------------------\n\n")
+
+mh_incl_underlying_male   <- mental$underlying_male   + suicide$underlying_male
+mh_incl_underlying_female <- mental$underlying_female + suicide$underlying_female
+
+cat("Mental-health underlying deaths, F00-F99 only vs including self-harm:\n")
+cat(sprintf("  F00-F99 only:            Male=%s, Female=%s, M:F=%.2f\n",
+            format(mental$underlying_male, big.mark = ","),
+            format(mental$underlying_female, big.mark = ","),
+            mental$underlying_male / mental$underlying_female))
+cat(sprintf("  Including self-harm:     Male=%s, Female=%s, M:F=%.2f\n",
+            format(mh_incl_underlying_male, big.mark = ","),
+            format(mh_incl_underlying_female, big.mark = ","),
+            mh_incl_underlying_male / mh_incl_underlying_female))
+
+# Illustrative combined ratio (upper bound on the union of multiple-cause
+# mentions assumes F-code and self-harm mentions are disjoint; true value is
+# lower because some suicide certificates mention F-codes already counted).
+mult_union_male_ub   <- mental$multiple_male   + suicide$multiple_male
+mult_union_female_ub <- mental$multiple_female + suicide$multiple_female
+ratio_incl_male   <- mult_union_male_ub   / mh_incl_underlying_male
+ratio_incl_female <- mult_union_female_ub / mh_incl_underlying_female
+
+cat(sprintf("\nIllustrative combined ratio (self-harm folded in, disjoint upper bound):\n"))
+cat(sprintf("  Male=%.2f, Female=%.2f, ratio=%.2f (vs observed F00-F99 ratio %.2f)\n",
+            ratio_incl_male, ratio_incl_female,
+            ratio_incl_male / ratio_incl_female,
+            mental$mur_male / mental$mur_female))
+
+cat("\nCaveat (Stone et al. 2018): 46% of US suicide decedents had a KNOWN mental\n")
+cat("health condition, so the majority did not; folding all self-harm deaths into\n")
+cat("'mental health' would over-attribute. The reframe is presented as a bound,\n")
+cat("not a point estimate, and reinforces that the male excess in RECORDED but\n")
+cat("HIDDEN (multiple-only) mental-health burden is distinct from suicide, which\n")
+cat("is already a highly visible mental-health mortality statistic.\n")
+
+# ============================================================================
 # SAVE RESULTS
 # ============================================================================
 
@@ -255,8 +354,12 @@ output_data <- tibble(
   mh_mur_female_counterfactual = mur_female_cf,
   mh_mur_ratio_counterfactual = mur_male_cf / mur_female_cf,
   mh_mention_assumption = pct_mh_on_suicide,
-  pct_sex_diff_explained_by_suicide = pct_explained
+  pct_sex_diff_explained_by_suicide = pct_explained,
+  pct_explained_max_multimention = max_expl,
+  mh_incl_selfharm_underlying_mf_ratio = mh_incl_underlying_male / mh_incl_underlying_female
 )
+
+write_csv(grid_res, "outputs/exploratory/suicide_mur_multimention_grid.csv")
 
 write_csv(output_data, "outputs/exploratory/suicide_mur_inflation.csv")
 
